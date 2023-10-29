@@ -8,7 +8,62 @@
 <body>
     <form>
         <h1>Wyszukaj produkt</h1>
-        <input type="search">
+        <input type="search" value="🔍Nazwa produktu"><br>
+        <br>
+        <fieldset>
+            <legend>Cena</legend>
+            <label for="cena od">od </label>
+            <input type="search" value="0.00">
+            <label for="cena do">do</label>
+            <input type="search" value="10000000.00">
+            <select>
+                <option value="PLN" selected>
+                    PLN
+                </option>
+                <option value="EURO">
+                    €
+                </option>
+                <option value="Dolar">
+                    $
+                </option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Ocena Produktu</legend>
+            <label>
+                <input type="radio" name="5gwiazdkowy" value="5">5,0⭐⭐⭐⭐⭐
+            </label><br>
+            <label>
+                <input type="radio" name="4gwiazdkowy" value="4">4,0⭐⭐⭐⭐
+            </label><br>
+            <label>
+                <input type="radio" name="3gwiazdkowy" value="3">3,0⭐⭐⭐
+            </label><br>
+            <label>
+                <input type="radio" name="2gwiazdkowy" value="2">2,0⭐⭐
+            </label><br>
+            <label>
+                <input type="radio" name="1gwiazdkowy" value="1">1,0⭐
+            </label><br>
+        </fieldset><br>
+        <label for="kolor">Kolor:</label>
+        <input type="color" value="#FFFF00"><br>
+        <label for="DataProduktu">Data produkcji:</label>
+        <input type="date"><br>
+        <label for="Ladowanie">Szybkie ładowanie: 0W</label>
+        <input type="range" valuemax="150" valuemin="0" value="50" >150W &nbsp;&nbsp;
+        <fieldset>
+            <legend>Inne:</legend>
+            <label for="dual-sim"></label>
+            <input type="checkbox"> dual-sim
+            <label for="5G"></label>
+            <input type="checkbox">5G
+            <label for="Gorilla glass"></label>
+            <input type="checkbox">Gorilla glass
+        </fieldset><br>
+        <button>Filtruj</button>
+        <button>Usuń filtry</button>
     </form>
 </body>
 </html>
