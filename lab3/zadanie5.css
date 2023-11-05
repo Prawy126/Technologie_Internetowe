@@ -1,0 +1,52 @@
+li{
+    color: red;
+}
+ul > li {
+    color:blue;
+}
+.nav-item {
+    color: green;
+}
+
+#nav > .nav-item:hover {
+    color: pink;
+}
+
+#nav > li:hover {
+    color:brown;
+}
+
+li.nav-item:hover{
+    color:orange;
+}
+
+h1 {
+    font-size: 60pt;
+}
+
+
+#thisOne h1{
+    font-size: 60pt;
+    color: chocolate;
+}
+
+#thatOne {
+    color:black;
+    font-size:10pt;
+}
+
+
+
+.btn-light {
+    color:chocolate;
+    background-color: beige;
+    border: 0px;
+    border-radius: 10px;
+}
+
+section p{
+    color:black;
+    font-family:Corbel;
+
+}
+
