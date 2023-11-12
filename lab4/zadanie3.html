@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Menu rozwijane</title>
+<style>
+  html{
+    background-color: aqua;
+  }
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #000080; /* ciemnoniebieski kolor tła */
+    overflow: hidden;
+  }
+
+  .menu > li {
+    float: left;
+    position: relative;
+  }
+
+  .menu li {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .menu li:hover {
+    background-color: #111;
+  }
+
+  /* Styl dla rozwijanego menu (na początku niewidoczne) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000080; /* ciemnoniebieski kolor tła */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 160px;
+    z-index: 1;
+  }
+
+  .dropdown-content  {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    opacity: 0; /* Ustawienie przezroczystości na 0 */
+    transition: opacity 0.5s; /* Animacja przezroczystości */
+  }
+
+  /* Wyświetlanie rozwijanego menu przy najechaniu */
+  .menu li:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Zmiana przezroczystości na 1 przy najechaniu */
+  .menu li:hover .dropdown-content a {
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+
+<ul class="menu">
+  <li>Kolegium</li>
+  <li>Jednostki naukowe</li>
+  <li>Studenci</li>
+  <li>
+    Doktoranci
+    <div class="dropdown-content">
+      <a href="#ogloszenia">Ogłoszenia</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="#stypendia">Stypendia</a>
+    </div>
+  </li>
+</ul>
+
+</body>
+</html>
