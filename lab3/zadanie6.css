@@ -1,0 +1,20 @@
+/* Styl dla pasków wierszy */
+.row-stripes tr:nth-child(even) {
+    background-color: #73BBE6;
+}
+
+.row-stripes thead tr,
+.row-stripes tr:nth-child(1) { /* Zakładając, że pierwszy wiersz może być nagłówkiem, jeśli nie ma elementu thead */
+    background-color: #666652;
+}
+
+/* Styl dla pasków kolumn */
+.col-stripes tr td:nth-child(even),
+.col-stripes tr th:nth-child(even) { /* Zakłada, że nagłówki mogą być w środku tabeli, co jest rzadkie */
+    background-color: #73BBE6;
+}
+
+.col-stripes thead tr th,
+.col-stripes tr:nth-child(1) th { /* Zakładając, że pierwszy wiersz może zawierać nagłówki, jeśli nie ma elementu thead */
+    background-color: #666652;
+}

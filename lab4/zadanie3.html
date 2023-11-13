@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Zad 3-6</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+        body{
+            margin: 0px;
+        }
+        nav{
+            height: 100px;
+            width: auto;
+            text-align: center;
+        }
+
+        ol{
+            list-style-type: none;
+            text-align: center;
+            width: auto;
+            margin: 0;
+            padding: 0;
+        }
+
+        ol > li{
+            float: left;
+            background-color: blue;
+            color: white;
+            font-size: 16px;
+            height: 30px;
+            padding: 20px 0 20px 0;
+            width: 170px;
+            text-align: center;
+        }
+
+        ul > li{
+            background-color: blue;
+            color: white;
+            font-size: 16px;
+            height: 30px;
+            padding: 20px 0 20px 0;
+            width: 170px;
+            text-align: center;
+        }
+
+        ol > li:hover{
+            background-color: darkblue;
+        }
+
+        ol > li > ul
+        {
+            list-style-type: none;
+            display: none;
+            pointer-events: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ol > li:hover > ul{
+            display: block;
+            pointer-events: auto;
+        }
+
+        ol > li > ul > li
+        {
+            position: relative;
+            top: 30px;
+        }
+
+        ol > li > ul > li:hover{
+            background-color: darkblue;
+        }
+        
+        li{
+            position: relative;
+            height: auto;
+        }
+
+        .arrowD::after{
+            content: "";
+            font-size: 0;
+            width: 0;
+            height: 0;
+            margin: 0;
+            border-top: 10px solid white;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            position: relative;
+            left: -95px;
+        }
+        
+        .arrowR::after{
+            content: "";
+            font-size: 0;
+            width: 0;
+            height: 0;
+            margin: 0 auto;
+            border-left: 10px solid white;
+            border-top: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            position: relative;
+            left: -95px;
+        }
+
+        .green{
+            background-color: green;
+            position: relative;
+            left: 130px;
+            top: -38px;
+            display: none;
+            pointer-events: none;
+        }
+
+        .green:hover{
+            background-color: greenyellow;
+        }
+
+        li:hover > ul > li.green{
+            display: block;
+            pointer-events: auto;
+        }
+    </style>
+    <body>
+        <nav>
+            <ol>
+                <li>Kolegium</li>
+                <li>Jednostki naukowe</li>
+                <li><div class ="arrowD">Student</div>
+                    <ul>
+                        <li><div class="arrowR">Kierunki</div>
+                            <ul>
+                                <li class="green">Informatyka</li>
+                                <li class="green">Matematyka</li>
+                                <li class="green">Biotechnoligia</li>
+                                <li class="green">Mechatronika</li>
+                            </ul>
+                        </li>
+                        <li>Aktualności</li>
+                        <li>Dziekanat</li>
+                        <li>Stypendia</li>
+                    </ul>
+                </li>
+                <li><div class ="arrowD">Doktorant</div>
+
+                    <ul>
+                        <li>Kontakt</li>
+                        <li>Ogłoszenia</li>
+                        <li>Stypendia</li>
+                    </ul>
+
+                </li>
+            </ol>
+        </div>
+        </nav>
+    </body>
+</html>

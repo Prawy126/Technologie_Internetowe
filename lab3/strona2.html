@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona internetowa</title>
+    <style>
+        body {
+            background-color: #0033A0;
+            font-family: Open Sans, sans-serif;
+            margin: auto;
+            padding:10px;
+            text-align: center;
+            color:white;
+            
+        }
+        input{
+            border-radius: 20px;
+            padding: 10px;
+        }
+        select {
+            border-radius: 10px;
+        }
+        button {
+            border-radius: 30px;
+            background-color: white;
+            color:#0033A0;
+            padding:10px;
+            
+        }
+        fieldset {
+            border:2px solid white;
+            border-radius: 30px;
+            border-top-width: 10px;
+            border-left-width: 4px;
+        }
+        legend{
+            margin-right: auto;
+            
+        }
+        #wyszukiwarka{
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+        label{
+            color: white;                 
+            font-weight: bold;            
+            display: inline;              
+            margin-right: 10px; 
+        }
+       
+    </style>
+</head>
+<body>
+    <form>
+        <h1>WSZUKAJ PRODUKT</h1>
+        <input type="search" value="🔍Nazwa produktu" id="wyszukiwarka"><br>
+        <br>
+        <fieldset>
+            <legend>CENA</legend>
+            <label for="cena od">OD </label>
+            <input type="number" value="0.00">
+            <label for="cena do">DO</label>
+            <input type="number" value="10000000.00">
+            <select>
+                <option value="PLN" selected>
+                    PLN
+                </option>
+                <option value="EURO">
+                    €
+                </option>
+                <option value="Dolar">
+                    $
+                </option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>OCENA PRODUKTU</legend>
+            <label>
+                <input type="radio" name="ocena" value="5" checked>5,0⭐⭐⭐⭐⭐
+            </label><br>
+            <label>
+                <input type="radio" name="ocena" value="4">4,0⭐⭐⭐⭐
+            </label><br>
+            <label>
+                <input type="radio" name="ocena" value="3">3,0⭐⭐⭐
+            </label><br>
+            <label>
+                <input type="radio" name="ocena" value="2">2,0⭐⭐
+            </label><br>
+            <label>
+                <input type="radio" name="ocena" value="1">1,0⭐
+            </label><br>
+        </fieldset><br>
+        <label for="kolor">KOLOR:</label>
+        <input type="color" value="#FFFF00"><br>
+        <label for="DataProduktu">DATA PRODUKCJI:</label>
+        <input type="datetime-local"><br>
+        <label for="Ladowanie">SZYBKIE ŁADOWANIE: 0W</label>
+        <input type="range" valuemax="150" valuemin="0" value="50" >150W 
+        <fieldset>
+            <legend>Inne:</legend>
+            <label for="dual-sim"></label>
+            <input type="checkbox"> DUAL-SIM
+            <label for="5G"></label>
+            <input type="checkbox">5G
+            <label for="Gorilla glass"></label>
+            <input type="checkbox">GORILLA GLASS
+        </fieldset><br>
+        <button>FILTRUJ</button>
+        <button>USUŃ FILTRY</button>
+    </form>
+</body>
+</html>
