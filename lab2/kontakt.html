@@ -2,84 +2,43 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularz</title>
+    <style>
+        *{
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
-    <form>
+    <form action="" method="post">
         <h1>Formularz kontaktowy</h1>
-        <fieldset>
-            <legend>Informacje o użytkowniku</legend>
-            <label for="name">Podaj swoje imię i nazwisko</label>
-            <input id="name" pattern="[A-Za-ząęółśżźćń ]{4,}"> <br>
-            <label for="mail">Podaj adres email: </label>
-            <input type="email" id="mail" name="email" pattern="[A-Za-ząęółśżźćń@]{4,}"> <br>
-            <label for="telefon">Podaj nuemr telefonu</label>
-            <input id="telefon" pattern="\+\d{2} \d{3} \d{3} \d{3}"> <br>
-            <label for="content">Podaj treść wiadomości</label>
-            <textarea id="content" name="content" minlength="20"></textarea>
-            <br>
-            <label for="Miasto">Wybierz miasto</label>
-            <select id="Miasto" name="miasto">
-                <optgroup>
-                    <option value="Warszawa">Warszawa</option>
-                    <option value="Rzeszow">Rzeszów</option>
-                    <option value="Bydgoszcz" disabled>Bydgoszcz</option>
-                    <option value="Podlasie" disabled>Podlasie</option>
-                </optgroup>
-            </select>
-        </fieldset>
-        <fieldset>
-            <legend>Zgoda na przetwarzanie danych</legend>
-            <label>
-                <input type="checkbox" name="regulamin" value="zawsze" disabled checked>Zaakceptuj regulamin <br>
-            </label>
-        </fieldset>
-        <fieldset>
-            <legend>Powód zgłoszenia</legend>
-            <label>
-                <input type="radio" name="problem1" value="problem1">Zgłoszenie problemu technicznego <br>
-            </label>
-            <label>
-                <input type="radio" name="problem2" value="problem2">Propozycja współpracy<br>
-            </label>
-            <label>
-                <input type="radio" name="problem3" value="problem3">Pytania dotyczące treści<br>
-            </label>
-            <label>
-                <input type="radio" name="problem4" value="problem4">Zgłoszenie nadużycia<br>
-            </label>
-        </fieldset>
+        <label for="name">Podaj swoje imię i nazwisko: </label>
+        <imput id="name" placeholder="Imię i nazwisko" name="name"> <br>
+        <label for="telefon">Podaj numer telefonu</label>
+        <imput type="tel" id="" tel placeholder="Nr telefonu" name="tel"><br>
+        <label for="mail">Podaj swój adres email: </label>
+        <input type="email" id="mail" name="mail"><br>
+        <label for="content">Treść: </label>
+        <textarea id="content" rows="10" cols="20"></textarea>
+        <br>
+        <label for="contact-topic">Wybierz swoje Miasto</label>
+        <select id="contact-topic" name="contact-topic" multiple size="20">
+            <optgroup label="Wybierz miasto">
+                <option value="Warszawa">Warszawa</option>
+                <option value="Rzeszów"> Rzeszów</option>
+                <option disabled value="Brak">Brak</option>
+                <option disabled value="Nie istineje">Nie istnieje</option>
+            </optgroup>
+        </select>
+        <label>
+            <input type="checkbox" name="regulamin" value="regulamin" disabled checked>Akceptuję regulamin
+        </label>
         <button>Wyślij</button>
+        <button type="reset">reset</button>
 
-    </form>
-    <br>
-    <form>
-        <h1>Rejestracja</h1>
-        <fieldset>
-            <legend>Utwórz konto</legend>
-            
-            <label for="data">Podaj datę</label>
-            <input type="date" id="data"><br>
-            <label for="avatar">Podaj avatar (akceptowalny format to pdf)</label>
-            <input type="file" id="avatar" accept=".pdf"><br>
-            <label for="miasto">Podaj swoje miasto</label>
-            <input type="search" id="miasto"> <br>
-            <label for="kolor">Podaj swój kolor</label>
-            <input type="color" id="kolor"><br><br>
-            <button>Załóż konto</button>
-        </fieldset>
-    </form>
-    <form>
-        <h1>Kup bilet</h1>
-        <label for="data">Podaj datę</label>
-        <input type="date" id="data"><br>
-        <label for="czas">Podaj godzinę</label>
-        <input type="time" id="time"><br>
-        <label for="miejsce">Trasa</label>
-        <input type="search" id="miejsce"><br>
-        <label for="bilety">Ilość biletów</label>
-        <input type="range" max="10" min="1"><br>
     </form>
 </body>
 </html>
