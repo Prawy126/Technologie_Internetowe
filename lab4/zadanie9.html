@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8" />
+        <title>title</title>
+        <style>
+            @import url(external.css);
+            @layer first, second,third, zero;
+            @layer first {
+            section {
+                color: black !important;
+            }
+            }
+            @layer second {
+            section {
+                color: red;
+                border: 1px solid;
+            }
+            }@layer third{
+                section{
+                    color: blue;
+                }
+            }
+            section{
+                color: green;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <p>Ten akapit będzie miał niebieską czcionkę i obramowanie,
+            gdyż warstwa second jest wyżej niż warstwa first. </p>
+        </section>
+    </body>
+</html>
