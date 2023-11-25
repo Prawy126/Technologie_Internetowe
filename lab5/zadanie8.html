@@ -21,7 +21,7 @@
     }
     
     section:nth-of-type(2n) {
-      background-color: #e0e0e0; /* inny kolor tła dla tygodni B */
+      background-color: #e0e0f0; /* inny kolor tła dla tygodni B */
     }
     
     ul {
@@ -67,29 +67,48 @@
         grid-template-columns: repeat(1, 400px); /* 1 kolumna o szerokości 400px */
       }
     }
-    /* Kolor dla pierwszych siedmiu elementów każdej grupy 14 elementów */
-ol li:nth-child(14n+1),
-ol li:nth-child(14n+2),
-ol li:nth-child(14n+3),
-ol li:nth-child(14n+4),
-ol li:nth-child(14n+5),
-ol li:nth-child(14n+6),
-ol li:nth-child(14n+7) {
-  background-color: #01b5f1; /* Przykładowy kolor, np. jasnoniebieski */
+
+/* Odwrócenie kolorów dla dni w Tygodniu A */
+article:nth-of-type(1) ol li:nth-child(14n+1),
+article:nth-of-type(1) ol li:nth-child(14n+2),
+article:nth-of-type(1) ol li:nth-child(14n+3),
+article:nth-of-type(1) ol li:nth-child(14n+4),
+article:nth-of-type(1) ol li:nth-child(14n+5),
+article:nth-of-type(1) ol li:nth-child(14n+6),
+article:nth-of-type(1) ol li:nth-child(14n+7) {
+  background-color: #01b5f1; /* Odwrócony kolor, np. stalowy błękit */
 }
 
-/* Kolor dla kolejnych siedmiu elementów każdej grupy 14 elementów */
-ol li:nth-child(14n+8),
-ol li:nth-child(14n+9),
-ol li:nth-child(14n+10),
-ol li:nth-child(14n+11),
-ol li:nth-child(14n+12),
-ol li:nth-child(14n+13),
-ol li:nth-child(14n+14) {
-  background-color: #f60404; /* Inny przykładowy kolor, np. stalowy błękit */
+article:nth-of-type(1) ol li:nth-child(14n+8),
+article:nth-of-type(1) ol li:nth-child(14n+9),
+article:nth-of-type(1) ol li:nth-child(14n+10),
+article:nth-of-type(1) ol li:nth-child(14n+11),
+article:nth-of-type(1) ol li:nth-child(14n+12),
+article:nth-of-type(1) ol li:nth-child(14n+13),
+article:nth-of-type(1) ol li:nth-child(14n+14) {
+  background-color: #f60404; /* Odwrócony kolor, np. jasnoniebieski */
 }
 
+/* Odwrócenie kolorów dla dni w Tygodniu B */
+article:nth-of-type(2) ol li:nth-child(14n+1),
+article:nth-of-type(2) ol li:nth-child(14n+2),
+article:nth-of-type(2) ol li:nth-child(14n+3),
+article:nth-of-type(2) ol li:nth-child(14n+4),
+article:nth-of-type(2) ol li:nth-child(14n+5),
+article:nth-of-type(2) ol li:nth-child(14n+6),
+article:nth-of-type(2) ol li:nth-child(14n+7) {
+  background-color: #f60404; /* Odwrócony kolor, np. stalowy błękit */
+}
 
+article:nth-of-type(2) ol li:nth-child(14n+8),
+article:nth-of-type(2) ol li:nth-child(14n+9),
+article:nth-of-type(2) ol li:nth-child(14n+10),
+article:nth-of-type(2) ol li:nth-child(14n+11),
+article:nth-of-type(2) ol li:nth-child(14n+12),
+article:nth-of-type(2) ol li:nth-child(14n+13),
+article:nth-of-type(2) ol li:nth-child(14n+14) {
+  background-color: #01b5f1; /* Odwrócony kolor, np. jasnoniebieski */
+}
 
  </style>
 </head>
