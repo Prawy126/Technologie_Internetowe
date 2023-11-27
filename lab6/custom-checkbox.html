@@ -92,6 +92,16 @@ input[type="checkbox"]:disabled {
 
 }
 
+input:checked{
+  animation-name: powiekszanie;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes powiekszanie {
+  from{height:  30px; width: 30px;}
+  to{height:  60px; width: 60px;}
+}
+
 
 </style>
 </head>
