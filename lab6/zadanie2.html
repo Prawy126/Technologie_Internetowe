@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            
+        }
+       
+        @keyframes obracanie{
+            from{transform: rotate(0);}
+            to{transform: rotate(360deg);}
+        }
+        .loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+.loader {
+    border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-left: 1.1em solid #000000;
+  animation: obracanie 1.1s infinite linear;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="loader"></div>
+</body>
+</html>
