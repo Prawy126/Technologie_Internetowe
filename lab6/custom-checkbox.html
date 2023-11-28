@@ -25,6 +25,7 @@ form {
   min-height: 100vh;
 }
 
+
 .form-control {
   font-family: system-ui, sans-serif;
   font-size: 2rem;
@@ -94,15 +95,77 @@ input[type="checkbox"]:disabled {
 
 input:checked{
   animation-name: powiekszanie;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 }
+
 @keyframes powiekszanie {
-  from{height:  30px; width: 30px;}
-  to{height:  60px; width: 60px;}
+  from { transform: scale(1); }
+  to { transform: scale(2); }
 }
 
+button{
+      font-family: system-ui, sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 10px 20px;
+      margin-top: 60px;
+      border: 2px solid black;
+      border-radius: 50%;
+      background-color: white;
+      cursor: pointer;
+      outline: none;
+      transition: all 1.0s ease;
+     
+    }
 
+    button:hover {
+      border-color: green;
+      
+      transform: scale(1.2);
+      
+    }
+    button:active::after {
+      content: '✓';
+    }
+    @keyframes anime {
+      0% {
+        width: 60px;
+        height: 60px;
+        background: #f0f0f0;
+        box-shadow:  0 0 0 #cccccc,
+                     0 0 0 #ffffff,
+                      10px 10px 10px #cccccc inset,
+                      -10px -10px 10px #ffffff inset;
+      }
+      25% {
+        width: 60px;
+        height: 60px;
+        background: #f8f8f8;
+        box-shadow:  10px 10px 10px #cccccc,
+                     10px 10px 10px #ffffff,
+                     0 0 0 #cccccc inset,
+                     0 0 0 #ffffff inset;
+      }
+      50% {
+        width: 60px;
+        height: 240px;
+        background: #f8f8f8;
+        box-shadow:  10px 10px 10px #cccccc,
+                     10px 10px 10px #ffffff,
+                     0 0 0 #cccccc inset,
+                     0 0 0 #ffffff inset;
+      }
+      100% {
+        width: 480px;
+        height: 240px;
+        background: #fafafa;
+        box-shadow:  40px 40px 40px #cccccc,
+                     0 0 0 #ffffff,
+                     0 0 0 #cccccc inset,
+                     2px 2px 2px #ffffff inset;
+      }
+    }
 </style>
 </head>
 
@@ -128,7 +191,7 @@ input:checked{
       <input type="checkbox" name="checkbox-disabled-checked" checked disabled />
       Checkbox Disabled - checked
     </label>
-
+    <button type="submit">Submit</button>
   </form>
 </body>
 </html>
