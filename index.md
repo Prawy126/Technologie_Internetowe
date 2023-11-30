@@ -1,5 +1,5 @@
 ---
-redirect_to: https://prawy126.github.io/Technologie_Intenetowe
+layout: default
 ---
 
 # Technologie internetowe
