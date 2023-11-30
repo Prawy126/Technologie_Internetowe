@@ -1,3 +1,7 @@
+---
+redirect_to: https://prawy126.github.io/Technologie_Intenetowe
+---
+
 # Technologie internetowe
 
 ## LABORATORIA:
