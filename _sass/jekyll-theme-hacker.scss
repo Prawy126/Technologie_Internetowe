@@ -248,6 +248,12 @@ a {
   text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
 }
 
+a:hover {
+  color: #white;
+  text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
+}
+
+
 /* Clearfix */
 
 .cf:before, .cf:after {
