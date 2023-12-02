@@ -8,12 +8,14 @@ layout: default
 
 ### LAB 1: 
 
-- [lab1](https://github.com/Prawy126/Technologie_Intenetowe/tree/main/lab1)
-- strona [link](https://prawy126.github.io/Technologie_Intenetowe/lab1)
+- [Folder z zadaniami z labu 1](https://github.com/Prawy126/Technologie_Intenetowe/tree/main/lab1)
+  - [zadanie 1](https://prawy126.github.io/Technologie_Intenetowe/lab1)
 
 ### LAB 2: 
 
-- [lab2](https://github.com/Prawy126/Technologie_Intenetowe/tree/main/lab2)
+  - [Folder z zadaniami z labu 2](https://github.com/Prawy126/Technologie_Intenetowe/tree/main/lab2)
+    - Zadanie:[ tworzenie formularza zgłoszeniowego](https://github.com/Prawy126/Technologie_Intenetowe/blob/main/lab2/kontakt.html)
+    - Zadanie: [tworzenie strony oceniającej różne produkty](https://github.com/Prawy126/Technologie_Intenetowe/lab2/strona.html)
 
 ### LAB 3: 
 
