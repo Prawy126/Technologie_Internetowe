@@ -45,7 +45,7 @@ layout: default
   - [zadanie 1, 2, 3](https://prawy126.github.io/Technologie_Intenetowe/lab5/zadanie2.html)
   - [zadanie 4 i 5](https://prawy126.github.io/Technologie_Intenetowe/lab5/zadanie4.html)
   - [zadanie 6](https://prawy126.github.io/Technologie_Intenetowe/lab5/zadanie6.html)
-  - [zadanie 7](https://prawy126.github.io/Technologie_Intenetowe/main/lab5/zadanie7.html)
+  - [zadanie 7](https://prawy126.github.io/Technologie_Intenetowe/lab5/zadanie7.html)
   - [zadanie 8](https://prawy126.github.io/Technologie_Intenetowe/main/lab5/zadanie8.html)
 
 ### LAB 6: 
