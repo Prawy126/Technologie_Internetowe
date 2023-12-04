@@ -11,16 +11,8 @@ layout: default
 ### [LAB 2](https://prawy126.github.io/Technologie_Intenetowe/lab2) 
 
  
-### LAB 3: 
+### [LAB 3](https://prawy126.github.io/Technologie_Intenetowe/lab3) 
 
-- [folder z zadaniami z labu 3](https://github.com/Prawy126/Technologie_Intenetowe/tree/main/lab3)
-  - [zadanie 1](https://prawy126.github.io/Technologie_Intenetowe/lab3/index.html)
-  - [zadanie 2](https://prawy126.github.io/Technologie_Intenetowe/lab3/index2.html)
-  - [zadanie 3 i 4](https://prawy126.github.io/Technologie_Intenetowe/lab3/zadanie4.html)
-  - [zadanie 5](https://prawy126.github.io/Technologie_Intenetowe/lab3/zadanie5.html)
-  - [zadanie 6](https://prawy126.github.io/Technologie_Intenetowe/lab3/zadanie6.html)
-  - [zmiana wyglądu storny z labu 2 wersja 1](https://prawy126.github.io/Technologie_Intenetowe/lab3/strona.html)
-  - [zmiana wyglądu storny z labu 2 wersja 2](https://prawy126.github.io/Technologie_Intenetowe/lab3/strona2.html)
 
 ### LAB 4: 
 

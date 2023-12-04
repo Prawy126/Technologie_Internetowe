@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Lab 2
+# LAB 2
 
 ## Zadania:
 
