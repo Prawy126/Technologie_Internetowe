@@ -142,3 +142,7 @@ layout: default
 </html>
 ```
 
+
+- [Jak strona wygląda](https://prawy126.github.io/Technologie_Intenetowe/lab1/index.html)
+
+
