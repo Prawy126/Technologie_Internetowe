@@ -6,17 +6,11 @@ layout: default
 
 ## LABORATORIA:
 
-### LAB 1: 
+### [LAB 1](https://prawy126.github.io/Technologie_Intenetowe/lab1) 
 
-- [Folder z zadaniami z labu 1](https://github.com/Prawy126/Technologie_Intenetowe/tree/main/lab1)
-  - [Strona pokazująca jak kod z zadania 1 wygląda](https://prawy126.github.io/Technologie_Intenetowe/lab1/index.html)
+### [LAB 2](https://prawy126.github.io/Technologie_Intenetowe/lab2) 
 
-### LAB 2: 
-
-  - [Folder z zadaniami z labu 2](https://github.com/Prawy126/Technologie_Intenetowe/tree/main/lab2)
-    - [ tworzenie formularza zgłoszeniowego](https://prawy126.github.io/Technologie_Intenetowe/lab2/kontakt.html)
-    - [tworzenie strony oceniającej różne produkty](https://prawy126.github.io/Technologie_Intenetowe/lab2/strona.html)
-
+ 
 ### LAB 3: 
 
 - [folder z zadaniami z labu 3](https://github.com/Prawy126/Technologie_Intenetowe/tree/main/lab3)
