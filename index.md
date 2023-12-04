@@ -9,7 +9,7 @@ layout: default
 ### LAB 1: 
 
 - [Folder z zadaniami z labu 1](https://github.com/Prawy126/Technologie_Intenetowe/tree/main/lab1)
-  - [Strona pokazująca jak kod z zadania 1 wygląda](https://prawy126.github.io/Technologie_Intenetowe/lab1)
+  - [Strona pokazująca jak kod z zadania 1 wygląda](https://prawy126.github.io/Technologie_Intenetowe/lab1/index.html)
 
 ### LAB 2: 
 
