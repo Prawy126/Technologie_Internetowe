@@ -14,8 +14,8 @@ layout: default
 ### LAB 2: 
 
   - [Folder z zadaniami z labu 2](https://github.com/Prawy126/Technologie_Intenetowe/tree/main/lab2)
-    - Zadanie:[ tworzenie formularza zgłoszeniowego](https://prawy126.github.io/Technologie_Intenetowe/lab2/kontakt.html)
-    - Zadanie: [tworzenie strony oceniającej różne produkty](https://prawy126.github.io/Technologie_Intenetowe/lab2/strona.html)
+    - [ tworzenie formularza zgłoszeniowego](https://prawy126.github.io/Technologie_Intenetowe/lab2/kontakt.html)
+    - [tworzenie strony oceniającej różne produkty](https://prawy126.github.io/Technologie_Intenetowe/lab2/strona.html)
 
 ### LAB 3: 
 
