@@ -3,6 +3,8 @@ layout: default
 ---
 # Lab 1
 - 
+
+
 ```html
 <!DOCTYPE html>
 <html lang="pl">
