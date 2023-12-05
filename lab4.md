@@ -30,7 +30,7 @@ layout: default
 - [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Intenetowe/lab4/zadanie1)
 ---
 - ZADANIE 2
--
+- 
 
 ```html
 <!DOCTYPE html>
