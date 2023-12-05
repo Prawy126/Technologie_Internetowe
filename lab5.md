@@ -5,6 +5,7 @@ layout: default
 # LAB 5
 - ZADANIE 1 I 2
 - 
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -123,6 +124,7 @@ layout: default
 ---
 - ZADANIE 3 I 4
 - 
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -418,6 +420,7 @@ layout: default
 ---
 - ZADANIE 6
 - 
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -582,6 +585,7 @@ layout: default
 ---
 - ZADANIE 7
 - 
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -630,6 +634,7 @@ layout: default
 ---
 - ZADANIE 8
 - 
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
