@@ -1,5 +1,5 @@
 ---
-layout: home.html
+layout: default
 ---
 
 # Technologie internetowe
