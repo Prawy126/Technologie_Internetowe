@@ -481,44 +481,62 @@ congue.</section>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid example</title>
-    <style>
-        :root {
-            --blue-ur: #0033A0;
-            --white-ur: #FEFEFE;
-        }
-        
-        body {
-            display: grid; 
-            text-align: center;
-            color: var(--white-ur);
-            background-color: var(--blue-ur);
-        }
-        
-        h1 {
-            display: grid;
-        }
-        
-        img {
-            background-color: var(--white-ur);
-            width: 300px;
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Grid example</title>
+ <style>
+  :root {
+ --blue-ur: #0033A0;
+ --white-ur: #FEFEFE;
+ }
+
+ body {
+ text-align: center;
+ color: var(--white-ur);
+ background-color: var(--blue-ur);
+ }
+
+ .gallery{
+    display: grid;
+    justify-content: center;
+    gap:10px;
+ }
+
+ .gallery img{
+    width: 100%; 
+  max-width: 400px; 
+ }
+
+@media  (max-width:467px){
+    .gallery{
+        grid-template-columns: repeat(1,400px);
+    }
+ }
+
+ @media  (min-width:468px) and (max-width:1199px){
+    .gallery{
+        grid-template-columns: repeat(2,400px)
+    }
+ }
+
+ @media  (min-width:1200px){
+    .gallery{
+        grid-template-columns: repeat(3,400px)
+    }
+ }
+ </style>
 </head>
 <body>
-    <h1>Gallery</h1>
-    <section id="gallery" class="gallery">
-        <img src="placeholder.png" alt="placeholder image">
-        <img src="placeholder.png" alt="placeholder image">
-        <img src="placeholder.png" alt="placeholder image">
-        <img src="placeholder.png" alt="placeholder image">
-        <img src="placeholder.png" alt="placeholder image">
-    </section>
+ <h1>Gallery</h1>
+ <section id="gallery" class="gallery">
+ <img src="placeholder.png" alt="placeholder image">
+ <img src="placeholder.png" alt="placeholder image">
+ <img src="placeholder.png" alt="placeholder image">
+ <img src="placeholder.png" alt="placeholder image">
+ <img src="placeholder.png" alt="placeholder image">
+ </section>
 </body>
 </html>
-
 ```
 
 - [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Intenetowe/lab5/zadanie7)
