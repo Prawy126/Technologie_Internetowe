@@ -144,12 +144,7 @@ layout: default
         justify-content: space-between;
         min-width: 100vw;
         min-height: 100vh;
-        margin: 0px; 
-        #toggle, #toggle1 {
-        display:none;
-    }
-        
-    }
+        margin: 0px;
         }
         .main-content {
         display: flex;
@@ -217,7 +212,7 @@ layout: default
         text-decoration: none;
         padding: 5px;
         }
-    
+    }
 
     @media screen and (max-width: 400px) {
         .take-all-space {
@@ -228,9 +223,6 @@ layout: default
         min-height: 100vh;
         margin: 0px;
         }
-        #toggle, #toggle1 {
-        display:inline;
-    }
         .main-content {
         display: block;
         flex-direction: row;
