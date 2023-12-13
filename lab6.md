@@ -338,110 +338,125 @@ button{
 </html>
 ```
 
-- [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Intenetowe/lab6/custom-checkbox)
+- [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Intenetowe/lab6/simple-slider.html)
 ---
 - ZADANIE 5
 - 
 
 ```html
 <!DOCTYPE html>
-<html lang="pl">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsywny Grid CSS</title>
-  <style>
-    .container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: 
-        "header header header"
-        "main main sidebar"
-        "footer footer footer";
-      gap: 10px;
-    }
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+   * {
+            box-sizing: border-box;
+        }
 
-    .header {
-      grid-area: header;
-      background-color: #8ca1af;
-    }
+        .slider {
+            width: 300px;
+            text-align: center;
+            overflow: hidden;
+        }
 
-    .main {
-      grid-area: main;
-      background-color: #b2c2d1;
-    }
+        .slides {
+            color: white;
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+            padding: 4px;
+        }
+        .slides::-webkit-scrollbar {
+            width: 0px;
+            height: 0px;
+        }
 
-    .sidebar {
-      grid-area: sidebar;
-      background-color: #d1dfe9;
-      overflow: hidden;
-      transition: max-height 0.3s;
-      max-height: 0;
-    }
+        .slides > div {
+            scroll-snap-align: start;
+            flex-shrink: 0;
+            width: 300px;
+            height: 300px;
+            margin-right: 50px;
+            border-radius: 10px;
+            background: #da0d0d;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 100px;
+        }
 
-    .footer {
-      grid-area: footer;
-      background-color: #e1eff8;
-    }
+        /* Styl dla radiobuttonów i etykiet */
+        .slider-controls {
+            display: flex;
+            justify-content: center;
+        }
 
-    /* Ukrycie checkboxa */
-    .sidebar-checkbox {
-      display: none;
-    }
+        .slider-radio {
+            display: none;
+        }
 
-    /* Styl dla przełącznika sidebar */
-    .sidebar-toggle {
-      grid-area: sidebar-toggle;
-      background-color: #c2d1e1;
-      text-align: center;
-      padding: 10px;
-      cursor: pointer;
-    }
+        .slider-label {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #969696;
+            margin: 0 5px;
+            cursor: pointer;
+        }
 
-    .sidebar-toggle label {
-      display: block;
-      cursor: pointer;
-    }
+        /* Zmiana koloru kropki gdy odpowiadający radiobutton jest zaznaczony */
+        .slider-radio:checked + .slider-label {
+            background: #000;
+        }
 
-    /* Style dla rozwinięcia sidebar */
-    .sidebar-checkbox:checked ~ .container .sidebar {
-      max-height: 500px; /* Wysokość maksymalna kiedy sidebar jest rozwinięty */
-    }
+        .slider-controls > a:hover, .slider-controls > a:focus, .slides > div:target {
+            background: #000;
+        }
 
-    @media (max-width: 600px) {
-      .container {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-          "header"
-          "main"
-          "sidebar-toggle"
-          "sidebar"
-          "footer";
-      }
-    }
-
-    /* Dodatkowe style dla zadania, gdzie kolumna main ma być 5 razy szersza niż sidebar */
-    @media (min-width: 601px) {
-      .container {
-        grid-template-columns: 5fr 1fr;
-      }
-    }
-  </style>
+    </style>
 </head>
 <body>
-
-<input type="checkbox" id="sidebar-checkbox" class="sidebar-checkbox">
-<label for="sidebar-checkbox" class="sidebar-toggle">Pokaż/Zwiń pasek boczny</label>
-
-<div class="container">
-  <div class="header">Nagłówek</div>
-  <div class="main">Główna treść</div>
-  <div class="sidebar" id="sidebar">Pasek boczny</div>
-  <div class="footer">Stopka</div>
-</div>
-
+    <div class="slider">
+        <div class="slides">
+          <div id="slide-1">
+            1
+          </div>
+          <div id="slide-2">
+            2
+          </div>
+          <div id="slide-3">
+            3
+          </div>
+          <div id="slide-4">
+            4
+          </div>
+          <div id="slide-5">
+            5
+          </div>
+        </div>
+        <div class="slider-controls">
+          <input type="radio" id="slide-radio-1" name="slide" class="slider-radio" checked>
+          <label for="slide-radio-1" class="slider-label" onclick="window.location.href='#slide-1';"></label>
+          
+          <input type="radio" id="slide-radio-2" name="slide" class="slider-radio" >
+          <label for="slide-radio-1" class="slider-label" onclick="window.location.href='#slide-2';"></label>
+          <input type="radio" id="slide-radio-3" name="slide" class="slider-radio" >
+          <label for="slide-radio-1" class="slider-label" onclick="window.location.href='#slide-3';"></label>
+          <input type="radio" id="slide-radio-4" name="slide" class="slider-radio" >
+          <label for="slide-radio-1" class="slider-label" onclick="window.location.href='#slide-4';"></label>
+          <input type="radio" id="slide-radio-5" name="slide" class="slider-radio" >
+          <label for="slide-radio-1" class="slider-label" onclick="window.location.href='#slide-5';"></label>
+        </div>
+      </div>
 </body>
 </html>
+
+
 ```
 
 - [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Intenetowe/lab5/zadanie5)
