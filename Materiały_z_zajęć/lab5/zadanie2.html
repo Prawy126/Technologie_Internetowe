@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <style>
+     
+
+        .container {
+            display: flex;
+            gap: 10px;
+            overflow-x: scroll;
+            scrollbar-width: none;
+        }
+
+        .container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .cart {
+            display: flex;
+            flex-direction: column;
+            background-color: whitesmoke;
+            box-shadow: 10px 10px 20px rgba(155,155,155,0.5);
+            border-radius: 10px;
+            align-items: center;
+            text-align: justify;
+            flex: 1;
+            justify-content: space-between;
+        }
+
+        .cart img {
+            max-width: 40%;
+        }
+
+        .cart button {
+            border: 0px;
+            background-color: transparent;
+            font-size: 12pt;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            background-color: darkgray;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            min-width: 100%;
+        }
+
+        .bottom span {
+            display: flex;
+        }
+
+        .main-text {
+            padding: 10px;
+            max-width: 80%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cart">
+            <h3>Nazwa</h3>
+            <img src="logo_UR_blue.jpg">
+            <div class="main-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique
+            sapien ac erat tincidunt, sit amet dignissim lectus vulputate. Donec id
+            iaculis velit. Aliquam vel malesuada erat. Praesent non magna ac massa
+            aliquet tincidunt vel in massa. Phasellus feugiat est vel leo finibus
+            congue.
+            </div>
+
+            <div class="bottom"><span><ion-icon name="time-outline"></ion-icon> 50 min</span> <button><ion-icon name="heart-outline"></ion-icon></button></div>
+        </div>
+        <div class="cart">
+            <h3>Nazwa</h3>
+            <img src="logo_UR_blue.jpg">
+            <div class="main-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique
+            sapien ac erat tincidunt, sit amet dignissim lectus vulputate. Donec id
+            iaculis velit. Aliquam vel malesuada erat. Praesent non magna ac massa
+            aliquet tincidunt vel in massa. Phasellus feugiat est vel leo finibus
+            congue.
+            </div>
+            <div class="bottom"><span><ion-icon name="time-outline"></ion-icon> 120 min</span> <button><ion-icon name="heart-outline"></ion-icon></button></div>
+        </div>
+        <div class="cart">
+            <h3>Nazwa</h3>
+            <img src="logo_UR_blue.jpg">
+            <div class="main-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique
+            sapien ac erat tincidunt, sit amet dignissim lectus vulputate.
+            </div>
+            <div class="bottom"><span><ion-icon name="time-outline"></ion-icon> 30 min</span> <button><ion-icon name="heart-outline"></ion-icon></button></div>
+        </div>
+    </div>
+</body>
+</html>

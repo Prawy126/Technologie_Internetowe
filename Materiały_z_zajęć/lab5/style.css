@@ -1,0 +1,720 @@
+:root {
+    /* --first: #ffaa00; */
+    --odd-color: lightgreen;
+    --even-color: lightblue;
+}
+
+body {
+    display: flex;
+}
+
+article {
+    /* flex: 1; */
+    color: ligh;
+}
+
+li {
+    list-style: none;
+}
+
+ul,
+ol {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(7, 2rem);
+    margin: 0px 10px 0px 10px;
+    padding: 0px;
+    border: 1px solid black;
+}
+
+section:nth-of-type(1) ol>li:nth-child(1) {
+    background-color: aquamarine;
+}
+
+@media only screen and (max-width : 768px) {
+    article:nth-of-type(1) section:nth-of-type(1) ol>li:nth-child(1) {
+        background-color: var(--odd-color);
+    }
+
+    /* h2 {
+            color: var(--odd-color);
+        } */
+
+    article:nth-of-type(1) section:nth-of-type(4) ol>li:nth-child(14n+8),
+    article:nth-of-type(1) section:nth-of-type(4) ol>li:nth-child(14n+9),
+    article:nth-of-type(1) section:nth-of-type(4) ol>li:nth-child(14n+10),
+    article:nth-of-type(1) section:nth-of-type(4) ol>li:nth-child(14n+11),
+    article:nth-of-type(1) section:nth-of-type(4) ol>li:nth-child(14n+12),
+    article:nth-of-type(1) section:nth-of-type(4) ol>li:nth-child(14n+13),
+    article:nth-of-type(1) section:nth-of-type(4) ol>li:nth-child(14n+14) {
+        background-color: var(--odd-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(1) ol li:nth-child(1),
+    article:nth-of-type(1) section:nth-of-type(7) ol li:nth-child(1),
+    article:nth-of-type(1) section:nth-of-type(10) ol li:nth-child(1) {
+        background-color: var(--first);
+        grid-column-start: 7;
+    }
+
+    article:nth-of-type(1) section:nth-of-type(1) ol>li:nth-child(14n+2),
+    article:nth-of-type(1) section:nth-of-type(1) ol>li:nth-child(14n+3),
+    article:nth-of-type(1) section:nth-of-type(1) ol>li:nth-child(14n+4),
+    article:nth-of-type(1) section:nth-of-type(1) ol>li:nth-child(14n+5),
+    article:nth-of-type(1) section:nth-of-type(1) ol>li:nth-child(14n+6),
+    article:nth-of-type(1) section:nth-of-type(1) ol>li:nth-child(14n+7),
+    article:nth-of-type(1) section:nth-of-type(1) ol>li:nth-child(14n+8) {
+        background-color: var(--odd-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(7) ol>li:nth-child(14n+2),
+    article:nth-of-type(1) section:nth-of-type(7) ol>li:nth-child(14n+3),
+    article:nth-of-type(1) section:nth-of-type(7) ol>li:nth-child(14n+4),
+    article:nth-of-type(1) section:nth-of-type(7) ol>li:nth-child(14n+5),
+    article:nth-of-type(1) section:nth-of-type(7) ol>li:nth-child(14n+6),
+    article:nth-of-type(1) section:nth-of-type(7) ol>li:nth-child(14n+7),
+    article:nth-of-type(1) section:nth-of-type(7) ol>li:nth-child(14n+8) {
+        background-color: var(--odd-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(10) ol>li:nth-child(14n+2),
+    article:nth-of-type(1) section:nth-of-type(10) ol>li:nth-child(14n+3),
+    article:nth-of-type(1) section:nth-of-type(10) ol>li:nth-child(14n+4),
+    article:nth-of-type(1) section:nth-of-type(10) ol>li:nth-child(14n+5),
+    article:nth-of-type(1) section:nth-of-type(10) ol>li:nth-child(14n+6),
+    article:nth-of-type(1) section:nth-of-type(10) ol>li:nth-child(14n+7),
+    article:nth-of-type(1) section:nth-of-type(10) ol>li:nth-child(14n+8) {
+        background-color: var(--odd-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(2) ol li:nth-child(1),
+    article:nth-of-type(1) section:nth-of-type(11) ol li:nth-child(1) {
+        background-color: var(--first);
+        grid-column-start: 3;
+    }
+
+    article:nth-of-type(1) section:nth-of-type(2) ol>li:nth-child(14n+6),
+    article:nth-of-type(1) section:nth-of-type(2) ol>li:nth-child(14n+7),
+    article:nth-of-type(1) section:nth-of-type(2) ol>li:nth-child(14n+8),
+    article:nth-of-type(1) section:nth-of-type(2) ol>li:nth-child(14n+9),
+    article:nth-of-type(1) section:nth-of-type(2) ol>li:nth-child(14n+10),
+    article:nth-of-type(1) section:nth-of-type(2) ol>li:nth-child(14n+11),
+    article:nth-of-type(1) section:nth-of-type(2) ol>li:nth-child(14n+12) {
+        background-color: var(--odd-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(11) ol>li:nth-child(14n+6),
+    article:nth-of-type(1) section:nth-of-type(11) ol>li:nth-child(14n+7),
+    article:nth-of-type(1) section:nth-of-type(11) ol>li:nth-child(14n+8),
+    article:nth-of-type(1) section:nth-of-type(11) ol>li:nth-child(14n+9),
+    article:nth-of-type(1) section:nth-of-type(11) ol>li:nth-child(14n+10),
+    article:nth-of-type(1) section:nth-of-type(11) ol>li:nth-child(14n+11),
+    article:nth-of-type(1) section:nth-of-type(11) ol>li:nth-child(14n+12) {
+        background-color: var(--odd-color);
+    }
+
+
+    article:nth-of-type(1) section:nth-of-type(3) ol li:nth-child(1),
+    article:nth-of-type(1) section:nth-of-type(9) ol li:nth-child(1) {
+        background-color: var(--first);
+        grid-column-start: 5;
+    }
+
+
+    article:nth-of-type(1) section:nth-of-type(3) ol>li:nth-child(14n+4),
+    article:nth-of-type(1) section:nth-of-type(3) ol>li:nth-child(14n+5),
+    article:nth-of-type(1) section:nth-of-type(3) ol>li:nth-child(14n+6),
+    article:nth-of-type(1) section:nth-of-type(3) ol>li:nth-child(14n+7),
+    article:nth-of-type(1) section:nth-of-type(3) ol>li:nth-child(14n+8),
+    article:nth-of-type(1) section:nth-of-type(3) ol>li:nth-child(14n+9),
+    article:nth-of-type(1) section:nth-of-type(3) ol>li:nth-child(14n+10) {
+        background-color: var(--odd-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(9) ol>li:nth-child(14n+4),
+    article:nth-of-type(1) section:nth-of-type(9) ol>li:nth-child(14n+5),
+    article:nth-of-type(1) section:nth-of-type(9) ol>li:nth-child(14n+6),
+    article:nth-of-type(1) section:nth-of-type(9) ol>li:nth-child(14n+7),
+    article:nth-of-type(1) section:nth-of-type(9) ol>li:nth-child(14n+8),
+    article:nth-of-type(1) section:nth-of-type(9) ol>li:nth-child(14n+9),
+    article:nth-of-type(1) section:nth-of-type(9) ol>li:nth-child(14n+10) {
+        background-color: var(--odd-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(5) ol li:nth-child(1),
+    article:nth-of-type(1) section:nth-of-type(6) ol li:nth-child(1) {
+        background-color: var(--first);
+        grid-column-start: 4;
+    }
+
+    article:nth-of-type(1) section:nth-of-type(5) ol>li:nth-child(14n+5),
+    article:nth-of-type(1) section:nth-of-type(5) ol>li:nth-child(14n+6),
+    article:nth-of-type(1) section:nth-of-type(5) ol>li:nth-child(14n+7),
+    article:nth-of-type(1) section:nth-of-type(5) ol>li:nth-child(14n+8),
+    article:nth-of-type(1) section:nth-of-type(5) ol>li:nth-child(14n+9),
+    article:nth-of-type(1) section:nth-of-type(5) ol>li:nth-child(14n+10),
+    article:nth-of-type(1) section:nth-of-type(5) ol>li:nth-child(14n+11) {
+        background-color: var(--odd-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(6) ol>li:nth-child(14n+5),
+    article:nth-of-type(1) section:nth-of-type(6) ol>li:nth-child(14n+6),
+    article:nth-of-type(1) section:nth-of-type(6) ol>li:nth-child(14n+7),
+    article:nth-of-type(1) section:nth-of-type(6) ol>li:nth-child(14n+8),
+    article:nth-of-type(1) section:nth-of-type(6) ol>li:nth-child(14n+9),
+    article:nth-of-type(1) section:nth-of-type(6) ol>li:nth-child(14n+10),
+    article:nth-of-type(1) section:nth-of-type(6) ol>li:nth-child(14n+11) {
+        background-color: var(--odd-color);
+    }
+
+
+    article:nth-of-type(1) section:nth-of-type(8) ol li:nth-child(1) {
+        background-color: var(--first);
+        grid-column-start: 2;
+    }
+
+    article:nth-of-type(1) section:nth-of-type(8) ol>li:nth-child(14n+7),
+    article:nth-of-type(1) section:nth-of-type(8) ol>li:nth-child(14n+8),
+    article:nth-of-type(1) section:nth-of-type(8) ol>li:nth-child(14n+9),
+    article:nth-of-type(1) section:nth-of-type(8) ol>li:nth-child(14n+10),
+    article:nth-of-type(1) section:nth-of-type(8) ol>li:nth-child(14n+11),
+    article:nth-of-type(1) section:nth-of-type(8) ol>li:nth-child(14n+12),
+    article:nth-of-type(1) section:nth-of-type(8) ol>li:nth-child(14n+13) {
+        background-color: var(--odd-color);
+    }
+
+
+    article:nth-of-type(1) section:nth-of-type(12) ol li:nth-child(1) {
+        background-color: var(--first);
+        grid-column-start: 6;
+    }
+
+
+    article:nth-of-type(1) section:nth-of-type(12) ol>li:nth-child(14n+3),
+    article:nth-of-type(1) section:nth-of-type(12) ol>li:nth-child(14n+4),
+    article:nth-of-type(1) section:nth-of-type(12) ol>li:nth-child(14n+5),
+    article:nth-of-type(1) section:nth-of-type(12) ol>li:nth-child(14n+6),
+    article:nth-of-type(1) section:nth-of-type(12) ol>li:nth-child(14n+7),
+    article:nth-of-type(1) section:nth-of-type(12) ol>li:nth-child(14n+8),
+    article:nth-of-type(1) section:nth-of-type(12) ol>li:nth-child(14n+9) {
+        background-color: var(--odd-color);
+    }
+
+
+
+    article:nth-of-type(1) section:nth-of-type(4) ol>li:nth-child(14n+1),
+    article:nth-of-type(1) section:nth-of-type(4) ol>li:nth-child(14n+2),
+    article:nth-of-type(1) section:nth-of-type(4) ol>li:nth-child(14n+3),
+    article:nth-of-type(1) section:nth-of-type(4) ol>li:nth-child(14n+4),
+    article:nth-of-type(1) section:nth-of-type(4) ol>li:nth-child(14n+5),
+    article:nth-of-type(1) section:nth-of-type(4) ol>li:nth-child(14n+6),
+    article:nth-of-type(1) section:nth-of-type(4) ol>li:nth-child(14n+7) {
+        background-color: var(--even-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(1) ol li:nth-child(1),
+    article:nth-of-type(1) section:nth-of-type(7) ol li:nth-child(1),
+    article:nth-of-type(1) section:nth-of-type(10) ol li:nth-child(1) {
+        background-color: var(--first);
+        grid-column-start: 7;
+    }
+
+    article:nth-of-type(1) section:nth-of-type(1) ol>li:nth-child(14n+1),
+    article:nth-of-type(1) section:nth-of-type(1) ol>li:nth-child(14n+9),
+    article:nth-of-type(1) section:nth-of-type(1) ol>li:nth-child(14n+10),
+    article:nth-of-type(1) section:nth-of-type(1) ol>li:nth-child(14n+11),
+    article:nth-of-type(1) section:nth-of-type(1) ol>li:nth-child(14n+12),
+    article:nth-of-type(1) section:nth-of-type(1) ol>li:nth-child(14n+13),
+    article:nth-of-type(1) section:nth-of-type(1) ol>li:nth-child(14n+14) {
+        background-color: var(--even-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(7) ol>li:nth-child(14n+1),
+    article:nth-of-type(1) section:nth-of-type(7) ol>li:nth-child(14n+9),
+    article:nth-of-type(1) section:nth-of-type(7) ol>li:nth-child(14n+10),
+    article:nth-of-type(1) section:nth-of-type(7) ol>li:nth-child(14n+11),
+    article:nth-of-type(1) section:nth-of-type(7) ol>li:nth-child(14n+12),
+    article:nth-of-type(1) section:nth-of-type(7) ol>li:nth-child(14n+13),
+    article:nth-of-type(1) section:nth-of-type(7) ol>li:nth-child(14n+14) {
+        background-color: var(--even-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(10) ol>li:nth-child(14n+1),
+    article:nth-of-type(1) section:nth-of-type(10) ol>li:nth-child(14n+9),
+    article:nth-of-type(1) section:nth-of-type(10) ol>li:nth-child(14n+10),
+    article:nth-of-type(1) section:nth-of-type(10) ol>li:nth-child(14n+11),
+    article:nth-of-type(1) section:nth-of-type(10) ol>li:nth-child(14n+12),
+    article:nth-of-type(1) section:nth-of-type(10) ol>li:nth-child(14n+13),
+    article:nth-of-type(1) section:nth-of-type(10) ol>li:nth-child(14n+14) {
+        background-color: var(--even-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(2) ol li:nth-child(1),
+    article:nth-of-type(1) section:nth-of-type(11) ol li:nth-child(1) {
+        background-color: var(--first);
+        grid-column-start: 3;
+    }
+
+    article:nth-of-type(1) section:nth-of-type(2) ol>li:nth-child(14n+1),
+    article:nth-of-type(1) section:nth-of-type(2) ol>li:nth-child(14n+2),
+    article:nth-of-type(1) section:nth-of-type(2) ol>li:nth-child(14n+3),
+    article:nth-of-type(1) section:nth-of-type(2) ol>li:nth-child(14n+4),
+    article:nth-of-type(1) section:nth-of-type(2) ol>li:nth-child(14n+5),
+    article:nth-of-type(1) section:nth-of-type(2) ol>li:nth-child(14n+13),
+    article:nth-of-type(1) section:nth-of-type(2) ol>li:nth-child(14n+14) {
+        background-color: var(--even-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(11) ol>li:nth-child(14n+1),
+    article:nth-of-type(1) section:nth-of-type(11) ol>li:nth-child(14n+2),
+    article:nth-of-type(1) section:nth-of-type(11) ol>li:nth-child(14n+3),
+    article:nth-of-type(1) section:nth-of-type(11) ol>li:nth-child(14n+4),
+    article:nth-of-type(1) section:nth-of-type(11) ol>li:nth-child(14n+5),
+    article:nth-of-type(1) section:nth-of-type(11) ol>li:nth-child(14n+13),
+    article:nth-of-type(1) section:nth-of-type(11) ol>li:nth-child(14n+14) {
+        background-color: var(--even-color);
+    }
+
+
+    article:nth-of-type(1) section:nth-of-type(3) ol li:nth-child(1),
+    article:nth-of-type(1) section:nth-of-type(9) ol li:nth-child(1) {
+        background-color: var(--first);
+        grid-column-start: 5;
+    }
+
+
+    article:nth-of-type(1) section:nth-of-type(3) ol>li:nth-child(14n+1),
+    article:nth-of-type(1) section:nth-of-type(3) ol>li:nth-child(14n+2),
+    article:nth-of-type(1) section:nth-of-type(3) ol>li:nth-child(14n+3),
+    article:nth-of-type(1) section:nth-of-type(3) ol>li:nth-child(14n+11),
+    article:nth-of-type(1) section:nth-of-type(3) ol>li:nth-child(14n+12),
+    article:nth-of-type(1) section:nth-of-type(3) ol>li:nth-child(14n+13),
+    article:nth-of-type(1) section:nth-of-type(3) ol>li:nth-child(14n+14) {
+        background-color: var(--even-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(9) ol>li:nth-child(14n+1),
+    article:nth-of-type(1) section:nth-of-type(9) ol>li:nth-child(14n+2),
+    article:nth-of-type(1) section:nth-of-type(9) ol>li:nth-child(14n+3),
+    article:nth-of-type(1) section:nth-of-type(9) ol>li:nth-child(14n+11),
+    article:nth-of-type(1) section:nth-of-type(9) ol>li:nth-child(14n+12),
+    article:nth-of-type(1) section:nth-of-type(9) ol>li:nth-child(14n+13),
+    article:nth-of-type(1) section:nth-of-type(9) ol>li:nth-child(14n+14) {
+        background-color: var(--even-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(5) ol li:nth-child(1),
+    article:nth-of-type(1) section:nth-of-type(6) ol li:nth-child(1) {
+        background-color: var(--first);
+        grid-column-start: 4;
+    }
+
+    article:nth-of-type(1) section:nth-of-type(5) ol>li:nth-child(14n+1),
+    article:nth-of-type(1) section:nth-of-type(5) ol>li:nth-child(14n+2),
+    article:nth-of-type(1) section:nth-of-type(5) ol>li:nth-child(14n+3),
+    article:nth-of-type(1) section:nth-of-type(5) ol>li:nth-child(14n+4),
+    article:nth-of-type(1) section:nth-of-type(5) ol>li:nth-child(14n+12),
+    article:nth-of-type(1) section:nth-of-type(5) ol>li:nth-child(14n+13),
+    article:nth-of-type(1) section:nth-of-type(5) ol>li:nth-child(14n+14) {
+        background-color: var(--even-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(6) ol>li:nth-child(14n+1),
+    article:nth-of-type(1) section:nth-of-type(6) ol>li:nth-child(14n+2),
+    article:nth-of-type(1) section:nth-of-type(6) ol>li:nth-child(14n+3),
+    article:nth-of-type(1) section:nth-of-type(6) ol>li:nth-child(14n+4),
+    article:nth-of-type(1) section:nth-of-type(6) ol>li:nth-child(14n+12),
+    article:nth-of-type(1) section:nth-of-type(6) ol>li:nth-child(14n+13),
+    article:nth-of-type(1) section:nth-of-type(6) ol>li:nth-child(14n+14) {
+        background-color: var(--even-color);
+    }
+
+
+    article:nth-of-type(1) section:nth-of-type(8) ol li:nth-child(1) {
+        background-color: var(--first);
+        grid-column-start: 2;
+    }
+
+    article:nth-of-type(1) section:nth-of-type(8) ol>li:nth-child(14n+1),
+    article:nth-of-type(1) section:nth-of-type(8) ol>li:nth-child(14n+2),
+    article:nth-of-type(1) section:nth-of-type(8) ol>li:nth-child(14n+3),
+    article:nth-of-type(1) section:nth-of-type(8) ol>li:nth-child(14n+4),
+    article:nth-of-type(1) section:nth-of-type(8) ol>li:nth-child(14n+5),
+    article:nth-of-type(1) section:nth-of-type(8) ol>li:nth-child(14n+6),
+    article:nth-of-type(1) section:nth-of-type(8) ol>li:nth-child(14n+14) {
+        background-color: var(--even-color);
+    }
+
+
+    article:nth-of-type(1) section:nth-of-type(12) ol li:nth-child(1) {
+        background-color: var(--first);
+        grid-column-start: 6;
+    }
+
+
+    article:nth-of-type(1) section:nth-of-type(12) ol>li:nth-child(14n+1),
+    article:nth-of-type(1) section:nth-of-type(12) ol>li:nth-child(14n+2),
+    article:nth-of-type(1) section:nth-of-type(12) ol>li:nth-child(14n+10),
+    article:nth-of-type(1) section:nth-of-type(12) ol>li:nth-child(14n+11),
+    article:nth-of-type(1) section:nth-of-type(12) ol>li:nth-child(14n+12),
+    article:nth-of-type(1) section:nth-of-type(12) ol>li:nth-child(14n+13),
+    article:nth-of-type(1) section:nth-of-type(12) ol>li:nth-child(14n+14) {
+        background-color: var(--even-color);
+    }
+
+
+    article:nth-of-type(2) section {
+        display: none;
+    }
+
+    article:nth-of-type(1)>h2 {
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        color: var(--odd-color);
+        height: 4rem;
+    }
+
+    article:nth-of-type(2)>h2 {
+        position: absolute;
+        top: 1rem;
+        left: 9px;
+        color: var(--even-color);
+    }
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+    h2 {
+        color: var(--odd-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(4) ol>li:nth-child(14n+8),
+    article:nth-of-type(1) section:nth-of-type(4) ol>li:nth-child(14n+9),
+    article:nth-of-type(1) section:nth-of-type(4) ol>li:nth-child(14n+10),
+    article:nth-of-type(1) section:nth-of-type(4) ol>li:nth-child(14n+11),
+    article:nth-of-type(1) section:nth-of-type(4) ol>li:nth-child(14n+12),
+    article:nth-of-type(1) section:nth-of-type(4) ol>li:nth-child(14n+13),
+    article:nth-of-type(1) section:nth-of-type(4) ol>li:nth-child(14n+14) {
+        background-color: var(--odd-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(1) ol li:nth-child(1),
+    article:nth-of-type(1) section:nth-of-type(7) ol li:nth-child(1),
+    article:nth-of-type(1) section:nth-of-type(10) ol li:nth-child(1) {
+        background-color: var(--first);
+        grid-column-start: 7;
+    }
+
+    article:nth-of-type(1) section:nth-of-type(1) ol>li:nth-child(14n+2),
+    article:nth-of-type(1) section:nth-of-type(1) ol>li:nth-child(14n+3),
+    article:nth-of-type(1) section:nth-of-type(1) ol>li:nth-child(14n+4),
+    article:nth-of-type(1) section:nth-of-type(1) ol>li:nth-child(14n+5),
+    article:nth-of-type(1) section:nth-of-type(1) ol>li:nth-child(14n+6),
+    article:nth-of-type(1) section:nth-of-type(1) ol>li:nth-child(14n+7),
+    article:nth-of-type(1) section:nth-of-type(1) ol>li:nth-child(14n+8) {
+        background-color: var(--odd-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(7) ol>li:nth-child(14n+2),
+    article:nth-of-type(1) section:nth-of-type(7) ol>li:nth-child(14n+3),
+    article:nth-of-type(1) section:nth-of-type(7) ol>li:nth-child(14n+4),
+    article:nth-of-type(1) section:nth-of-type(7) ol>li:nth-child(14n+5),
+    article:nth-of-type(1) section:nth-of-type(7) ol>li:nth-child(14n+6),
+    article:nth-of-type(1) section:nth-of-type(7) ol>li:nth-child(14n+7),
+    article:nth-of-type(1) section:nth-of-type(7) ol>li:nth-child(14n+8) {
+        background-color: var(--odd-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(10) ol>li:nth-child(14n+2),
+    article:nth-of-type(1) section:nth-of-type(10) ol>li:nth-child(14n+3),
+    article:nth-of-type(1) section:nth-of-type(10) ol>li:nth-child(14n+4),
+    article:nth-of-type(1) section:nth-of-type(10) ol>li:nth-child(14n+5),
+    article:nth-of-type(1) section:nth-of-type(10) ol>li:nth-child(14n+6),
+    article:nth-of-type(1) section:nth-of-type(10) ol>li:nth-child(14n+7),
+    article:nth-of-type(1) section:nth-of-type(10) ol>li:nth-child(14n+8) {
+        background-color: var(--odd-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(2) ol li:nth-child(1),
+    article:nth-of-type(1) section:nth-of-type(11) ol li:nth-child(1) {
+        background-color: var(--first);
+        grid-column-start: 3;
+    }
+
+    article:nth-of-type(1) section:nth-of-type(2) ol>li:nth-child(14n+6),
+    article:nth-of-type(1) section:nth-of-type(2) ol>li:nth-child(14n+7),
+    article:nth-of-type(1) section:nth-of-type(2) ol>li:nth-child(14n+8),
+    article:nth-of-type(1) section:nth-of-type(2) ol>li:nth-child(14n+9),
+    article:nth-of-type(1) section:nth-of-type(2) ol>li:nth-child(14n+10),
+    article:nth-of-type(1) section:nth-of-type(2) ol>li:nth-child(14n+11),
+    article:nth-of-type(1) section:nth-of-type(2) ol>li:nth-child(14n+12) {
+        background-color: var(--odd-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(11) ol>li:nth-child(14n+6),
+    article:nth-of-type(1) section:nth-of-type(11) ol>li:nth-child(14n+7),
+    article:nth-of-type(1) section:nth-of-type(11) ol>li:nth-child(14n+8),
+    article:nth-of-type(1) section:nth-of-type(11) ol>li:nth-child(14n+9),
+    article:nth-of-type(1) section:nth-of-type(11) ol>li:nth-child(14n+10),
+    article:nth-of-type(1) section:nth-of-type(11) ol>li:nth-child(14n+11),
+    article:nth-of-type(1) section:nth-of-type(11) ol>li:nth-child(14n+12) {
+        background-color: var(--odd-color);
+    }
+
+
+    article:nth-of-type(1) section:nth-of-type(3) ol li:nth-child(1),
+    article:nth-of-type(1) section:nth-of-type(9) ol li:nth-child(1) {
+        background-color: var(--first);
+        grid-column-start: 5;
+    }
+
+
+    article:nth-of-type(1) section:nth-of-type(3) ol>li:nth-child(14n+4),
+    article:nth-of-type(1) section:nth-of-type(3) ol>li:nth-child(14n+5),
+    article:nth-of-type(1) section:nth-of-type(3) ol>li:nth-child(14n+6),
+    article:nth-of-type(1) section:nth-of-type(3) ol>li:nth-child(14n+7),
+    article:nth-of-type(1) section:nth-of-type(3) ol>li:nth-child(14n+8),
+    article:nth-of-type(1) section:nth-of-type(3) ol>li:nth-child(14n+9),
+    article:nth-of-type(1) section:nth-of-type(3) ol>li:nth-child(14n+10) {
+        background-color: var(--odd-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(9) ol>li:nth-child(14n+4),
+    article:nth-of-type(1) section:nth-of-type(9) ol>li:nth-child(14n+5),
+    article:nth-of-type(1) section:nth-of-type(9) ol>li:nth-child(14n+6),
+    article:nth-of-type(1) section:nth-of-type(9) ol>li:nth-child(14n+7),
+    article:nth-of-type(1) section:nth-of-type(9) ol>li:nth-child(14n+8),
+    article:nth-of-type(1) section:nth-of-type(9) ol>li:nth-child(14n+9),
+    article:nth-of-type(1) section:nth-of-type(9) ol>li:nth-child(14n+10) {
+        background-color: var(--odd-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(5) ol li:nth-child(1),
+    article:nth-of-type(1) section:nth-of-type(6) ol li:nth-child(1) {
+        background-color: var(--first);
+        grid-column-start: 4;
+    }
+
+    article:nth-of-type(1) section:nth-of-type(5) ol>li:nth-child(14n+5),
+    article:nth-of-type(1) section:nth-of-type(5) ol>li:nth-child(14n+6),
+    article:nth-of-type(1) section:nth-of-type(5) ol>li:nth-child(14n+7),
+    article:nth-of-type(1) section:nth-of-type(5) ol>li:nth-child(14n+8),
+    article:nth-of-type(1) section:nth-of-type(5) ol>li:nth-child(14n+9),
+    article:nth-of-type(1) section:nth-of-type(5) ol>li:nth-child(14n+10),
+    article:nth-of-type(1) section:nth-of-type(5) ol>li:nth-child(14n+11) {
+        background-color: var(--odd-color);
+    }
+
+    article:nth-of-type(1) section:nth-of-type(6) ol>li:nth-child(14n+5),
+    article:nth-of-type(1) section:nth-of-type(6) ol>li:nth-child(14n+6),
+    article:nth-of-type(1) section:nth-of-type(6) ol>li:nth-child(14n+7),
+    article:nth-of-type(1) section:nth-of-type(6) ol>li:nth-child(14n+8),
+    article:nth-of-type(1) section:nth-of-type(6) ol>li:nth-child(14n+9),
+    article:nth-of-type(1) section:nth-of-type(6) ol>li:nth-child(14n+10),
+    article:nth-of-type(1) section:nth-of-type(6) ol>li:nth-child(14n+11) {
+        background-color: var(--odd-color);
+    }
+
+
+    article:nth-of-type(1) section:nth-of-type(8) ol li:nth-child(1) {
+        background-color: var(--first);
+        grid-column-start: 2;
+    }
+
+    article:nth-of-type(1) section:nth-of-type(8) ol>li:nth-child(14n+7),
+    article:nth-of-type(1) section:nth-of-type(8) ol>li:nth-child(14n+8),
+    article:nth-of-type(1) section:nth-of-type(8) ol>li:nth-child(14n+9),
+    article:nth-of-type(1) section:nth-of-type(8) ol>li:nth-child(14n+10),
+    article:nth-of-type(1) section:nth-of-type(8) ol>li:nth-child(14n+11),
+    article:nth-of-type(1) section:nth-of-type(8) ol>li:nth-child(14n+12),
+    article:nth-of-type(1) section:nth-of-type(8) ol>li:nth-child(14n+13) {
+        background-color: var(--odd-color);
+    }
+
+
+    article:nth-of-type(1) section:nth-of-type(12) ol li:nth-child(1) {
+        background-color: var(--first);
+        grid-column-start: 6;
+    }
+
+
+    article:nth-of-type(1) section:nth-of-type(12) ol>li:nth-child(14n+3),
+    article:nth-of-type(1) section:nth-of-type(12) ol>li:nth-child(14n+4),
+    article:nth-of-type(1) section:nth-of-type(12) ol>li:nth-child(14n+5),
+    article:nth-of-type(1) section:nth-of-type(12) ol>li:nth-child(14n+6),
+    article:nth-of-type(1) section:nth-of-type(12) ol>li:nth-child(14n+7),
+    article:nth-of-type(1) section:nth-of-type(12) ol>li:nth-child(14n+8),
+    article:nth-of-type(1) section:nth-of-type(12) ol>li:nth-child(14n+9) {
+        background-color: var(--odd-color);
+    }
+
+
+
+    h2 {
+        color: var(--even-color);
+    }
+
+    article:nth-of-type(2) section:nth-of-type(4) ol>li:nth-child(14n+1),
+    article:nth-of-type(2) section:nth-of-type(4) ol>li:nth-child(14n+2),
+    article:nth-of-type(2) section:nth-of-type(4) ol>li:nth-child(14n+3),
+    article:nth-of-type(2) section:nth-of-type(4) ol>li:nth-child(14n+4),
+    article:nth-of-type(2) section:nth-of-type(4) ol>li:nth-child(14n+5),
+    article:nth-of-type(2) section:nth-of-type(4) ol>li:nth-child(14n+6),
+    article:nth-of-type(2) section:nth-of-type(4) ol>li:nth-child(14n+7) {
+        background-color: var(--even-color);
+    }
+
+    article:nth-of-type(2) section:nth-of-type(1) ol li:nth-child(1),
+    article:nth-of-type(2) section:nth-of-type(7) ol li:nth-child(1),
+    article:nth-of-type(2) section:nth-of-type(10) ol li:nth-child(1) {
+        background-color: var(--first);
+        grid-column-start: 7;
+    }
+
+    article:nth-of-type(2) section:nth-of-type(1) ol>li:nth-child(14n+1),
+    article:nth-of-type(2) section:nth-of-type(1) ol>li:nth-child(14n+9),
+    article:nth-of-type(2) section:nth-of-type(1) ol>li:nth-child(14n+10),
+    article:nth-of-type(2) section:nth-of-type(1) ol>li:nth-child(14n+11),
+    article:nth-of-type(2) section:nth-of-type(1) ol>li:nth-child(14n+12),
+    article:nth-of-type(2) section:nth-of-type(1) ol>li:nth-child(14n+13),
+    article:nth-of-type(2) section:nth-of-type(1) ol>li:nth-child(14n+14) {
+        background-color: var(--even-color);
+    }
+
+    article:nth-of-type(2) section:nth-of-type(7) ol>li:nth-child(14n+1),
+    article:nth-of-type(2) section:nth-of-type(7) ol>li:nth-child(14n+9),
+    article:nth-of-type(2) section:nth-of-type(7) ol>li:nth-child(14n+10),
+    article:nth-of-type(2) section:nth-of-type(7) ol>li:nth-child(14n+11),
+    article:nth-of-type(2) section:nth-of-type(7) ol>li:nth-child(14n+12),
+    article:nth-of-type(2) section:nth-of-type(7) ol>li:nth-child(14n+13),
+    article:nth-of-type(2) section:nth-of-type(7) ol>li:nth-child(14n+14) {
+        background-color: var(--even-color);
+    }
+
+    article:nth-of-type(2) section:nth-of-type(10) ol>li:nth-child(14n+1),
+    article:nth-of-type(2) section:nth-of-type(10) ol>li:nth-child(14n+9),
+    article:nth-of-type(2) section:nth-of-type(10) ol>li:nth-child(14n+10),
+    article:nth-of-type(2) section:nth-of-type(10) ol>li:nth-child(14n+11),
+    article:nth-of-type(2) section:nth-of-type(10) ol>li:nth-child(14n+12),
+    article:nth-of-type(2) section:nth-of-type(10) ol>li:nth-child(14n+13),
+    article:nth-of-type(2) section:nth-of-type(10) ol>li:nth-child(14n+14) {
+        background-color: var(--even-color);
+    }
+
+    article:nth-of-type(2) section:nth-of-type(2) ol li:nth-child(1),
+    article:nth-of-type(2) section:nth-of-type(11) ol li:nth-child(1) {
+        background-color: var(--first);
+        grid-column-start: 3;
+    }
+
+    article:nth-of-type(2) section:nth-of-type(2) ol>li:nth-child(14n+1),
+    article:nth-of-type(2) section:nth-of-type(2) ol>li:nth-child(14n+2),
+    article:nth-of-type(2) section:nth-of-type(2) ol>li:nth-child(14n+3),
+    article:nth-of-type(2) section:nth-of-type(2) ol>li:nth-child(14n+4),
+    article:nth-of-type(2) section:nth-of-type(2) ol>li:nth-child(14n+5),
+    article:nth-of-type(2) section:nth-of-type(2) ol>li:nth-child(14n+13),
+    article:nth-of-type(2) section:nth-of-type(2) ol>li:nth-child(14n+14) {
+        background-color: var(--even-color);
+    }
+
+    article:nth-of-type(2) section:nth-of-type(11) ol>li:nth-child(14n+1),
+    article:nth-of-type(2) section:nth-of-type(11) ol>li:nth-child(14n+2),
+    article:nth-of-type(2) section:nth-of-type(11) ol>li:nth-child(14n+3),
+    article:nth-of-type(2) section:nth-of-type(11) ol>li:nth-child(14n+4),
+    article:nth-of-type(2) section:nth-of-type(11) ol>li:nth-child(14n+5),
+    article:nth-of-type(2) section:nth-of-type(11) ol>li:nth-child(14n+13),
+    article:nth-of-type(2) section:nth-of-type(11) ol>li:nth-child(14n+14) {
+        background-color: var(--even-color);
+    }
+
+
+    article:nth-of-type(2) section:nth-of-type(3) ol li:nth-child(1),
+    article:nth-of-type(2) section:nth-of-type(9) ol li:nth-child(1) {
+        background-color: var(--first);
+        grid-column-start: 5;
+    }
+
+
+    article:nth-of-type(2) section:nth-of-type(3) ol>li:nth-child(14n+1),
+    article:nth-of-type(2) section:nth-of-type(3) ol>li:nth-child(14n+2),
+    article:nth-of-type(2) section:nth-of-type(3) ol>li:nth-child(14n+3),
+    article:nth-of-type(2) section:nth-of-type(3) ol>li:nth-child(14n+11),
+    article:nth-of-type(2) section:nth-of-type(3) ol>li:nth-child(14n+12),
+    article:nth-of-type(2) section:nth-of-type(3) ol>li:nth-child(14n+13),
+    article:nth-of-type(2) section:nth-of-type(3) ol>li:nth-child(14n+14) {
+        background-color: var(--even-color);
+    }
+
+    article:nth-of-type(2) section:nth-of-type(9) ol>li:nth-child(14n+1),
+    article:nth-of-type(2) section:nth-of-type(9) ol>li:nth-child(14n+2),
+    article:nth-of-type(2) section:nth-of-type(9) ol>li:nth-child(14n+3),
+    article:nth-of-type(2) section:nth-of-type(9) ol>li:nth-child(14n+11),
+    article:nth-of-type(2) section:nth-of-type(9) ol>li:nth-child(14n+12),
+    article:nth-of-type(2) section:nth-of-type(9) ol>li:nth-child(14n+13),
+    article:nth-of-type(2) section:nth-of-type(9) ol>li:nth-child(14n+14) {
+        background-color: var(--even-color);
+    }
+
+    article:nth-of-type(2) section:nth-of-type(5) ol li:nth-child(1),
+    article:nth-of-type(2) section:nth-of-type(6) ol li:nth-child(1) {
+        background-color: var(--first);
+        grid-column-start: 4;
+    }
+
+    article:nth-of-type(2) section:nth-of-type(5) ol>li:nth-child(14n+1),
+    article:nth-of-type(2) section:nth-of-type(5) ol>li:nth-child(14n+2),
+    article:nth-of-type(2) section:nth-of-type(5) ol>li:nth-child(14n+3),
+    article:nth-of-type(2) section:nth-of-type(5) ol>li:nth-child(14n+4),
+    article:nth-of-type(2) section:nth-of-type(5) ol>li:nth-child(14n+12),
+    article:nth-of-type(2) section:nth-of-type(5) ol>li:nth-child(14n+13),
+    article:nth-of-type(2) section:nth-of-type(5) ol>li:nth-child(14n+14) {
+        background-color: var(--even-color);
+    }
+
+    article:nth-of-type(2) section:nth-of-type(6) ol>li:nth-child(14n+1),
+    article:nth-of-type(2) section:nth-of-type(6) ol>li:nth-child(14n+2),
+    article:nth-of-type(2) section:nth-of-type(6) ol>li:nth-child(14n+3),
+    article:nth-of-type(2) section:nth-of-type(6) ol>li:nth-child(14n+4),
+    article:nth-of-type(2) section:nth-of-type(6) ol>li:nth-child(14n+12),
+    article:nth-of-type(2) section:nth-of-type(6) ol>li:nth-child(14n+13),
+    article:nth-of-type(2) section:nth-of-type(6) ol>li:nth-child(14n+14) {
+        background-color: var(--even-color);
+    }
+
+
+    article:nth-of-type(2) section:nth-of-type(8) ol li:nth-child(1) {
+        background-color: var(--first);
+        grid-column-start: 2;
+    }
+
+    article:nth-of-type(2) section:nth-of-type(8) ol>li:nth-child(14n+1),
+    article:nth-of-type(2) section:nth-of-type(8) ol>li:nth-child(14n+2),
+    article:nth-of-type(2) section:nth-of-type(8) ol>li:nth-child(14n+3),
+    article:nth-of-type(2) section:nth-of-type(8) ol>li:nth-child(14n+4),
+    article:nth-of-type(2) section:nth-of-type(8) ol>li:nth-child(14n+5),
+    article:nth-of-type(2) section:nth-of-type(8) ol>li:nth-child(14n+6),
+    article:nth-of-type(2) section:nth-of-type(8) ol>li:nth-child(14n+14) {
+        background-color: var(--even-color);
+    }
+
+
+    article:nth-of-type(2) section:nth-of-type(12) ol li:nth-child(1) {
+        background-color: var(--first);
+        grid-column-start: 6;
+    }
+
+
+    article:nth-of-type(2) section:nth-of-type(12) ol>li:nth-child(14n+1),
+    article:nth-of-type(2) section:nth-of-type(12) ol>li:nth-child(14n+2),
+    article:nth-of-type(2) section:nth-of-type(12) ol>li:nth-child(14n+10),
+    article:nth-of-type(2) section:nth-of-type(12) ol>li:nth-child(14n+11),
+    article:nth-of-type(2) section:nth-of-type(12) ol>li:nth-child(14n+12),
+    article:nth-of-type(2) section:nth-of-type(12) ol>li:nth-child(14n+13),
+    article:nth-of-type(2) section:nth-of-type(12) ol>li:nth-child(14n+14) {
+        background-color: var(--even-color);
+    }
+
+}

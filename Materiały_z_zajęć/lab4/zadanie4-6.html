@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        html,
+        body {
+            padding: 0px;
+            margin: 0px;
+            background: #ffffff;
+            font-family: 'Fira sans', sans-serif;
+            width: 100vw;
+        }
+
+        body * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav menuitem {
+            position: relative;
+            float: left;
+            display: block;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        nav menuitem>menu {
+            position: absolute;
+            pointer-events: none;
+        }
+
+        nav>menu {
+            display: block;
+        }
+
+        nav>menu>menuitem {
+            pointer-events: all;
+            opacity: 1;
+        }
+
+        menu menuitem a {
+            white-space: nowrap;
+            display: block;
+        }
+
+        menuitem:hover>menu {
+            pointer-events: initial;
+        }
+
+        menuitem:hover>menu>menuitem,
+        menu:hover>menuitem {
+            opacity: 1;
+        }
+
+        nav>menu>menuitem menuitem menu {
+            position: absolute;
+            top: 0;
+            /* float: left; */
+            left: 190px;
+
+        }
+
+
+        nav {
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+
+        nav a {
+            background: #0033a0;
+            color: #FFF;
+            min-width: 190px;
+            margin: 0px 0px 6px 0px;
+            padding: 20px 40px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        nav a:hover:before {
+            content: '';
+            top: 0;
+            left: 0;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.2);
+            width: 100%;
+            height: 100%;
+        }
+
+        nav>menu>menuitem>a+menu:after {
+            content: '';
+            position: absolute;
+            border: 10px solid transparent;
+            border-top: 10px solid white;
+            left: 12px;
+            top: -40px;
+        }
+
+        nav menuitem>menu>menuitem>a+menu:after {
+            content: '';
+            position: absolute;
+            border: 10px solid transparent;
+            border-left: 10px solid white;
+            top: 20px;
+            left: -180px;
+        }
+
+        nav menu menu menu a {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <menu>
+            <menuitem>
+            <a>Kolegium</a>
+
+            </menuitem>
+            <menuitem>
+            <a>Jednostki naukowe</a>
+            </menuitem>
+            <menuitem>
+            <a>Student</a>
+            <menu>
+                <menuitem><a>Kierunki</a>
+                <menu>
+                    <menuitem><a>Informatyka</a></menuitem>
+                    <menuitem><a>Matematyka</a></menuitem>
+                    <menuitem><a>Biotechnologia</a></menuitem>
+                    <menuitem><a>Mechatronika</a></menuitem>
+                </menu>
+                </menuitem>
+                <menuitem><a>Aktualności</a></menuitem>
+                <menuitem><a>Dziekanat</a></menuitem>
+                <menuitem><a>Stypendia</a></menuitem>
+            </menu>
+            </menuitem>
+            <menuitem>
+            <a>Doktorant</a>
+            <menu>
+                <menuitem><a>Ogłoszenia</a></menuitem>
+                <menuitem><a>Kontakt</a></menuitem>
+                <menuitem><a>Stypendia</a></menuitem>
+            </menu>
+            </menuitem>
+        </menu>
+    </nav>
+</body>
+
+</html>
