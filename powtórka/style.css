@@ -1,0 +1,12 @@
+ol{
+    list-style-type: upper-roman;
+}
+ul>li{
+    list-style-type: disc;
+}
+div > ul{
+    display: none;
+}
+nav > ul > li:hover{
+    display: block;
+}
