@@ -12,10 +12,10 @@
         <br>
         <fieldset>
             <legend>Cena</legend>
-            <label for="cena od">od </label>
-            <input type="search" value="0.00">
-            <label for="cena do">do</label>
-            <input type="search" value="10000000.00">
+            <label for="cena_od">od </label>
+            <input type="search" value="0.00" id="cena_od">
+            <label for="cena_do">do</label>
+            <input type="search" value="10000000.00" id="cena_do">
             <select>
                 <option value="PLN" selected>
                     PLN
@@ -48,19 +48,19 @@
             </label><br>
         </fieldset><br>
         <label for="kolor">Kolor:</label>
-        <input type="color" value="#FFFF00"><br>
-        <label for="DataProduktu">Data produkcji:</label>
-        <input type="datetime-local"><br>
-        <label for="Ladowanie">Szybkie ładowanie: 0W</label>
-        <input type="range" valuemax="150" valuemin="0" value="50" >150W &nbsp;&nbsp;
+        <input type="color" value="#FFFF00" id="kolor"><br>
+        <label for="dataproduktu">Data produkcji:</label>
+        <input type="datetime-local" id="dataproduktu"><br>
+        <label for="ladowanie">Szybkie ładowanie: 0W</label>
+        <input type="range" value="50" id="ladowanie">150W &nbsp;&nbsp;
         <fieldset>
             <legend>Inne:</legend>
-            <label for="dual-sim"></label>
-            <input type="checkbox"> dual-sim
+            <label for="dualsim"></label>
+            <input type="checkbox" id="dualsim"> dual-sim
             <label for="5G"></label>
-            <input type="checkbox">5G
-            <label for="Gorilla glass"></label>
-            <input type="checkbox">Gorilla glass
+            <input type="checkbox" id="5G">5G
+            <label for="Gorilla_glass"></label>
+            <input type="checkbox" id="Gorilla_glass">Gorilla glass
         </fieldset><br>
         <button>Filtruj</button>
         <button>Usuń filtry</button>

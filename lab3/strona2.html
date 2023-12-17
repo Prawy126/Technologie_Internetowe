@@ -55,15 +55,15 @@
 </head>
 <body>
     <form>
-        <h1>WSZUKAJ PRODUKT</h1>
-        <input type="search" value="🔍Nazwa produktu" id="wyszukiwarka"><br>
+        <h1>Wyszukaj produkt</h1>
+        <input type="search" value="🔍Nazwa produktu"><br>
         <br>
         <fieldset>
-            <legend>CENA</legend>
-            <label for="cena od">OD </label>
-            <input type="number" value="0.00">
-            <label for="cena do">DO</label>
-            <input type="number" value="10000000.00">
+            <legend>Cena</legend>
+            <label for="cena_od">od </label>
+            <input type="search" value="0,00" id="cena_od">
+            <label for="cena_do">do</label>
+            <input type="search" value="10000000,00" id="cena_do">
             <select>
                 <option value="PLN" selected>
                     PLN
@@ -78,40 +78,40 @@
         </fieldset>
         <br>
         <fieldset>
-            <legend>OCENA PRODUKTU</legend>
+            <legend>Ocena Produktu</legend>
             <label>
-                <input type="radio" name="ocena" value="5" checked>5,0⭐⭐⭐⭐⭐
+                <input type="radio" name="5gwiazdkowy" value="5" checked>5,0⭐⭐⭐⭐⭐
             </label><br>
             <label>
-                <input type="radio" name="ocena" value="4">4,0⭐⭐⭐⭐
+                <input type="radio" name="4gwiazdkowy" value="4">4,0⭐⭐⭐⭐
             </label><br>
             <label>
-                <input type="radio" name="ocena" value="3">3,0⭐⭐⭐
+                <input type="radio" name="3gwiazdkowy" value="3">3,0⭐⭐⭐
             </label><br>
             <label>
-                <input type="radio" name="ocena" value="2">2,0⭐⭐
+                <input type="radio" name="2gwiazdkowy" value="2">2,0⭐⭐
             </label><br>
             <label>
-                <input type="radio" name="ocena" value="1">1,0⭐
+                <input type="radio" name="1gwiazdkowy" value="1">1,0⭐
             </label><br>
         </fieldset><br>
-        <label for="kolor">KOLOR:</label>
-        <input type="color" value="#FFFF00"><br>
-        <label for="DataProduktu">DATA PRODUKCJI:</label>
-        <input type="datetime-local"><br>
-        <label for="Ladowanie">SZYBKIE ŁADOWANIE: 0W</label>
-        <input type="range" valuemax="150" valuemin="0" value="50" >150W 
+        <label for="kolor">Kolor:</label>
+        <input type="color" id="kolor" value="#FFFF00"><br>
+        <label for="DataProduktu">Data produkcji:</label>
+        <input type="datetime-local" id="DataProduktu"><br>
+        <label for="Ladowanie">Szybkie ładowanie: 0W</label>
+        <input type="range" id="Ladowanie" value="50" >150W &nbsp;&nbsp;
         <fieldset>
             <legend>Inne:</legend>
             <label for="dual-sim"></label>
-            <input type="checkbox"> DUAL-SIM
+            <input type="checkbox" id="dual-sim" > dual-sim
             <label for="5G"></label>
-            <input type="checkbox">5G
-            <label for="Gorilla glass"></label>
-            <input type="checkbox">GORILLA GLASS
+            <input type="checkbox" id="5G" >5G
+            <label for="Gorilla_glass" ></label>
+            <input type="checkbox" id="Gorilla_glass" >Gorilla glass
         </fieldset><br>
-        <button>FILTRUJ</button>
-        <button>USUŃ FILTRY</button>
+        <button>Filtruj</button>
+        <button>Usuń filtry</button>
     </form>
 </body>
 </html>
