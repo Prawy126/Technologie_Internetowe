@@ -64,7 +64,7 @@ layout: default
 </html>
 ```
 
-- [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Intenetowe/lab6/zadanie1)
+- [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Internetowe/lab6/zadanie1)
 ---
 - ZADANIE 2
 - 
@@ -111,7 +111,7 @@ layout: default
 </html>
 ```
 
-- [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Intenetowe/lab6/zadanie2)
+- [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Internetowe/lab6/zadanie2)
 ---
 - ZADANIE 3 I 4
 - 
@@ -338,7 +338,7 @@ button{
 </html>
 ```
 
-- [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Intenetowe/lab6/simple-slider.html)
+- [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Internetowe/lab6/simple-slider.html)
 ---
 - ZADANIE 5
 - 
@@ -459,5 +459,5 @@ button{
 
 ```
 
-- [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Intenetowe/lab5/zadanie5)
+- [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Internetowe/lab5/zadanie5)
 

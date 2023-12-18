@@ -120,7 +120,7 @@ layout: default
 
 ```
 
-- [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Intenetowe/lab5/zadanie2)
+- [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Internetowe/lab5/zadanie2)
 ---
 - ZADANIE 3 I 4
 - 
@@ -416,7 +416,7 @@ layout: default
 </html>
 ```
 
-- [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Intenetowe/lab5/zadanie4)
+- [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Internetowe/lab5/zadanie4)
 ---
 - ZADANIE 6
 - 
@@ -581,7 +581,7 @@ layout: default
 
 ```
 
-- [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Intenetowe/lab5/zadanie6)
+- [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Internetowe/lab5/zadanie6)
 ---
 - ZADANIE 7
 - 
@@ -630,7 +630,7 @@ layout: default
 
 ```
 
-- [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Intenetowe/lab5/zadanie7)
+- [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Internetowe/lab5/zadanie7)
 ---
 - ZADANIE 8
 - 
@@ -1849,4 +1849,4 @@ article:nth-of-type(2) ol li:nth-child(14n+14) {
        </html>                                                             
 ```
 
-- [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Intenetowe/lab5/zadanie8)
+- [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Internetowe/lab5/zadanie8)

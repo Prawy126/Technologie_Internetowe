@@ -55,7 +55,7 @@ layout: default
 ```
 
 
-- [Aktualny podgląd kodu](https://prawy126.github.io/Technologie_Intenetowe/lab2/kontakt)
+- [Aktualny podgląd kodu](https://prawy126.github.io/Technologie_Internetowe/lab2/kontakt)
 
 ---
 - Wyszukiwarka produktów
@@ -134,4 +134,4 @@ layout: default
 </html>
 ```
 
-- [Aktualny podgląd kodu](https://prawy126.github.io/Technologie_Intenetowe/lab2/strona)
+- [Aktualny podgląd kodu](https://prawy126.github.io/Technologie_Internetowe/lab2/strona)
