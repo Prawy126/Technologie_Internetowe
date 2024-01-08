@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+        const a = 0;
+        let b;
+        try{
+            a = 0;
+        }catch(e){
+            console.log(e);
+        }
+        console.log(a);
+        b += 1;
+        console.log(b);
+        b = 'abc';
+        console.log(b);
+        import{abc} from './index.js';
+        import{bca} from './index.js';
+
+        //object literal
+        let x = {};
+        console.log(x);
+
+        let y = new Object();
+        console.log(y);
+
+        const person = {name: null, printIntroduction: function(){return 'I am ${this.name}'}};
+
+        const mark = Object.create(person);
+        mark.name='Mark';
+        
+        
+        const person2 = {name: person};
+
+        function Person('Susan');
+
+    </script>
+    <script src="index.js" type="module"></script>
+    <script src="index2.js" type="module"></script>
+</body>
+</html>
