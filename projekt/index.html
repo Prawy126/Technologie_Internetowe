@@ -8,7 +8,7 @@
     <title>Sklep z komputerami</title>
     
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="naglowek.css">
+    
     
     <!--<link rel="stylesheet" href="stopka.css">-->
     <style>
@@ -65,6 +65,8 @@
           width: 60%;
           float:right;
           display: flex;
+          flex-direction: row-reverse;
+          justify-content: center;
           
         }
         .srodek{
@@ -151,6 +153,41 @@
     </nav>
     <section></section>
     <main>
+      <div>
+        <div class="slider">
+          <div class="slides">
+            <div id="slide-1">
+              1
+            </div>
+            <div id="slide-2">
+              2
+            </div>
+            <div id="slide-3">
+              3
+            </div>
+            <div id="slide-4">
+              4
+            </div>
+            <div id="slide-5">
+              5
+            </div>
+          </div>
+          <div class="slider-controls">
+            <input type="radio" id="slide-radio-1" name="slide" class="slider-radio" checked>
+            <label for="slide-radio-1" class="slider-label" onclick="window.location.href='#slide-1';"></label>
+            
+            <input type="radio" id="slide-radio-2" name="slide" class="slider-radio" >
+            <label for="slide-radio-1" class="slider-label" onclick="window.location.href='#slide-2';"></label>
+            <input type="radio" id="slide-radio-3" name="slide" class="slider-radio" >
+            <label for="slide-radio-1" class="slider-label" onclick="window.location.href='#slide-3';"></label>
+            <input type="radio" id="slide-radio-4" name="slide" class="slider-radio" >
+            <label for="slide-radio-1" class="slider-label" onclick="window.location.href='#slide-4';"></label>
+            <input type="radio" id="slide-radio-5" name="slide" class="slider-radio" >
+            <label for="slide-radio-1" class="slider-label" onclick="window.location.href='#slide-5';"></label>
+          </div>
+        </div>
+       </div>
+       
         <div class="container">
             <div class="card">
               <div class="face face1">

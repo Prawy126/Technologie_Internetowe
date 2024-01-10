@@ -15,7 +15,7 @@ header{
 body {
     margin: 0;
     padding: 0;
-    
+    background-color: #444;
 }
 * {
     margin: 0; 
@@ -270,3 +270,72 @@ body {
 .slider-controls > a:hover, .slider-controls > a:focus, .slides > div:target {
     background: #000;
 }
+
+
+header {
+    background: #d2d2d2;
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 100px;
+    color: #B71427 ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+  }
+.container{
+    display: flex;
+    
+    }
+    .L {
+      top: 85px;
+      left: 140px;
+    }
+    .ADING {
+      top: 85px;
+      left: 285px;
+    }
+    .outter {
+      top: 110px;
+      left: 200px;
+      width: 80px;
+      height: 80px;
+      border-radius: 80px 0 0 80px;
+      border-left: solid 5px #7D1935 ;
+      -webkit-animation-name:             spin; 
+      -webkit-animation-duration:         1s; 
+      -webkit-animation-iteration-count:  infinite;
+      -webkit-animation-timing-function:  linear;
+    }
+    .mid {
+      top: 15px;
+      left: 15px;
+      position: relative; 
+      width: 50px;
+      height: 50px;
+      border-radius: 50px 0 0 50px;
+      border-left: solid 5px #B71427; 
+      -webkit-animation-name:             spin; 
+      -webkit-animation-duration:         3s; 
+      -webkit-animation-iteration-count:  infinite;
+      -webkit-animation-timing-function:  linear;
+    }
+    
+    @-webkit-keyframes spin {
+      from { -webkit-transform:rotate(0deg) } 
+      to { -webkit-transform:rotate(360deg) } 
+    }
+    @-moz-keyframes spin {
+      from { -webkit-transform:rotate(0deg) } 
+      to { -webkit-transform:rotate(360deg) }   
+    }
+    @-o-keyframes spin {
+      from { -webkit-transform:rotate(0deg) } 
+      to { -webkit-transform:rotate(360deg) }   
+    }
+    @keyframes spin {
+      from { -webkit-transform:rotate(0deg) } 
+    to { -webkit-transform:rotate(360deg) }   
+    }
+    
