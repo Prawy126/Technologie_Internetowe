@@ -8,10 +8,8 @@
     <title>Sklep z komputerami</title>
     
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="tresc.css">
     <link rel="stylesheet" href="naglowek.css">
-    <link rel="stylesheet" href="menu.css">
-    <link rel="stylesheet" href="slider.css">
+    
     <!--<link rel="stylesheet" href="stopka.css">-->
     <style>
         @import url(https://fonts.googleapis.com/css?family=Open+Sans);
@@ -64,7 +62,7 @@
             animation: hoverShake 0.15s linear 3;
         }
         .prawy{
-          width: 70%;
+          width: 60%;
           float:right;
           display: flex;
           
@@ -74,19 +72,22 @@
           justify-content: center;
         }
         .left{
-          width: 30%;
+          width: 40%;
           float:left;
           display: flex;
           align-items: center;
           justify-content: center;
         }
 
+        .flex{
+          display: flex;
+        }
     </style>
 </head>
 <body>
     <header>  
-      <div class="prawy">
-        <div class="srodek">
+      <div class="lewy">
+        <div class="flex">
             <div class="L">L</div>
               <div class="outter">
                 <div class="mid"></div>
@@ -95,7 +96,7 @@
             </div>
         </div>
       </div> 
-      <div class="lewy">
+      <div class="prawy">
         <div class="search-container">
           <input type="text" name="search" placeholder="Search..." class="search-input">
           <a href="#" class="search-btn">
@@ -110,6 +111,7 @@
     </header>
     
     <nav>
+      <div class="pasek">
         <div id="container">
             <ul id="menu">
               <li><a href="#">About Me</a>
@@ -142,6 +144,8 @@
               </li>
             </ul>
             </div>
+      </div>
+        
     </nav>
     <section></section>
     <main>
