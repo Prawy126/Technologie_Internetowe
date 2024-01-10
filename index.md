@@ -25,4 +25,6 @@ layout: default
 
 ### [LAB 8](https://prawy126.github.io/Technologie_Internetowe/lab8) 
 
+### [Projekt](https://prawy126.github.io/Technologie_Internetowe/projekt/index)
+
 

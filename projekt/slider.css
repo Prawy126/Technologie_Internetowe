@@ -1,0 +1,63 @@
+.slider {
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.slides {
+    color: white;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding: 4px;
+}
+.slides::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: #da0d0d;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+/* Styl dla radiobuttonów i etykiet */
+.slider-controls {
+    display: flex;
+    justify-content: center;
+}
+
+.slider-radio {
+    display: none;
+}
+
+.slider-label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #969696;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* Zmiana koloru kropki gdy odpowiadający radiobutton jest zaznaczony */
+.slider-radio:checked + .slider-label {
+    background: #000;
+}
+
+.slider-controls > a:hover, .slider-controls > a:focus, .slides > div:target {
+    background: #000;
+}

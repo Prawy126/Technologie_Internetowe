@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="tresc.css">
     <link rel="stylesheet" href="naglowek.css">
     <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="slider.css">
     <!--<link rel="stylesheet" href="stopka.css">-->
     <style>
         @import url(https://fonts.googleapis.com/css?family=Open+Sans);
@@ -62,25 +63,50 @@
         .search-container:hover {
             animation: hoverShake 0.15s linear 3;
         }
-
+        .prawy{
+          width: 70%;
+          float:right;
+          display: flex;
+          
+        }
+        .srodek{
+          align-items: center;
+          justify-content: center;
+        }
+        .left{
+          width: 30%;
+          float:left;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
 
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
+    <header>  
+      <div class="prawy">
+        <div class="srodek">
             <div class="L">L</div>
-            <div class="outter">
-              <div class="mid"></div>
+              <div class="outter">
+                <div class="mid"></div>
+              </div>
+              <div class="ADING">GO</div>
             </div>
-            <div class="ADING">GO</div>
-            </div>
-        <div class="search-container">
-            <input type="text" name="search" placeholder="Search..." class="search-input">
-            <a href="#" class="search-btn">
-                <i class="fas fa-search"></i>
-            </a>
         </div>
+      </div> 
+      <div class="lewy">
+        <div class="search-container">
+          <input type="text" name="search" placeholder="Search..." class="search-input">
+          <a href="#" class="search-btn">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+      </div> 
+      
+      <div class="container">
+            
+        
     </header>
     
     <nav>
@@ -170,6 +196,41 @@
               </div>
            </div>
          </div>
+         <br>
+         <div>
+          <div class="slider">
+            <div class="slides">
+              <div id="slide-1">
+                1
+              </div>
+              <div id="slide-2">
+                2
+              </div>
+              <div id="slide-3">
+                3
+              </div>
+              <div id="slide-4">
+                4
+              </div>
+              <div id="slide-5">
+                5
+              </div>
+            </div>
+            <div class="slider-controls">
+              <input type="radio" id="slide-radio-1" name="slide" class="slider-radio" checked>
+              <label for="slide-radio-1" class="slider-label" onclick="window.location.href='#slide-1';"></label>
+              
+              <input type="radio" id="slide-radio-2" name="slide" class="slider-radio" >
+              <label for="slide-radio-1" class="slider-label" onclick="window.location.href='#slide-2';"></label>
+              <input type="radio" id="slide-radio-3" name="slide" class="slider-radio" >
+              <label for="slide-radio-1" class="slider-label" onclick="window.location.href='#slide-3';"></label>
+              <input type="radio" id="slide-radio-4" name="slide" class="slider-radio" >
+              <label for="slide-radio-1" class="slider-label" onclick="window.location.href='#slide-4';"></label>
+              <input type="radio" id="slide-radio-5" name="slide" class="slider-radio" >
+              <label for="slide-radio-1" class="slider-label" onclick="window.location.href='#slide-5';"></label>
+            </div>
+          </div>
+         </div>
     </main>
     <footer>
        <!-- <button class="send">
@@ -193,6 +254,7 @@
             </div>
             <div class="shadow"></div>
           </div>-->
+          
     </footer>
 </body>
 </html>
