@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Kalkulator opłacalności pizzy</h1>
+    
+    <label name="cena">Pizza 1</label><br>
+    <input type="number" id="cena" placeholder="Podaj cenę pizzy"><br>
+    <input type="number" id="malaPizza" placeholder="Podaj średnicę pizzy"><br>
+
+    <label name="cena">Pizza 2</label><br>
+    <input type="number" id="cena2" placeholder="Podaj cenę pizzy"><br>
+    <input type="number" id="duzaPizza" placeholder="Podaj średnicę pizzy">
+    
+    <br><br><button>Oblicz</button>
+    <script>
+        const button = document.querySelector("button");
+
+        button.addEventListener("click", (event) =>{
+            cena = document.getElementById('cena').value;
+            malaPizza = document.getElementById('malaPizza').value;
+            cena2 = document.getElementById('cena2').value;
+            duzaPizz = document.getElementById('duzaPizza').value;
+            var a = document.getElementById("cena");
+            var b = document.getElementById("cena2");
+            
+            if(duzaPizz>malaPizza){
+                if(cena2 == cena){
+                   a.style.background = "red";
+                   b.style.background = "green";
+                }else if(cena2<cena){
+                    a.style.background = "red"
+                    b.style.background = "green";
+            }else if(2*cena == cena2 && duzaPizz == malaPizza*2){
+                    a.style.background = "green"
+                    b.style.background = "green";
+            }
+            else {
+                a.style.background = "green"
+                b.style.background = "red";
+            }
+            }else if(malaPizza == duzaPizz){
+                if(cena == cena2){
+                    a.style.background = "green"
+                    b.style.background = "green";
+                }else if(cena>cena2){
+                    a.style.background = "red"
+                    b.style.background = "green";
+                }else{
+                    a.style.background = "green"
+                    b.style.background = "red";
+                }
+            }else{
+                if(cena<cena2){
+                    a.style.background = "red"
+                    b.style.background = "green"; 
+                }else if(cena == cena2){
+                    a.style.background = "green"
+                    b.style.background = "green";
+                }else{
+                    a.style.background = "green"
+                    b.style.background = "red";
+                }
+            }
+            
+        })
+    </script>
+</body>
+</html>
