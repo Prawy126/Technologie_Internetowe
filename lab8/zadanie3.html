@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my-table {
+ border-collapse: collapse;
+ }
+.my-table * {
+ border: 1px solid black;
+}
+    </style>
+</head>
+<body>
+    <h1>Nagłówek</h1>
+    <p>Akapit</p>
+    <script>
+        let newP = document.createElement('p');
+        newP.innerText = "Programowo utworzony akapit";
+        document.body.append(newP);
+
+        const exchangeRate = [
+  {"currency":"dolar amerykański","code":"USD","mid":3.9432},
+  {"currency":"dolar australijski","code":"AUD","mid":2.6897},
+  {"currency":"dolar Hongkongu","code":"HKD","mid":0.5046},
+  {"currency":"dolar kanadyjski","code":"CAD","mid":2.9752},
+  {"currency":"dolar nowozelandzki","code":"NZD","mid":2.4884},
+  {"currency":"dolar singapurski","code":"SGD","mid":2.9809}
+];
+
+const HTMLTable = document.createElement('table');
+const header = document.createElement('tr');
+const headerCurrency = document.createElement('th');
+headerCurrency.innerText = 'Waluta';
+const headerCurrencyCode = document.createElement('th');
+headerCurrencyCode.innerText = 'Kod waluty';
+const headerMeanExchangeRate = document.createElement('th');
+headerMeanExchangeRate.innerText = 'Kurs średni';
+header.appendChild(headerCurrency);
+header.appendChild(headerCurrencyCode);
+header.appendChild(headerMeanExchangeRate);
+HTMLTable.appendChild(header);
+
+for (let curr of exchangeRate) {
+  const row = document.createElement('tr');
+  const cellCurrency = document.createElement('td');
+  cellCurrency.innerText = curr.currency;
+  const cellCurrencyCode = document.createElement('td');
+  cellCurrencyCode.innerText = curr.code;
+  const cellMeanExchangeRate = document.createElement('td');
+  cellMeanExchangeRate.innerText = curr.mid;
+  row.append(cellCurrency);
+  row.append(cellCurrencyCode);
+  row.append(cellMeanExchangeRate);
+  HTMLTable.appendChild(row);
+}
+
+document.body.append(HTMLTable);
+
+HTMLTable.style.borderCollapse = 'collapse';
+ for (let child of HTMLTable.children) {
+ child.style.border = '1px solid black';
+ for (let grandchild of child.children) {
+ grandchild.style.border = '1px solid black';
+ }
+ }
+
+ const HTMLTable2 = HTMLTable.cloneNode(true); // tworzymy kopię elementu zanim 
+HTMLTable.style.borderCollapse = 'collapse';
+ for (let child of HTMLTable.children) {
+ child.style.border = '1px solid black';
+ for (let grandchild of child.children) {
+ grandchild.style.border = '1px solid black';
+ }
+ }
+HTMLTable2.setAttribute('class', 'my-table');
+document.body.append(HTMLTable);
+document.body.append(HTMLTable2);
+
+    </script>
+</body>
+</html>
