@@ -26,12 +26,11 @@ body {
   nav{
    
     display: flex;
-    
+    justify-content: space-around;
+    align-items: center;
     background-color: #ccc2cc;
   }
-  .pasek{
-    
-  }
+  
   #menu {
     align-items: center;
     justify-content:space-between;
@@ -170,7 +169,7 @@ body {
     color: white;
     text-align: center;
   }
-  .container .card .face.face1 .content a{
+  .container .card .face.face1 .content button{
      transition: .5s;
   }
   .container .card .face.face2{
@@ -187,13 +186,13 @@ body {
   .container .card:hover .face.face2{
       transform: translateY(0);
   }
-  .container .card .face.face2 .content p, a{
+  .container .card .face.face2 .content p, button{
     font-size: 10pt;
     margin: 0 ;
     padding: 0;
     color:#333;
   }
-  .container .card .face.face2 .content a{
+  .container .card .face.face2 .content button{
     text-decoration:none;
     color: black;
     box-sizing: border-box;
@@ -202,7 +201,7 @@ body {
     margin: 15px 0 0;
     display: inline-block;
   }
-  .container .card .face.face2 .content a:hover{
+  .container .card .face.face2 .content button:hover{
     background: #333 ;
     color: whitesmoke; 
     box-shadow: inset 0px 0px 10px #00000080;
@@ -303,10 +302,10 @@ header {
       height: 80px;
       border-radius: 80px 0 0 80px;
       border-left: solid 5px #7D1935 ;
-      -webkit-animation-name:             spin; 
-      -webkit-animation-duration:         1s; 
-      -webkit-animation-iteration-count:  infinite;
-      -webkit-animation-timing-function:  linear;
+      animation-name:             spin; 
+      animation-duration:         1s; 
+      animation-iteration-count:  infinite;
+      animation-timing-function:  linear;
     }
     .mid {
       top: 15px;
@@ -316,10 +315,10 @@ header {
       height: 50px;
       border-radius: 50px 0 0 50px;
       border-left: solid 5px #B71427; 
-      -webkit-animation-name:             spin; 
-      -webkit-animation-duration:         3s; 
-      -webkit-animation-iteration-count:  infinite;
-      -webkit-animation-timing-function:  linear;
+      animation-name:             spin; 
+      animation-duration:         3s; 
+      animation-iteration-count:  infinite;
+      animation-timing-function:  linear;
     }
     
     @-webkit-keyframes spin {
