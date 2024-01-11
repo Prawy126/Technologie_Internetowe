@@ -206,69 +206,73 @@ body {
     color: whitesmoke; 
     box-shadow: inset 0px 0px 10px #00000080;
   }
-  .slider {
-    width: 300px;
-    text-align: center;
-    overflow: hidden;
-}
+.slider {
+            width: 100%;
+            max-width: 300px;
+            text-align: center;
+            overflow: hidden;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
 
-.slides {
-    color: white;
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-    padding: 4px;
-}
-.slides::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
-}
+        .slides {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+            padding: 4px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .slides::-webkit-scrollbar {
+            display: none;
+        }
 
-.slides > div {
-    scroll-snap-align: start;
-    flex-shrink: 0;
-    width: 300px;
-    height: 300px;
-    margin-right: 50px;
-    border-radius: 10px;
-    background: #da0d0d;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 100px;
-}
+        .slides > div {
+            scroll-snap-align: start;
+            flex-shrink: 0;
+            width: 100%;
+            height: 300px;
+            margin-right: 50px;
+            border-radius: 10px;
+            background: #da0d0d;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 100px;
+        }
 
-/* Styl dla radiobuttonów i etykiet */
-.slider-controls {
-    display: flex;
-    justify-content: center;
-}
+        .slider-controls {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
 
-.slider-radio {
-    display: none;
-}
+        .slider-radio {
+            display: none;
+        }
 
-.slider-label {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #969696;
-    margin: 0 5px;
-    cursor: pointer;
-}
+        .slider-label {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #969696;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
 
-/* Zmiana koloru kropki gdy odpowiadający radiobutton jest zaznaczony */
-.slider-radio:checked + .slider-label {
-    background: #000;
-}
+        .slider-radio:checked + .slider-label {
+            background: #000;
+        }
 
-.slider-controls > a:hover, .slider-controls > a:focus, .slides > div:target {
-    background: #000;
-}
+        @media screen and (max-width: 600px) {
+            .slides > div {
+                margin-right: 30px;
+            }
+        }
 
 
 header {
