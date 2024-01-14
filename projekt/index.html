@@ -236,15 +236,14 @@
     <div>
       <div class="slider">
         <div class="slides">
-          <div id="slide-1">1</div>
+          
           <div id="slide-2">2</div>
           <div id="slide-3">3</div>
           <div id="slide-4">4</div>
           <div id="slide-5">5</div>
         </div>
         <div class="slider-controls">
-          <input type="radio" id="slide-radio-1" name="slide" class="slider-radio" checked>
-          <label for="slide-radio-1" class="slider-label" onclick="window.location.href='#slide-1';"></label>
+         
           
           <input type="radio" id="slide-radio-2" name="slide" class="slider-radio">
           <label for="slide-radio-2" class="slider-label" onclick="window.location.href='#slide-2';"></label>
@@ -266,13 +265,15 @@
           const radioButtons = document.querySelectorAll('.slider-radio');
           let currentIndex = 0;
           const totalSlides = radioButtons.length;
-  
+          console.log(totalSlides);
+          
           function goToSlide(index) {
               const slideWidth = slides.clientWidth;
               slides.scrollTo({
                   left: slideWidth * index,
                   behavior: 'smooth'
               });
+              console.log(currentIndex);
               radioButtons[index].checked = true;
               currentIndex = index;
           }
