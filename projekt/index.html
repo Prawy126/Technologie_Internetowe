@@ -12,98 +12,7 @@
     
     <!--<link rel="stylesheet" href="stopka.css">-->
     <style>
-        @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-          .search-container {
-            background: #fff;
-            height: 30px;
-            border-radius: 30px;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            transition: 0.8s;
-            box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
-                -4px -4px 6px 0 rgba(116, 125, 136, .2),
-                inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
-                inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
-        }
-        .search-container:hover>.search-input {
-            width: 400px;
-        }
-        .search-container .search-input {
-            background: transparent;
-            border: none;
-            outline: none;
-            width: 0px;
-            font-weight: 500;
-            font-size: 16px;
-            transition: 0.8s;
-
-        }
-        .search-container .search-btn .fas {
-            color: #5cbdbb;
-        }
-        @keyframes hoverShake {
-            0% {
-                transform: skew(0deg, 0deg);
-            }
-            25% {
-                transform: skew(5deg, 5deg);
-            }
-            75% {
-                transform: skew(-5deg, -5deg);
-            }
-            100% {
-                transform: skew(0deg, 0deg);
-            }
-        }
-        .search-container:hover {
-            animation: hoverShake 0.15s linear 3;
-        }
-        .prawy{
-          width: 20%;
-          float:right;
-          display: flex;
-          flex-direction: row-reverse;
-          justify-content: center;
-          
-        }
-        .srodek{
-          align-items: center;
-          justify-content: center;
-        }
-        .left{
-          width: 40%;
-          float:left;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-
-        .flex{
-          display: flex;
-        }
-        .container-logo{
-          font-size: 90px;
-          display: flex;
-        }
-        .search-container{
-          font-size: 15px;
-        }
-        main{
-          display: inline;
-        }
-        .system{
-          display: flex;
-          justify-content: center;
-          width: 100%;
-        }
-        .promocje{
-          display: flex;
-          justify-content: space-around;
-          width: 100%;
-        }
+      
     </style>
 </head>
 <body>
@@ -130,7 +39,30 @@
       </div> 
       
       
-            
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var searchInput = document.getElementById('search-input');
+            var searchButton = document.getElementById('search-btn');
+    
+            function search() {
+                var query = searchInput.value;
+                var googleSearchUrl = 'https://www.google.com/search?q=' + encodeURIComponent(query);
+                window.open(googleSearchUrl, '_blank'); // Otwiera wyniki wyszukiwania w nowej karcie
+            }
+    
+            searchInput.addEventListener('keypress', function(event) {
+                if (event.key === 'Enter') {
+                    event.preventDefault(); // Zapobiega standardowej akcji formularza
+                    search();
+                }
+            });
+    
+            searchButton.addEventListener('click', function(event) {
+                event.preventDefault(); // Zapobiega standardowej akcji linku
+                search();
+            });
+        });
+    </script>
         
     </header>
     
@@ -236,14 +168,43 @@
     <div>
       <div class="slider">
         <div class="slides">
-          
-          <div id="slide-2">2</div>
-          <div id="slide-3">3</div>
-          <div id="slide-4">4</div>
-          <div id="slide-5">5</div>
+          <div id="slide-1">
+            <div class="zdjecie">
+              <img src="logo_barwne.png" alt="logo_barwne" height="200px" width="200px">
+            </div>
+            <div class="cena" >
+              200.00 PLN
+            </div>
+          </div>
+          <div id="slide-2">
+            <div class="zdjecie">
+              <img src="logo_barwne.png" alt="logo_barwne" height="200px" width="200px">
+            </div>
+            <div class="cena" >
+              100.00 PLN
+            </div>
+          </div>
+          <div id="slide-3">
+            <div class="zdjecie">
+              <img src="logo_barwne.png" alt="logo_barwne" height="200px" width="200px">
+            </div>
+            <div class="cena" >
+              200.90 PLN
+            </div>
+          </div>
+          <div id="slide-4">
+            <div class="zdjecie">
+              <img src="logo_barwne.png" alt="logo_barwne" height="200px" width="200px">
+            </div>
+            <div class="cena" >
+              200.10 PLN
+            </div>
+          </div>
+         
         </div>
         <div class="slider-controls">
-         
+          <input type="radio" id="slide-radio-1" name="slide" class="slider-radio">
+          <label for="slide-radio-1" class="slider-label" onclick="window.location.href='#slide-1';"></label>
           
           <input type="radio" id="slide-radio-2" name="slide" class="slider-radio">
           <label for="slide-radio-2" class="slider-label" onclick="window.location.href='#slide-2';"></label>
@@ -254,8 +215,6 @@
           <input type="radio" id="slide-radio-4" name="slide" class="slider-radio">
           <label for="slide-radio-4" class="slider-label" onclick="window.location.href='#slide-4';"></label>
           
-          <input type="radio" id="slide-radio-5" name="slide" class="slider-radio">
-          <label for="slide-radio-5" class="slider-label" onclick="window.location.href='#slide-5';"></label>
         </div>
       </div>
      </div>
@@ -284,7 +243,7 @@
           }
   
           // Ustawienie interwału dla automatycznego przesuwania slajdów (np. co 3 sekundy)
-          setInterval(autoSlide, 3000);
+          setInterval(autoSlide, 1000);
   
           slides.addEventListener('scroll', function() {
               let index = Math.round(this.scrollLeft / this.clientWidth);
@@ -296,28 +255,7 @@
   </section>  
     </main>
     <footer>
-       <!-- <button class="send">
-            <i class="fa fa-paper-plane"></i>
-        </button>
-        
-        <div class="letter-image">
-            <div class="animated-mail">
-              <div class="back-fold"></div>
-              <div class="letter">
-                <div class="letter-border"></div>
-                <div class="letter-title"></div>
-                <div class="letter-context"></div>
-                <div class="letter-stamp">
-                  <div class="letter-stamp-inner"></div>
-                </div>
-              </div>
-              <div class="top-fold"></div>
-              <div class="body"></div>
-              <div class="left-fold"></div>
-            </div>
-            <div class="shadow"></div>
-          </div>-->
-          
+      Wszelkie prawa zastrzeżone © 2023 
     </footer>
 </body>
 </html>
