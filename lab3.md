@@ -11,7 +11,7 @@ layout: default
 <!DOCTYPE html>
 <html>
     <head>
-        <titel>Podstawy CSS</titel>
+        <title>Podstawy CSS</title>
         <style>
             p {
                 color: red;
