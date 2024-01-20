@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="galeria.css">
+</head>
+<body>
+</head>
+<body>
+    <header>  
+      <div class="lewy">
+        <div class="flex">
+          <div class="container-logo">
+            <div class="L">L</div>
+              <div class="outter">
+                <div class="mid"></div>
+              </div>
+              <div class="ADING">GO</div>
+            </div>
+          </div>
+        </div>
+      
+      <div class="prawy">
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Search..." class="search-input">
+          <a href="#" id="search-btn" class="search-btn">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+      </div>
+      
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var searchInput = document.getElementById('search-input');
+          var searchButton = document.getElementById('search-btn');
+      
+          function search() {
+            var query = searchInput.value;
+            var googleSearchUrl = 'https://www.google.com/search?q=' + encodeURIComponent(query);
+            window.open(googleSearchUrl, '_blank'); // Otwiera wyniki wyszukiwania w nowej karcie
+          }
+      
+          searchInput.addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+              event.preventDefault(); // Zapobiega standardowej akcji formularza
+              search();
+            }
+          });
+      
+          searchButton.addEventListener('click', function(event) {
+            event.preventDefault(); // Zapobiega standardowej akcji linku
+            search();
+          });
+        });
+      </script>
+      
+        
+    </header>
+    <nav>
+        <div class="pasek">
+          <div id="container">
+              <ul id="menu">
+                <li><a href="#">Strona główna</a>
+                  <ul>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                    <li><a href="#">Maecenas lacinia sem</a></li>
+                    <li><a href="#">Suspendisse fringilla</a></li>
+                  </ul>
+                </li>
+                <li><a href="galeria.html">Galeria</a>
+                  <ul>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                    <li><a href="#">Maecenas lacinia sem</a></li>
+                    <li><a href="#">Suspendisse fringilla</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Konto</a>
+                  <ul>
+                    <li><a href="#">Zalogj się</a></li>
+                    <li><a href="#">Zarejestruj się</a></li>
+                    <li><a href="#">Suspendisse fringilla</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">About Me</a>
+                  <ul>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                    <li><a href="#">Maecenas lacinia sem</a></li>
+                    <li><a href="#">Suspendisse fringilla</a></li>
+                  </ul>
+                </li>
+              </ul>
+              </div>
+        </div>
+          
+      </nav>
+      <main>
+        <h1>Gallery</h1>
+        <section id="gallery" class="gallery">
+        <img src="placeholder.png" alt="placeholder image">
+        <img src="placeholder.png" alt="placeholder image">
+        <img src="placeholder.png" alt="placeholder image">
+        <img src="logo_barwne.png" alt="placeholder image">
+        <img src="logo_barwne.png" alt="placeholder image">
+        </section>
+      </main>
+      
+</body>
+</html>

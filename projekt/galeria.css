@@ -1,0 +1,43 @@
+:root {
+    --blue-ur: #282625;
+    --white-ur: #FEFEFE;
+    }
+   
+    body {
+    text-align: center;
+    color: var(--white-ur);
+    background-color: var(--blue-ur);
+    }
+   
+    .gallery{
+       display: grid;
+       justify-content: center;
+       gap:5px;
+    }
+   
+    .gallery img{
+       width: 100%; 
+     max-width: 400px;  
+     
+    }
+   img:hover{
+    scale: 1.1;
+   }
+    
+   @media  (max-width:467px){
+       .gallery{
+           grid-template-columns: repeat(1,400px);
+       }
+    }
+   
+    @media  (min-width:468px) and (max-width:1199px){
+       .gallery{
+           grid-template-columns: repeat(2,400px)
+       }
+    }
+   
+    @media  (min-width:1200px){
+       .gallery{
+           grid-template-columns: repeat(3,400px)
+       }
+    }
