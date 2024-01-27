@@ -7,8 +7,9 @@
     <link rel="icon" type="image/png" href="zdjecia/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sklep z komputerami</title>
-    <link rel="stylesheet" href="style.css">
+    
     <link rel="stylesheet" href="galeria.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 </head>
@@ -63,42 +64,47 @@
         
     </header>
     <nav>
-        <div class="pasek">
+      <div class="pasek">
           <div id="container">
-              <ul id="menu">
-                <li><a href="index.html">Strona główna</a>
-                  <ul>
-                    <li><a href="#">Lorem ipsum dolor</a></li>
-                    <li><a href="#">Maecenas lacinia sem</a></li>
-                    <li><a href="#">Suspendisse fringilla</a></li>
-                  </ul>
-                </li>
-                <li><a href="galeria.html">Galeria</a>
-                  <ul>
-                    <li><a href="#">Lorem ipsum dolor</a></li>
-                    <li><a href="#">Maecenas lacinia sem</a></li>
-                    <li><a href="#">Suspendisse fringilla</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Konto</a>
-                  <ul>
-                    <li><a href="#">Zalogj się</a></li>
-                    <li><a href="#">Zarejestruj się</a></li>
-                    <li><a href="#">Suspendisse fringilla</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">About Me</a>
-                  <ul>
-                    <li><a href="#">Lorem ipsum dolor</a></li>
-                    <li><a href="#">Maecenas lacinia sem</a></li>
-                    <li><a href="#">Suspendisse fringilla</a></li>
-                  </ul>
-                </li>
-              </ul>
+              <div id="menu-toggle" class="hamburger">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
               </div>
-        </div>
-          
-      </nav>
+              <div id="menu-container">
+                  <ul id="menu">
+                      <li><a href="index.html">Strona główna</a>
+                      </li>
+                      <li><a href="galeria.html">Galeria</a>
+                      </li>
+                      <li><a href="#">Konto</a>
+                          <ul>
+                              <li><a href="zaloguj.html">Zalogj się</a></li>
+                              <li><a href="zarejestruj.html">Zarejestruj się</a></li>
+                            
+                          </ul>
+                      </li>
+                      <li><a href="#">About Me</a>
+                          <ul>
+                              <li><a href="dostawa.html">Koszt zakupu</a></li>
+                              <li><a href="#">Maecenas lacinia sem</a></li>
+                              <li><a href="#">Suspendisse fringilla</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </nav>
+  <script>
+    const hamburger = document.getElementById("menu-toggle");
+    const menuContainer = document.getElementById("menu-container");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        menuContainer.classList.toggle("active");
+    });
+</script>
       <main>
         <h1>Gallery</h1>
         <section id="gallery" class="gallery">

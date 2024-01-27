@@ -123,7 +123,7 @@ html{
     margin:0;
     padding:0;
     min-height: 75vh;
-    background: #444;
+    background: darkslategray;
     justify-content: center;
     align-items: center;
     font-family: arial;
@@ -432,9 +432,23 @@ header {
     justify-content: center;
     width: 100%;
   }
+  .promocje h3{
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .promocje h3:hover{
+    text-decoration: underline;
+    color:red;
+    transform: scale(1.3);
+    }
+  .promocje img{
+    max-height: 200px;
+  }
   .promocje{
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
     width: 100%;
   }
   .pasek{
@@ -447,7 +461,7 @@ header {
     display: flex;
     flex-direction: column;
   }
-  @media screen and (max-width: 700px){
+  @media screen and (max-width: 900px){
     header{
       display: flex;
       flex-direction: column;
@@ -507,5 +521,220 @@ header {
   background-color: darkslategray ;
 }
 
+.Onas{
+  background-color: #323131;
+  display: flex;
+  flex-direction: column;
+  color:white;
+  padding: 100px;
+}
+.tytul{
+  font-size: 20px;
+  align-items: center;
+  margin: 10px;
+}
 
+.onasgora:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease; 
+}
+.onasgora{
+  padding: 20px;
+}
+.onasdol{
+  padding: 20px;
+}
+
+.onasdol:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease; 
+}
+.tytul:hover{
+  color:red;
+}
+
+.top{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-self: space-evenly;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: #0ff;
+  margin-bottom: 20px;
+  
+}
+.noferta{
+  background-color: #0ff;
+  display: flex;
+}
+.noferta2{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  margin: 12px;
+  
+}
+.top img{
+  
+  max-height: 90px;
+}
+.pozycja{
+  display: flex;
+}
+@media screen and (max-width: 600px) {
+  .pozycja {
+    flex-direction: column;
+  }
+}
+
+.top h3{
+  padding: 10px;
+}
+.top{
+  padding: 10px;
+}
+.divPrzyszlosc{
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+.przyszlosc {
+  margin: 30px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.przyszlosc img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.divNaObrazku {
+  position: absolute;
+  top: 50%; /* Ustawienie pozycji diva na środku pionowo */
+  left: 50%; /* Ustawienie pozycji diva na środku poziomo */
+  transform: translate(-50%, -50%); /* Przesunięcie diva o 50% jego własnej szerokości i wysokości wstecz, aby wyśrodkować */
+  width: 60%; /* Szerokość diva */
+  height: 60%; /* Wysokość diva */
+  background-color: rgba(255, 255, 255, 0.8); /* Białe tło z przeźroczystością */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.divNaObrazku h3 {
+  color: black; /* Kolor tekstu na białym tle */
+}
+/* Domyślny styl dla większych ekranów */
+.divNaObrazku p {
+  display: block;
+}
+
+.buttonCzytajDalej {
+  display: none;
+}
+
+/* Styl dla ekranów o szerokości mniejszej niż 900px */
+@media screen and (max-width: 900px) {
+  .divNaObrazku p {
+    display: none; /* Ukryj tekst */
+  }
+
+  .buttonCzytajDalej {
+    display: block; /* Wyświetl przycisk "Czytaj dalej" */
+    text-align: center;
+    margin-top: 10px; /* Dodaj trochę marginesu na górę */
+  }
+}
+@media (max-width: 600px) {
+  #menu-container {
+    display: none;
+  }
+}
+/* Dodaj ten kod do swojego pliku CSS */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  transition: 0.4s;
+}
+
+#menu-container {
+  display: block; /* Dodaj tę linię, aby menu było widoczne na początku */
+}
+
+/* Dodaj ten kod do swojego pliku CSS, aby ukryć menu na małych ekranach */
+@media (max-width: 600px) {
+  #menu-container {
+      display: none;
+  }
+  .hamburger.active .bar:nth-child(1) {
+      transform: translateY(6px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-6px) rotate(-45deg);
+  }
+}
+/* Styl dla menu-container na większych ekranach */
+#menu-container {
+  display: block;
+}
+
+/* Ukryj menu-container na małych ekranach, chyba że klasa 'active' jest dodana */
+@media (max-width: 600px) {
+#menu-container {
+    display: none;
+}
+
+#menu-container.active {
+    display: block;
+}
+
+/* Styl dla hamburgera, gdy jest aktywny */
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+}
+
+/* Ukryj hamburger na większych ekranach */
+#menu-toggle {
+  display: none;
+}
+
+/* Pokaż hamburger tylko na małych ekranach */
+@media (max-width: 600px) {
+  #menu-toggle {
+      display: flex;
+  }
+  #menu li ul{
+    width: 120px;
+  }
+}
 

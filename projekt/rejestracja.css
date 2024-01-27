@@ -51,3 +51,37 @@ table {
     width: 50%; 
 
 }
+table {
+    margin: 0 auto;
+    width: 70%;
+    border-collapse: collapse; /* Usunięcie odstępów między komórkami */
+    background-color: #fff; /* Kolor tła tabelki */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Cień wokół tabelki */
+}
+
+th, td {
+    padding: 10px; /* Dodanie wewnętrznego odstępu w komórkach */
+    border: 1px solid #ddd; /* Jednopikselowe obramowanie komórek */
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Kolor tła co drugiego wiersza */
+}
+
+th {
+    background-color: #181515; /* Kolor tła nagłówka */
+    color: #fff; /* Kolor tekstu w nagłówku */
+}
+footer {
+    height: 100px; /* Ustaw stałą wysokość stopki na 100 pikseli */
+    background-color: #333; /* Kolor tła stopki */
+    color: #fff; /* Kolor tekstu w stopce */
+    text-align: center; /* Wycentrowanie tekstu w stopce */
+    padding-top: 20px; /* Wewnętrzny odstęp na górze stopki (opcjonalny) */
+}
+body{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}

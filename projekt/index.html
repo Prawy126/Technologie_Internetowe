@@ -8,9 +8,6 @@
     <title>Sklep z komputerami</title>
     <link rel="icon" type="image/png" href="zdjecia/logo.png">
     <link rel="stylesheet" href="style.css">
-    
-    
-    <!--<link rel="stylesheet" href="stopka.css">-->
     <style>
       
     </style>
@@ -65,45 +62,49 @@
       
         
     </header>
-    
     <nav>
       <div class="pasek">
-        <div id="container">
-            <ul id="menu">
-              <li><a href="#">Strona główna</a>
-                <ul>
-                  <li><a href="#">Lorem ipsum dolor</a></li>
-                  <li><a href="#">Maecenas lacinia sem</a></li>
-                  <li><a href="#">Suspendisse fringilla</a></li>
-                </ul>
-              </li>
-              <li><a href="galeria.html">Galeria</a>
-                <ul>
-                  <li><a href="#">Lorem ipsum dolor</a></li>
-                  <li><a href="#">Maecenas lacinia sem</a></li>
-                  <li><a href="#">Suspendisse fringilla</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Konto</a>
-                <ul>
-                  <li><a href="zaloguj.html">Zalogj się</a></li>
-                  <li><a href="zarejestruj.html">Zarejestruj się</a></li>
-                  <li><a href="#">Suspendisse fringilla</a></li>
-                </ul>
-              </li>
-              <li><a href="#">About Me</a>
-                <ul>
-                  <li><a href="#">Lorem ipsum dolor</a></li>
-                  <li><a href="#">Maecenas lacinia sem</a></li>
-                  <li><a href="#">Suspendisse fringilla</a></li>
-                </ul>
-              </li>
-            </ul>
-            </div>
+          <div id="container">
+              <div id="menu-toggle" class="hamburger">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+              </div>
+              <div id="menu-container">
+                  <ul id="menu">
+                      <li><a href="index.html">Strona główna</a>
+                      </li>
+                      <li><a href="galeria.html">Galeria</a>
+                      </li>
+                      <li><a href="#">Konto</a>
+                          <ul>
+                              <li><a href="zaloguj.html">Zalogj się</a></li>
+                              <li><a href="zarejestruj.html">Zarejestruj się</a></li>
+                            
+                          </ul>
+                      </li>
+                      <li><a href="#">About Me</a>
+                          <ul>
+                              <li><a href="dostawa.html">Koszt zakupu</a></li>
+                              <li><a href="#">Maecenas lacinia sem</a></li>
+                              <li><a href="#">Suspendisse fringilla</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+          </div>
       </div>
-        
-    </nav>
-    
+  </nav>
+  <script>
+    const hamburger = document.getElementById("menu-toggle");
+    const menuContainer = document.getElementById("menu-container");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        menuContainer.classList.toggle("active");
+    });
+</script>
+  
     
     
     <main>   
@@ -165,12 +166,13 @@
            </div>
       </section>
       <section class="promocje">
+        <h3>Promocje</h3>
     <div>
       <div class="slider">
         <div class="slides">
           <div id="slide-1">
             <div class="zdjecie">
-              <img src="zdjecia/logo_barwne.png" alt="logo_barwne" height="200px" width="200px">
+              <img src="zdjecia/komputer1.png" alt="logo_barwne">
             </div>
             <div class="cena" >
               200.00 PLN
@@ -178,7 +180,7 @@
           </div>
           <div id="slide-2">
             <div class="zdjecie">
-              <img src="zdjecia/logo_barwne.png" alt="logo_barwne" height="200px" width="200px">
+              <img src="zdjecia/komputer2.png" alt="logo_barwne">
             </div>
             <div class="cena" >
               100.00 PLN
@@ -186,7 +188,7 @@
           </div>
           <div id="slide-3">
             <div class="zdjecie">
-              <img src="zdjecia/logo_barwne.png" alt="logo_barwne" height="200px" width="200px">
+              <img src="zdjecia/laptop.png" alt="logo_barwne" >
             </div>
             <div class="cena" >
               200.90 PLN
@@ -194,7 +196,7 @@
           </div>
           <div id="slide-4">
             <div class="zdjecie">
-              <img src="zdjecia/placeholder.png" alt="logo_barwne" height="200px" width="200px">
+              <img src="zdjecia/komputer3.png" alt="Komputer przyszłości">
             </div>
             <div class="cena" >
               200.10 PLN
@@ -243,7 +245,7 @@
           }
   
           // Ustawienie interwału dla automatycznego przesuwania slajdów (np. co 3 sekundy)
-          setInterval(autoSlide, 1000);
+          setInterval(autoSlide, 2000);
   
           slides.addEventListener('scroll', function() {
               let index = Math.round(this.scrollLeft / this.clientWidth);
@@ -252,7 +254,67 @@
           });
       });
   </script>
-  </section>  
+  </section> 
+  <section class="Onas">
+    <div class="onasgora">
+      <div class="tytul">Dlaczego warto wybrać nasz serwis?</div>
+      <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque egestas sagittis magna, at dignissim nunc aliquam in. Vivamus id vestibulum sem. Mauris ac orci sagittis ipsum venenatis maximus ac at erat. Nullam nec faucibus massa. Praesent urna augue, facilisis at tincidunt sit amet, scelerisque et arcu. Quisque ornare hendrerit porta. In hac habitasse platea dictumst. Nulla at urna leo. Aliquam molestie tellus nulla.
+
+        Pellentesque tristique mollis blandit. Nullam maximus ligula fringilla diam tincidunt, sed sodales lorem euismod. In at ligula malesuada, tincidunt orci ut, ornare lectus. Donec et vulputate odio, eget venenatis metus. Suspendisse euismod laoreet consequat. Sed ultricies lectus ac mollis rutrum. Duis id sagittis odio. Etiam velit nibh, egestas id gravida eget, gravida vel elit. Morbi luctus gravida tempus. Quisque aliquam mi non vulputate fermentum. Morbi tempor sit amet velit a consectetur.</div>
+    </div>
+    <div class="onasdol">
+      <div class="tytul" id="oferujemy">Co oferujemy?</div>
+      <div>Integer quis ante consectetur, suscipit elit et, mattis orci. Proin consectetur urna non turpis ultricies pretium. Etiam efficitur varius purus, commodo vehicula ligula ultrices eget. Phasellus viverra, ligula id molestie egestas, leo elit dapibus purus, sit amet dapibus libero nunc fermentum metus. Vestibulum sit amet finibus nulla. Etiam ante mi, cursus sit amet lacinia non, dapibus a elit. Donec nec tincidunt metus, eget aliquam ipsum. In venenatis id ex luctus tincidunt. Nunc eu risus sit amet dui porta tempus sit amet in ligula. Etiam sagittis pellentesque purus, vitae rutrum dolor aliquet ac. Vivamus vel mi mollis, pretium velit et, semper erat. Donec et purus eu neque luctus hendrerit. Duis venenatis vehicula lacus. Nulla laoreet facilisis est, congue sollicitudin diam tempor eget.</div>
+    </div>
+  </section> 
+  <section class="top">
+    <h3>Najpopularniejsze komputery</h3>
+    <div class="pozycja">
+    <div class="noferta">
+      <img src="zdjecia/komputer1.png" alt="Komputer appla">
+      
+      <div class="noferta2">
+        <h4>Popularny komputer</h4>
+      <p>Najlepszy wybór dla każdego</p>
+      </div>
+    </div>
+    <div class="noferta">
+      <img src="zdjecia/komputer3.png" alt="Komputer przyszłości">
+      
+      <div class="noferta2">
+        <h4>Popularny komputer</h4>
+      <p>Najlepszy wybór dla każdego</p>
+      </div>
+    </div>
+    <div class="noferta">
+      <img src="zdjecia/laptop.png" alt="Najlepszy laptop">
+      
+      <div class="noferta2">
+        <h4>Popularny komputer</h4>
+      <p>Najlepszy wybór dla każdego</p>
+      </div>
+    </div>
+  </div>
+  </section>
+  <section>
+    <div class="przyszlosc">
+      <div class="divPrzyszlosc">
+        <h3>Przyszłość</h3>
+      </div>
+      
+      <img src="zdjecia/komputerPrzyszlosic.png" alt="Przyszłość">
+      <div class="divNaObrazku">
+        <h5>Lorem ipsum</h5>
+        <p>Integer quis ante consectetur, suscipit elit et, mattis orci. Proin consectetur urna non turpis ultricies pretium. Etiam efficitur varius purus, commodo vehicula ligula ultrices eget. Phasellus viverra, ligula id molestie egestas, leo elit dapibus purus, sit amet dapibus libero nunc fermentum metus. Vestibulum sit amet finibus nulla. Etiam ante mi, cursus sit amet lacinia non, dapibus a elit. Donec nec tincidunt metus, eget aliquam ipsum. In venenatis id ex luctus tincidunt. Nunc eu risus sit amet dui porta tempus sit amet in ligula. Etiam sagittis pellentesque purus, vitae rutrum dolor aliquet ac. Vivamus vel mi mollis, pretium velit et, semper erat. Donec et purus eu neque luctus hendrerit. Duis venenatis vehicula lacus. Nulla laoreet facilisis est, congue sollicitudin diam tempor eget.
+
+        Quisque sagittis, nisl et sodales iaculis, felis massa pulvinar eros, non tincidunt augue risus ac nisi. Donec maximus a justo non varius. In magna felis, pharetra posuere fermentum aliquam, convallis at leo. Maecenas ex massa, imperdiet nec condimentum id, gravida id sem. In congue, leo a cursus cursus, sapien urna blandit urna, vel commodo nulla neque tincidunt augue. Sed blandit lacus vel tristique molestie. Donec malesuada est est, et sodales purus eleifend quis. Phasellus pulvinar urna mi, non sollicitudin neque efficitur at. Fusce vehicula hendrerit congue. Morbi rutrum egestas dui. Sed ut ligula et enim iaculis cursus. Etiam sit amet commodo nunc, vitae sodales ligula. Nam rhoncus neque in ornare bibendum. Morbi eros orci, dignissim quis hendrerit eget, elementum eget tellus. </p>
+      </p>
+        <button class="buttonCzytajDalej">Czytaj dalej</button>
+      </div>
+      
+    </div>
+  </section>
+  
     </main>
     <footer>
       <div class="social-icons">

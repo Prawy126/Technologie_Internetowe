@@ -44,3 +44,15 @@
            grid-template-columns: repeat(3,400px)
        }
     }
+    @media (max-width: 600px) {
+        #menu-container {
+          display: none;
+        }
+      }
+      @media (max-width: 400px) {
+        .gallery img{
+            width: 385px;
+        }
+      }
+
+      

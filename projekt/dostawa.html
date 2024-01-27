@@ -7,8 +7,9 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sklep z komputerami</title>
     <link rel="icon" type="image/png" href="zdjecia/logo.png">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="rejestracja.css">
+    <link rel="stylesheet" href="style.css">
+    
     
     
     <!--<link rel="stylesheet" href="stopka.css">-->
@@ -69,41 +70,46 @@
     
     <nav>
       <div class="pasek">
-        <div id="container">
-            <ul id="menu">
-              <li><a href="#">Strona główna</a>
-                <ul>
-                  <li><a href="#">Lorem ipsum dolor</a></li>
-                  <li><a href="#">Maecenas lacinia sem</a></li>
-                  <li><a href="#">Suspendisse fringilla</a></li>
-                </ul>
-              </li>
-              <li><a href="galeria.html">Galeria</a>
-                <ul>
-                  <li><a href="#">Lorem ipsum dolor</a></li>
-                  <li><a href="#">Maecenas lacinia sem</a></li>
-                  <li><a href="#">Suspendisse fringilla</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Konto</a>
-                <ul>
-                  <li><a href="zaloguj.html">Zalogj się</a></li>
-                  <li><a href="zarejestruj.html">Zarejestruj się</a></li>
-                  <li><a href="#">Suspendisse fringilla</a></li>
-                </ul>
-              </li>
-              <li><a href="#">About Me</a>
-                <ul>
-                  <li><a href="#">Lorem ipsum dolor</a></li>
-                  <li><a href="#">Maecenas lacinia sem</a></li>
-                  <li><a href="#">Suspendisse fringilla</a></li>
-                </ul>
-              </li>
-            </ul>
-            </div>
+          <div id="container">
+              <div id="menu-toggle" class="hamburger">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+              </div>
+              <div id="menu-container">
+                  <ul id="menu">
+                      <li><a href="index.html">Strona główna</a>
+                      </li>
+                      <li><a href="galeria.html">Galeria</a>
+                      </li>
+                      <li><a href="#">Konto</a>
+                          <ul>
+                              <li><a href="zaloguj.html">Zalogj się</a></li>
+                              <li><a href="zarejestruj.html">Zarejestruj się</a></li>
+                            
+                          </ul>
+                      </li>
+                      <li><a href="#">About Me</a>
+                          <ul>
+                              <li><a href="dostawa.html">Koszt zakupu</a></li>
+                              <li><a href="#">Maecenas lacinia sem</a></li>
+                              <li><a href="#">Suspendisse fringilla</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+          </div>
       </div>
-        
-    </nav>
+  </nav>
+  <script>
+    const hamburger = document.getElementById("menu-toggle");
+    const menuContainer = document.getElementById("menu-container");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        menuContainer.classList.toggle("active");
+    });
+</script>
     <main>
       <H1>Koszty dostaway</H1>
       <table >
@@ -126,7 +132,14 @@
            
         </tr>
         <tr>
-            <th></tr>
+            <th>Kurier</th>
+            <th>23.99</th>
+            <th>19.99</th>
+        </tr>
+        <tr>
+            <th>Kiurier expres</th>
+            <th colspan="2"> 28.00</th>
+           
         </tr>
       </table>
     </main>
