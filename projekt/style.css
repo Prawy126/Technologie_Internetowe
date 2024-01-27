@@ -18,6 +18,9 @@ body {
     padding: 0;
     background-color: #444;
 }
+html{
+  background-color: #333;
+}
 * {
     margin: 0; 
     padding: 0;
@@ -460,11 +463,49 @@ header {
       justify-content: center;
     }
   }
-  footer{
+  footer {
     background-color: #333;
-    min-height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: lightcyan;
-  }
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    height: 100px;
+}
+
+.social-icons {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    
+}
+#facebook:hover{
+  scale: 1.5;
+  color:blue;
+}
+#instagram:hover{
+  scale: 1.5;
+  color:orange;
+}
+#yt:hover{
+  scale: 1.5;
+  color:red;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+.system{
+  background-color: darkslategray ;
+}
+
+
+
