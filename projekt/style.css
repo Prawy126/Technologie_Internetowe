@@ -603,8 +603,11 @@ header {
 .przyszlosc {
   margin: 30px;
   position: relative;
-  display: inline-block;
+  display: flex;
   text-align: center;
+  flex-direction: column;
+  align-items: stretch;
+
 }
 
 .przyszlosc img {
