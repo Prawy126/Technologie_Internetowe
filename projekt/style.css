@@ -751,3 +751,9 @@ header {
     flex-wrap: wrap;
   }
 }
+.promocje h3{
+  color:white;
+}
+.divNaObrazku h5{
+  font-size: 70px;
+}
