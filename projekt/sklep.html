@@ -7,12 +7,8 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sklep z komputerami</title>
     <link rel="icon" type="image/png" href="zdjecia/logo.png">
-    <link rel="stylesheet" href="rejestracja.css">
     <link rel="stylesheet" href="style.css">
-    
-    
-    
-    <!--<link rel="stylesheet" href="stopka.css">-->
+    <link rel="stylesheet" href="sklep.css">
     <style>
       
     </style>
@@ -67,7 +63,6 @@
       
         
     </header>
-    
     <nav>
       <div class="pasek">
           <div id="container">
@@ -80,7 +75,8 @@
                   <ul id="menu">
                       <li><a href="#">Strona główna</a>
                         <ul>
-                          <li><a href="index.html">Strona główna</a></li>                      
+                          <li><a href="index.html">Strona główna</a></li>
+                          <li><a href="sklep.html">Sklep</a></li>                      
                       </ul>
                       </li>
                       <li><a href="#">Galeria</a>
@@ -116,49 +112,91 @@
         menuContainer.classList.toggle("active");
     });
 </script>
-    <main>
-      <H1>Koszty dostaway</H1>
-      <table >
-        <tr>
-            <th rowspan="2">Rodzaj Dostawy</th>
-            <th colspan="2"> Koszt</th>
-        </tr>
-        <tr>
-            <th>płatnośc przy odbierze</th>
-            <th>Płatność z góry</th>
-        </tr>
-        <tr>
-            <th>paczkomant</th>
-            <th>23.99</th>
-            <th>19.99</th>
-        </tr>
-        <tr>
-            <th>Poczta</th>
-            <th colspan="2"> 28.00</th>
-           
-        </tr>
-        <tr>
-            <th>Kurier</th>
-            <th>23.99</th>
-            <th>19.99</th>
-        </tr>
-        <tr>
-            <th>Kiurier expres</th>
-            <th colspan="2"> 28.00</th>
-           
-        </tr>
-      </table>
-    </main>
-    
-    <footer>
-      <div class="social-icons">
-          <a href="https://www.facebook.com" target="_blank" ><i class="fab fa-facebook" id="facebook"></i></a>
-          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" id="instagram"></i></a>
-          <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube" id="yt"></i></a>
+<main>
+    <div class="gallery" id="gallery">
+        <div class="oferta"> 
+          <img src="zdjecia/komputer1.png" alt="Nowy Komputer">
+          <div class="tytulOferty">
+            Komputer
+          </div>
+          <div class="cena">200.00</div>
+          <button>Kup teraz</button><button>Dodaj do koszyka</button>
+        </div>
+        <div class="oferta"> 
+          <img src="zdjecia/komputer2.png" alt="Kolejny Komputer">
+          <div class="tytulOferty">
+            Komputer2
+          </div>
+          <div class="cena">1200.00</div>
+          <button>Kup teraz</button><button>Dodaj do koszyka</button>
+        </div>
+        <div class="oferta"> 
+          <img src="zdjecia/komputer3.png" alt="Komputer przyszłościowy">
+          <div class="tytulOferty">
+            Jedyny taki komputer
+          </div>
+          <div class="cena">12300.00</div>
+          <button>Kup teraz</button><button>Dodaj do koszyka</button>
+        </div>
+        <div class="oferta"> 
+          <img src="zdjecia/komputerPrzyszlosic.png" alt="Najnowszy komputer">
+          <div class="tytulOferty">
+            Musisz go mieć
+          </div>
+          <div class="cena">23200.00</div>
+          <button>Kup teraz</button><button>Dodaj do koszyka</button>
+        </div><div class="oferta"> 
+        <img src="zdjecia/laptop.png" alt="laptop">
+        <div class="tytulOferty">
+          laptop
+        </div>
+        <div class="cena">100.00</div>
+        <button>Kup teraz</button><button>Dodaj do koszyka</button>
       </div>
-      <div class="copyright">
-          &copy; 2023 Wszelkie prawa zastrzeżone
+      <div class="oferta"> 
+        <img src="zdjecia/komputer1.png" alt="laptop">
+        <div class="tytulOferty">
+          laptop
+        </div>
+        <div class="cena">100.00</div>
+        <button>Kup teraz</button><button>Dodaj do koszyka</button>
       </div>
-  </footer>
+      <div class="oferta"> 
+        <img src="zdjecia/laptop2.png" alt="laptop kolejny">
+        <div class="tytulOferty">
+          laptop
+        </div>
+        <div class="cena">120.00</div>
+        <button>Kup teraz</button><button>Dodaj do koszyka</button>
+      </div>
+      <div class="oferta"> 
+        <img src="zdjecia/laptop3.png" alt="laptop nowy">
+        <div class="tytulOferty">
+           nowy laptop 
+        </div>
+        <div class="cena">1000.00</div>
+        <button>Kup teraz</button><button>Dodaj do koszyka</button>
+      </div>
+      <div class="oferta"> 
+        <img src="zdjecia/laptop3.png" alt="laptop">
+        <div class="tytulOferty">
+          laptop
+        </div>
+        <div class="cena">100.99</div>
+        <button>Kup teraz</button><button>Dodaj do koszyka</button>
+      </div>
+      <div class="oferta"> 
+        <img src="zdjecia/laptop5.png" alt="laptop nowej generacji">
+        <div class="tytulOferty">
+          laptop
+        </div>
+        <div class="cena">105.00</div>
+        <button>Kup teraz</button><button>Dodaj do koszyka</button>
+      </div>
+    </div>
+         
+</main>
+  
+     
 </body>
 </html>

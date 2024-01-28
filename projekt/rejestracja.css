@@ -85,3 +85,23 @@ body{
     flex-wrap: nowrap;
     flex-direction: column;
 }
+@media (max-width: 600px) {
+    #menu-toggle {
+        display: flex;
+    }
+    #menu li ul{
+      width: 120px;
+    }
+    .prawy{
+      flex-direction: row;
+      justify-content: space-around;
+      width: 300px;
+    }
+    .search-container{
+      flex-direction: row;
+      min-width: 260px;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+    }
+  }
