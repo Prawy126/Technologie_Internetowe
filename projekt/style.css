@@ -277,6 +277,7 @@ html{
                 margin-right: 30px;
             }
         }
+        
 
 
 header {
@@ -633,8 +634,9 @@ header {
   justify-content: space-evenly;
 }
 
-.divNaObrazku h3 {
+.divNaObrazku h5 {
   color: black; /* Kolor tekstu na białym tle */
+  font-size: 60px;
 }
 /* Domyślny styl dla większych ekranów */
 .divNaObrazku p {
@@ -765,7 +767,7 @@ section h3{
   color: white;
 }
 .zdjecia {
- 
+margin-left: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -816,4 +818,43 @@ section h3{
   opacity: 0.5;
   left:30%;
   transform: translate(-50%, -50%) rotateY(-10deg) translateZ(-100px);
+}
+ /* Styl dla przycisku otwierającego popup */
+ .buttonCzytajDalej {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styl dla popupa */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 999; /* Aby popup był na wierzchu */
+}
+
+/* Styl dla przycisku zamykającego popup */
+.close-button {
+  background-color: #ccc;
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Pseudo-klasa :target - pokazuje popup, gdy fragment URL to #myPopup */
+.popup:target {
+  display: block;
 }
