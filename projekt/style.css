@@ -540,8 +540,22 @@ header {
   transform: scale(1.1); 
   transition: transform 0.3s ease; 
 }
+@media screen and (max-width:600px) {
+  .Onas{
+    align-items: flex-start;
+    padding: 10px;
+    flex-direction: column;
+  }
+  .onasgora{
+    margin-top: 20px;
+    padding: 0;
+
+    width: 90%px;
+    margin-left: 0;
+  }
+}
 .onasgora{
-  padding: 20px;
+  margin: 20px;
 }
 .onasdol{
   padding: 20px;
@@ -636,7 +650,7 @@ header {
 
 .divNaObrazku h5 {
   color: black; /* Kolor tekstu na białym tle */
-  font-size: 60px;
+  font-size: 50px;
 }
 /* Domyślny styl dla większych ekranów */
 .divNaObrazku p {
