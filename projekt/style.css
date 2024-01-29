@@ -59,7 +59,7 @@ html{
     color: #4b4b4b;
     font-size: 18px;
     background: transparent;    
-    transition: all .25s ease-in-out;
+    transition: all .01s linear;
   }
   #menu > li:hover > a {
     background: #333;
