@@ -373,6 +373,7 @@ header {
       font-weight: 500;
       font-size: 16px;
       transition: 0.8s;
+      color:#000;
 
   }
   .search-container .search-btn .fas {
