@@ -233,7 +233,7 @@
           const radioButtons = document.querySelectorAll('.slider-radio');
           let currentIndex = 0;
           const totalSlides = radioButtons.length;
-          console.log(totalSlides);
+         
           
           function goToSlide(index) {
               const slideWidth = slides.clientWidth;
@@ -241,7 +241,7 @@
                   left: slideWidth * index,
                   behavior: 'smooth'
               });
-              console.log(currentIndex);
+              
               radioButtons[index].checked = true;
               currentIndex = index;
           }
@@ -329,22 +329,22 @@
         <div class="box">
           <img
             src="zdjecia/komputer1.png"
-            alt="Komputer"/>
+            alt="Kup nowy komputer">
         </div>
         <div class="box">
           <img
             src="zdjecia/komputer2.png"
-            alt="Komputer nowy"/>
+            alt="Nowy lepszy komputer"/>
         </div>
         <div class="box">
           <img
             src="zdjecia/komputer3.png"
-            alt="Nowy komputer"/>
+            alt="Nie ma wydajniejszego komputera"/>
         </div>
         <div class="box">
           <img
             src="zdjecia/komputerPrzyszlosic.png"
-            alt="Njmocniejszy komputer"/>
+            alt="Komputer biurowy"/>
       </div>
       <script>
         let imgContainer = document.querySelector(".img-container");
@@ -355,7 +355,7 @@
         }, 2500);
       </script>
     </div>
-    
+    </div>
   </section>
   
     </main>
