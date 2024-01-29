@@ -648,10 +648,7 @@ header {
   justify-content: space-evenly;
 }
 
-.divNaObrazku h5 {
-  color: black; /* Kolor tekstu na białym tle */
-  font-size: 50px;
-}
+
 /* Domyślny styl dla większych ekranów */
 .divNaObrazku p {
   display: block;
@@ -772,7 +769,8 @@ header {
   color:white;
 }
 .divNaObrazku h5{
-  font-size: 70px;
+  font-size: 50px;
+  color:#000
 }
 section h3{
   display: flex;
