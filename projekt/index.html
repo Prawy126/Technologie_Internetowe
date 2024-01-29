@@ -322,6 +322,41 @@
       
     </div>
   </section>
+  <section >
+    <h3>Zdjęcia</h3>
+    <div class="zdjecia">
+      <div class="img-container">
+        <div class="box">
+          <img
+            src="zdjecia/komputer1.png"
+            alt="Komputer"/>
+        </div>
+        <div class="box">
+          <img
+            src="zdjecia/komputer2.png"
+            alt="Komputer nowy"/>
+        </div>
+        <div class="box">
+          <img
+            src="zdjecia/komputer3.png"
+            alt="Nowy komputer"/>
+        </div>
+        <div class="box">
+          <img
+            src="zdjecia/komputerPrzyszlosic.png"
+            alt="Njmocniejszy komputer"/>
+      </div>
+      <script>
+        let imgContainer = document.querySelector(".img-container");
+        setInterval(() => {
+        let last = imgContainer.firstElementChild;
+        last.remove();
+        imgContainer.appendChild(last);
+        }, 2500);
+      </script>
+    </div>
+    
+  </section>
   
     </main>
     <footer>

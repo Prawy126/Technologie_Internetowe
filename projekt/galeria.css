@@ -33,7 +33,7 @@
        }
     }
    
-    @media  (min-width:468px) and (max-width:1199px){
+    @media  (min-width:800px) and (max-width:1199px){
        .gallery{
            grid-template-columns: repeat(2,400px)
        }

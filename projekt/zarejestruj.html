@@ -116,7 +116,7 @@
 </script>
     <main>
         <h1>Zarejestruj się</h1>
-        <form>
+        <form id="myForm">
             
             <label for="name">Podaj swoje imię</label>
             <input type="text" id="name" placeholder="Imię" name="name" required><br>
@@ -145,6 +145,101 @@
             <button type="submit" id="zaloz">Załóż konto</button>
             <button type="reset" id="reset">Resetuj</button>
         </form>
+        <script>
+        const form = document.getElementById('myForm');
+const nameInput = document.getElementById('name');
+const nazwiskoInput = document.getElementById('nazwisko');
+const telInput = document.getElementById('tel');
+const mailInput = document.getElementById('mail');
+const loginInput = document.getElementById('login');
+const hasloInput = document.getElementById('haslo');
+
+form.addEventListener('submit', function (event) {
+    if (!validateName(nameInput.value)) {
+        alert('Podaj poprawne imię.');
+        event.preventDefault();
+    }
+
+    if (!validateNazwisko(nazwiskoInput.value)) {
+        alert('Podaj poprawne nazwisko.');
+        event.preventDefault();
+    }
+
+    if (!validateTelefon(telInput.value)) {
+        alert('Podaj poprawny numer telefonu.');
+        event.preventDefault();
+    }
+
+    if (!validateEmail(mailInput.value)) {
+        alert('Podaj poprawny adres email.');
+        event.preventDefault();
+    }
+
+    if (!validateLogin(loginInput.value)) {
+        alert('Podaj poprawny login.');
+        event.preventDefault();
+    }
+
+    if (!validateHaslo(hasloInput.value)) {
+        alert('Hasło musi zawierać co najmniej 8 znaków.');
+        event.preventDefault();
+    }
+});
+
+function validateName(name) {
+    return /^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+$/u.test(name);
+}
+
+function validateNazwisko(nazwisko) {
+    return /^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+$/u.test(nazwisko);
+}
+
+function validateTelefon(telefon) {
+    return /^[0-9]{9,15}$/.test(telefon);
+}
+
+function validateEmail(email) {
+    return /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(email);
+}
+
+function validateLogin(login) {
+    return /^[a-zA-Z0-9]+$/u.test(login);
+}
+
+function validateHaslo(haslo) {
+    return haslo.length >= 8;
+}
+document.addEventListener("DOMContentLoaded", function () {
+  var form = document.querySelector("form");
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Zapobiega wysłaniu formularza
+
+    var nameInput = document.getElementById("name");
+    var surnameInput = document.getElementById("nazwisko");
+    var name = nameInput.value.trim();
+    var surname = surnameInput.value.trim();
+
+    var namePattern = /^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+$/u;
+
+    if (!namePattern.test(name)) {
+      alert("Imię może zawierać tylko litery alfabetu.");
+      return;
+    }
+
+    if (!namePattern.test(surname)) {
+      alert("Nazwisko może zawierać tylko litery alfabetu.");
+      return;
+    }
+
+    // Kontynuuj proces rejestracji, ponieważ dane są poprawne
+    alert("Rejestracja udana!");
+    // Dodaj kod tutaj, który wykona się po prawidłowej walidacji
+
+    // Możesz również zaimplementować logikę zapisywania danych na serwerze lub gdziekolwiek indziej tutaj
+  });
+});
+    </script>
+        </script>
     </main>  
     <footer>
       <div class="social-icons">

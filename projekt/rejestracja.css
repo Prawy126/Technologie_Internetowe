@@ -20,6 +20,12 @@ input{
     border-radius:20px;
     text-align: center;
 }
+#contact-topic{
+    background-color: rgb(32,28,28);
+    color:aliceblue;
+    height: 25px;
+
+}
 
 button{
     background-color: rgb(32, 28, 28);
