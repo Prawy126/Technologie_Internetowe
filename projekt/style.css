@@ -82,7 +82,7 @@ html{
     visibility: visible;
     box-shadow: 1px 1px 7px #00000080;
     animation-name: swingdown;
-    animation-duration: 10s;
+    animation-duration: 1s;
     animation-timing-function: ease;
   }
   @keyframes swingdown {
