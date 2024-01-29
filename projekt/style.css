@@ -59,7 +59,7 @@ html{
     color: #4b4b4b;
     font-size: 18px;
     background: transparent;    
-    transition: all .01s linear;
+    transition: all .25s ease-in-out;
   }
   #menu > li:hover > a {
     background: #333;
@@ -82,7 +82,7 @@ html{
     visibility: visible;
     box-shadow: 1px 1px 7px #00000080;
     animation-name: swingdown;
-    animation-duration: 1s;
+    animation-duration: 10s;
     animation-timing-function: ease;
   }
   @keyframes swingdown {
