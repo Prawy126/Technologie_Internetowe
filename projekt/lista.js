@@ -56,17 +56,17 @@ function removeItem(button) {
     saveShoppingList();
 }
 
-// Funkcja do aktualizacji zegara
-function updateClock() {
-    const clock = document.getElementById("clock");
-    const currentTime = new Date();
-    const hours = currentTime.getHours().toString().padStart(2, "0");
-    const minutes = currentTime.getMinutes().toString().padStart(2, "0");
-    const seconds = currentTime.getSeconds().toString().padStart(2, "0");
-
-    clock.textContent = `${hours}:${minutes}:${seconds}`;
+// Funkcja do obsługi zdarzenia naciśnięcia klawisza w polu tekstowym
+function handleKeyPress(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault(); // Zapobiega standardowej akcji formularza
+        addItem();
+    }
 }
 
-// Aktualizuj zegar co sekundę
-setInterval(updateClock, 1000);
+// Dodajmy obsługę zdarzenia 'keypress' dla pola tekstowego
+const itemInput = document.getElementById("item");
+itemInput.addEventListener('keypress', handleKeyPress);
 
+// Wywołaj funkcję wczytywania listy przy załadowaniu strony
+loadShoppingList();
