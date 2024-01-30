@@ -562,9 +562,6 @@ header {
     margin-left: 0;
   }
 }
-.top h3{
-  color:#000
-}
 .onasgora{
   margin: 20px;
 }
@@ -626,6 +623,7 @@ header {
 
 .top h3{
   padding: 10px;
+  color:black;
 }
 .top{
   padding: 10px;
