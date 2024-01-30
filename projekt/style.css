@@ -584,6 +584,14 @@ header {
 .noferta{
   background-color: #0ff;
   display: flex;
+  gap: 10px;
+  margin-left: 10px;
+}
+@media screen and (max-width:600px) {
+  .noferta{
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
 .noferta2{
   display: flex;
@@ -870,4 +878,22 @@ margin-left: 120px;
 /* Pseudo-klasa :target - pokazuje popup, gdy fragment URL to #myPopup */
 .popup:target {
   display: block;
+}
+
+@keyframes glow {
+  0% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+  }
+  50% {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+  }
+  100% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+  }
+}
+
+.swieci {
+  font-size: 24px;
+  color: white; /* Kolor tekstu */
+  animation: glow 2s linear infinite;
 }
