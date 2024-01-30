@@ -551,7 +551,14 @@ header {
     margin-top: 20px;
     padding: 0;
 
-    width: 90%px;
+    width: 90%;
+    margin-left: 0;
+  }
+  .onasdol{
+    margin-top: 20px;
+    padding: 0;
+
+    width: 90%;
     margin-left: 0;
   }
 }

@@ -12,7 +12,19 @@
     
     <!--<link rel="stylesheet" href="stopka.css">-->
     <style>
-      
+       fieldset {
+            border:2px solid lightgreen;
+            border-radius: 30px;
+            border-top-width: 10px;
+            border-left-width: 4px;
+        }
+        legend{
+            margin-right: auto;
+            color: white;
+        }
+        form{
+          color:white;
+        }
     </style>
 </head>
 <body>
@@ -116,7 +128,8 @@
     <main>
         <h1>Zarejestruj się</h1>
         <form id="myForm">
-            
+            <fieldset>
+            <legend>Indormacje o tobie</legend>  
             <label for="name">Podaj swoje imię</label>
             <input type="text" id="name" placeholder="Imię" name="name" required><br>
             <label for="nazwisko">Podaj swoje nazwisko</label>
@@ -130,16 +143,43 @@
             <label for="haslo">Podaj swoje hasło</label>
             <input type="password" id="haslo" name="haslo" placeholder="haslo" required><br>
             <br>
+            <label for="plec">Zaznacz swoją płeć</label>
+            <input type="radio" name="plec" value="mezczyzna">mężczyzna
+            <input type="radio" name="plec" value="Kobieta">Kobieta<br><br>
             <label for="contact-topic">Wybierz swoje Miasto:</label>
             <select id="contact-topic" name="contact-topic">
                 <option value="Warszawa">Warszawa</option>
                 <option value="Rzeszów">Rzeszów</option>
                 <option value="Brak" disabled>Brak</option>
-            </select>
+            </select><br>
+            
             <br>
             <label>
-                <input type="checkbox" name="regulamin" value="regulamin" disabled checked>Akceptuję regulamin
-            </label>
+                
+            </label></fieldset>
+            <fieldset>
+              <legend>Oferty</legend>
+              <label for="oferta">Zaznacz gdzie chcesz otrzymywać oferty:</label><br>
+              <input type="checkbox">Chcę otrzymywać oferty na maila
+              <input type="checkbox">Chcę otrzymywać oferty na SMS
+              
+            </fieldset>
+            <fieldset>
+              <legend>Domyślny adres</legend>
+              <label for="contact-topic">Wybierz swoje Miasto:</label>
+              <select id="contact-topic" name="contact-topic">
+                <option value="Warszawa">Warszawa</option>
+                <option value="Rzeszów">Rzeszów</option>
+                <option value="Brak" disabled>Brak</option><br>
+                
+            </select><br>
+            <label for="ulica">Ulica</label>
+            <input type="text" id="ulica" name="ulca" placeholder="Podaj nazwę swojej ulicy" pattern="[a-zA-Z0-9]+"><br>
+            <label for="numerDomu">Numer</label>
+            <input type="number" id="numerDomu" name="numerDomu" placeholder="Podaj numer mieszkania lub domu" min="1"><br>
+
+            </fieldset>
+            <input type="checkbox" name="regulamin" value="regulamin" disabled checked>Akceptuję regulamin
             <br>
             <button type="submit" id="zaloz">Załóż konto</button>
             <button type="reset" id="reset">Resetuj</button>
@@ -147,7 +187,6 @@
         <script src="rejestracja.js">
         
     </script>
-        </script>
     </main>  
     <footer>
       <div class="social-icons">
