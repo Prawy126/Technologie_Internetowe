@@ -643,7 +643,7 @@ header {
 
 .divNaObrazku {
   position: absolute;
-  top: 50%; /* Ustawienie pozycji diva na środku pionowo */
+  top: 60%; /* Ustawienie pozycji diva na środku pionowo */
   left: 50%; /* Ustawienie pozycji diva na środku poziomo */
   transform: translate(-50%, -50%); /* Przesunięcie diva o 50% jego własnej szerokości i wysokości wstecz, aby wyśrodkować */
   width: 60%; /* Szerokość diva */
@@ -760,7 +760,7 @@ header {
       display: flex;
   }
   #menu li ul{
-    width: 120px;
+    width: 105px;
   }
   .prawy{
     flex-direction: row;
