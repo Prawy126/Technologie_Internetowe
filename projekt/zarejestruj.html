@@ -129,7 +129,7 @@
         <h1>Zarejestruj się</h1>
         <form id="myForm">
             <fieldset>
-            <legend>Indormacje o tobie</legend>  
+            <legend>Informacje o tobie</legend>  
             <label for="name">Podaj swoje imię</label>
             <input type="text" id="name" placeholder="Imię" name="name" required><br>
             <label for="nazwisko">Podaj swoje nazwisko</label>
@@ -143,9 +143,9 @@
             <label for="haslo">Podaj swoje hasło</label>
             <input type="password" id="haslo" name="haslo" placeholder="haslo" required><br>
             <br>
-            <label for="plec">Zaznacz swoją płeć</label>
-            <input type="radio" name="plec" value="mezczyzna">mężczyzna
-            <input type="radio" name="plec" value="Kobieta">Kobieta<br><br>
+            <label>Zaznacz swoją płeć</label>
+            <input type="radio" name="plec1" value="mezczyzna">mężczyzna
+            <input type="radio" name="plec2" value="Kobieta">Kobieta<br><br>
             <label for="contact-topic">Wybierz swoje Miasto:</label>
             <select id="contact-topic" name="contact-topic">
                 <option value="Warszawa">Warszawa</option>
@@ -159,18 +159,18 @@
             </label></fieldset>
             <fieldset>
               <legend>Oferty</legend>
-              <label for="oferta">Zaznacz gdzie chcesz otrzymywać oferty:</label><br>
-              <input type="checkbox">Chcę otrzymywać oferty na maila
-              <input type="checkbox">Chcę otrzymywać oferty na SMS
+              <label>Zaznacz gdzie chcesz otrzymywać oferty:</label><br>
+              <input type="checkbox" name="namail" value="mail">Chcę otrzymywać oferty na maila
+              <input type="checkbox"name="nasms" value="sms">Chcę otrzymywać oferty na SMS
               
             </fieldset>
             <fieldset>
               <legend>Domyślny adres</legend>
               <label for="contact-topic">Wybierz swoje Miasto:</label>
-              <select id="contact-topic" name="contact-topic">
+              <select id="contact-topic2" name="contact-topic2">
                 <option value="Warszawa">Warszawa</option>
                 <option value="Rzeszów">Rzeszów</option>
-                <option value="Brak" disabled>Brak</option><br>
+                <option value="Brak" disabled>Brak</option>
                 
             </select><br>
             <label for="ulica">Ulica</label>
