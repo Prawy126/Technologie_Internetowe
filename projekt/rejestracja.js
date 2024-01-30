@@ -1,38 +1,3 @@
-class User {
-  constructor() {
-    this.imie = "";
-    this.nazwisko = "";
-    this.telefon = "";
-    this.email = "";
-    this.login = "";
-    this.haslo = "";
-    this.ofertyEmail = false;
-    this.ofertySMS = false;
-    this.miasto = "";
-    this.ulica = "";
-    this.numerDomu = "";
-  }
-
-  getInfoAsString() {
-    return `Imię: ${this.imie}\nNazwisko: ${this.nazwisko}\nLogin: ${this.login}\nHasło: ${this.haslo}\nTelefon: ${this.telefon}\nEmail: ${this.email}\nOtrzymywanie ofert na email: ${this.ofertyEmail}\nOtrzymywanie ofert na SMS: ${this.ofertySMS}\nMiasto: ${this.miasto}\nUlica: ${this.ulica}\nNumer domu: ${this.numerDomu}`;
-  }
-
-  saveToLocalStorage() {
-    localStorage.setItem("userData", JSON.stringify(this));
-  }
-
-  static loadFromLocalStorage() {
-    const userData = localStorage.getItem("userData");
-    if (userData) {
-      const user = JSON.parse(userData);
-      const newUser = new User();
-      Object.assign(newUser, user);
-      return newUser;
-    }
-    return new User();
-  }
-}
-
 document.addEventListener("DOMContentLoaded", function () {
   var form = document.getElementById("myForm");
   var newUser = User.loadFromLocalStorage();
@@ -129,6 +94,20 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
+    // Czyszczenie pól formularza po udanej rejestracji
+    nameInput.value = "";
+    surnameInput.value = "";
+    telInput.value = "";
+    mailInput.value = "";
+    loginInput.value = "";
+    hasloInput.value = "";
+    ofertyEmailInput.checked = false;
+    ofertySMSInput.checked = false;
+    miastoInput.value = "";
+    ulicaInput.value = "";
+    numerDomuInput.value = "";
+
+    // Zapisanie danych do lokalnego magazynu
     newUser.saveToLocalStorage();
     alert("Rejestracja udana!\n\n" + newUser.getInfoAsString());
   });
