@@ -1,35 +1,35 @@
 class User {
   constructor() {
-      this.imie = "";
-      this.nazwisko = "";
-      this.telefon = "";
-      this.email = "";
-      this.login = "";
-      this.haslo = "";
-      this.ofertyEmail = false;
-      this.ofertySMS = false;
-      this.miasto = "";
-      this.ulica = "";
-      this.numerDomu = "";
+    this.imie = "";
+    this.nazwisko = "";
+    this.telefon = "";
+    this.email = "";
+    this.login = "";
+    this.haslo = "";
+    this.ofertyEmail = false;
+    this.ofertySMS = false;
+    this.miasto = "";
+    this.ulica = "";
+    this.numerDomu = "";
   }
 
   getInfoAsString() {
-      return `Imię: ${this.imie}\nNazwisko: ${this.nazwisko}\nLogin: ${this.login}\nHasło: ${this.haslo}\nTelefon: ${this.telefon}\nEmail: ${this.email}\nOtrzymywanie ofert na email: ${this.ofertyEmail}\nOtrzymywanie ofert na SMS: ${this.ofertySMS}\nMiasto: ${this.miasto}\nUlica: ${this.ulica}\nNumer domu: ${this.numerDomu}`;
+    return `Imię: ${this.imie}\nNazwisko: ${this.nazwisko}\nLogin: ${this.login}\nHasło: ${this.haslo}\nTelefon: ${this.telefon}\nEmail: ${this.email}\nOtrzymywanie ofert na email: ${this.ofertyEmail}\nOtrzymywanie ofert na SMS: ${this.ofertySMS}\nMiasto: ${this.miasto}\nUlica: ${this.ulica}\nNumer domu: ${this.numerDomu}`;
   }
 
   saveToLocalStorage() {
-      localStorage.setItem("userData", JSON.stringify(this));
+    localStorage.setItem("userData", JSON.stringify(this));
   }
 
   static loadFromLocalStorage() {
-      const userData = localStorage.getItem("userData");
-      if (userData) {
-          const user = JSON.parse(userData);
-          const newUser = new User();
-          Object.assign(newUser, user);
-          return newUser;
-      }
-      return new User();
+    const userData = localStorage.getItem("userData");
+    if (userData) {
+      const user = JSON.parse(userData);
+      const newUser = new User();
+      Object.assign(newUser, user);
+      return newUser;
+    }
+    return new User();
   }
 
   initializeForm() {
@@ -147,8 +147,3 @@ class User {
     });
   }
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-  const user = new User();
-  user.initializeForm();
-});
