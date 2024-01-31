@@ -1,150 +1,153 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sklep z komputerami</title>
-    <link rel="icon" type="image/png" href="zdjecia/logo.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="sklep.css">
-    <style>
-      
-    </style>
-</head>
-<body>
-    <header>  
-      <div class="lewy">
-        <div class="flex">
-          <div class="container-logo">
-            <div class="L">L</div>
-              <div class="outter">
-                <div class="mid"></div>
-              </div>
-              <div class="ADING">GO</div>
-            </div>
-          </div>
-        </div>
-      
-      <div class="prawy">
-        <div class="search-container">
-          <input type="text" id="search-input" placeholder="Szukaj..." class="search-input">
-          <a href="#" id="search-btn" class="search-btn">
-            <i class="fas fa-search"></i>
-          </a>
-        </div>
-      </div>
-      
-      <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          var searchInput = document.getElementById('search-input');
-          var searchButton = document.getElementById('search-btn');
-      
-          function search() {
-            var query = searchInput.value;
-            var googleSearchUrl = 'https://www.google.com/search?q=' + encodeURIComponent(query);
-            window.open(googleSearchUrl, '_blank'); // Otwiera wyniki wyszukiwania w nowej karcie
-          }
-      
-          searchInput.addEventListener('keypress', function(event) {
-            if (event.key === 'Enter') {
-              event.preventDefault(); // Zapobiega standardowej akcji formularza
-              search();
-            }
-          });
-      
-          searchButton.addEventListener('click', function(event) {
-            event.preventDefault(); // Zapobiega standardowej akcji linku
-            search();
-          });
-        });
-      </script>
-      
-        
-    </header>
-    <nav>
-      <div class="pasek">
-          <div id="container">
-              <div id="menu-toggle" class="hamburger">
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-                  <div class="bar"></div>
-              </div>
-              <div id="menu-container">
-                  <ul id="menu">
-                      <li><a href="index.html">Strona główna</a>
-                                          
-                      
-                      </li>
-                      <li><a href="galeria.html">Galeria</a>
-                        
-                      </li>
-                      <li><a href="#">Konto</a>
-                          <ul>
-                              <li><a href="zaloguj.html">Zaloguj się</a></li>
-                              <li><a href="zarejestruj.html">Zarejestruj się</a></li>
-                            
-                          </ul>
-                      </li>
-                      <li><a href="#">Sklep</a>
 
-                      </li>
-                      <li><a href="#">About Me</a>
-                          <ul>
-                              <li><a href="dostawa.html">Koszt zakupu</a></li>
-                              <li><a href="lista.html">Zrób listę</a></li>
-                              <li><a href="#">Suspendisse fringilla</a></li>
-                          </ul>
-                      </li>
-                  </ul>
-              </div>
+<head>
+  <meta charset="UTF-8">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sklep z komputerami</title>
+  <link rel="icon" type="image/png" href="zdjecia/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sklep.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="lewy">
+      <div class="flex">
+        <div class="container-logo">
+          <div class="L">L</div>
+          <div class="outter">
+            <div class="mid"></div>
           </div>
+          <div class="ADING">GO</div>
+        </div>
       </div>
+    </div>
+
+    <div class="prawy">
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Szukaj..." class="search-input">
+        <a href="#" id="search-btn" class="search-btn">
+          <i class="fas fa-search"></i>
+        </a>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var searchInput = document.getElementById('search-input');
+        var searchButton = document.getElementById('search-btn');
+
+        function search() {
+          var query = searchInput.value;
+          var googleSearchUrl = 'https://www.google.com/search?q=' + encodeURIComponent(query);
+          window.open(googleSearchUrl, '_blank'); // Otwiera wyniki wyszukiwania w nowej karcie
+        }
+
+        searchInput.addEventListener('keypress', function (event) {
+          if (event.key === 'Enter') {
+            event.preventDefault(); // Zapobiega standardowej akcji formularza
+            search();
+          }
+        });
+
+        searchButton.addEventListener('click', function (event) {
+          event.preventDefault(); // Zapobiega standardowej akcji linku
+          search();
+        });
+      });
+    </script>
+
+
+  </header>
+  <nav>
+    <div class="pasek">
+      <div id="container">
+        <div id="menu-toggle" class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <div id="menu-container">
+          <ul id="menu">
+            <li><a href="index.html">Strona główna</a>
+
+
+            </li>
+            <li><a href="galeria.html">Galeria</a>
+
+            </li>
+            <li><a href="#">Konto</a>
+              <ul>
+                <li><a href="zaloguj.html">Zaloguj się</a></li>
+                <li><a href="zarejestruj.html">Zarejestruj się</a></li>
+
+              </ul>
+            </li>
+            <li><a href="#">Sklep</a>
+
+            </li>
+            <li><a href="#">About Me</a>
+              <ul>
+                <li><a href="dostawa.html">Koszt zakupu</a></li>
+                <li><a href="lista.html">Zrób listę</a></li>
+                <li><a href="#">Suspendisse fringilla</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </nav>
   <script>
     const hamburger = document.getElementById("menu-toggle");
     const menuContainer = document.getElementById("menu-container");
 
     hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        menuContainer.classList.toggle("active");
+      hamburger.classList.toggle("active");
+      menuContainer.classList.toggle("active");
     });
-</script>
-<main>
+  </script>
+  <main>
     <div class="gallery" id="gallery">
-        <div class="oferta"> 
-          <img src="zdjecia/komputer1.png" alt="Nowy Komputer">
-          <div class="tytulOferty">
-            Komputer
-          </div>
-          <div class="cena">200.00</div>
-          <button>Kup teraz</button><button>Dodaj do koszyka</button>
+      <div class="oferta">
+        <img src="zdjecia/komputer1.png" alt="Nowy Komputer">
+        <div class="tytulOferty">
+          Komputer
         </div>
-        <div class="oferta"> 
-          <img src="zdjecia/komputer2.png" alt="Kolejny Komputer">
-          <div class="tytulOferty">
-            Komputer2
-          </div>
-          <div class="cena">1200.00</div>
-          <button>Kup teraz</button><button>Dodaj do koszyka</button>
+        <div class="cena">200.00</div>
+        <button>Kup teraz</button><button>Dodaj do koszyka</button>
+      </div>
+      <div class="oferta">
+        <img src="zdjecia/komputer2.png" alt="Kolejny Komputer">
+        <div class="tytulOferty">
+          Komputer2
         </div>
-        <div class="oferta"> 
-          <img src="zdjecia/komputer3.png" alt="Komputer przyszłościowy">
-          <div class="tytulOferty">
-            Jedyny taki komputer
-          </div>
-          <div class="cena">12300.00</div>
-          <button>Kup teraz</button><button>Dodaj do koszyka</button>
+        <div class="cena">1200.00</div>
+        <button>Kup teraz</button><button>Dodaj do koszyka</button>
+      </div>
+      <div class="oferta">
+        <img src="zdjecia/komputer3.png" alt="Komputer przyszłościowy">
+        <div class="tytulOferty">
+          Jedyny taki komputer
         </div>
-        <div class="oferta"> 
-          <img src="zdjecia/komputerPrzyszlosic.png" alt="Najnowszy komputer">
-          <div class="tytulOferty">
-            Musisz go mieć
-          </div>
-          <div class="cena">23200.00</div>
-          <button>Kup teraz</button><button>Dodaj do koszyka</button>
-        </div><div class="oferta"> 
+        <div class="cena">12300.00</div>
+        <button>Kup teraz</button><button>Dodaj do koszyka</button>
+      </div>
+      <div class="oferta">
+        <img src="zdjecia/komputerPrzyszlosic.png" alt="Najnowszy komputer">
+        <div class="tytulOferty">
+          Musisz go mieć
+        </div>
+        <div class="cena">23200.00</div>
+        <button>Kup teraz</button><button>Dodaj do koszyka</button>
+      </div>
+      <div class="oferta">
         <img src="zdjecia/laptop.png" alt="laptop">
         <div class="tytulOferty">
           laptop
@@ -152,7 +155,7 @@
         <div class="cena">100.00</div>
         <button>Kup teraz</button><button>Dodaj do koszyka</button>
       </div>
-      <div class="oferta"> 
+      <div class="oferta">
         <img src="zdjecia/komputer1.png" alt="laptop">
         <div class="tytulOferty">
           laptop
@@ -160,7 +163,7 @@
         <div class="cena">100.00</div>
         <button>Kup teraz</button><button>Dodaj do koszyka</button>
       </div>
-      <div class="oferta"> 
+      <div class="oferta">
         <img src="zdjecia/laptop2.png" alt="laptop kolejny">
         <div class="tytulOferty">
           laptop
@@ -168,15 +171,15 @@
         <div class="cena">120.00</div>
         <button>Kup teraz</button><button>Dodaj do koszyka</button>
       </div>
-      <div class="oferta"> 
+      <div class="oferta">
         <img src="zdjecia/laptop3.png" alt="laptop nowy">
         <div class="tytulOferty">
-           nowy laptop 
+          nowy laptop
         </div>
         <div class="cena">1000.00</div>
         <button>Kup teraz</button><button>Dodaj do koszyka</button>
       </div>
-      <div class="oferta"> 
+      <div class="oferta">
         <img src="zdjecia/laptop3.png" alt="laptop">
         <div class="tytulOferty">
           laptop
@@ -184,7 +187,7 @@
         <div class="cena">100.99</div>
         <button>Kup teraz</button><button>Dodaj do koszyka</button>
       </div>
-      <div class="oferta"> 
+      <div class="oferta">
         <img src="zdjecia/laptop5.png" alt="laptop nowej generacji">
         <div class="tytulOferty">
           laptop
@@ -193,17 +196,18 @@
         <button>Kup teraz</button><button>Dodaj do koszyka</button>
       </div>
     </div>
-         
-</main>
-<footer>
+
+  </main>
+  <footer>
     <div class="social-icons">
-        <a href="https://www.facebook.com" target="_blank" ><i class="fab fa-facebook" id="facebook"></i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" id="instagram"></i></a>
-        <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube" id="yt"></i></a>
+      <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook" id="facebook"></i></a>
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" id="instagram"></i></a>
+      <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube" id="yt"></i></a>
     </div>
     <div class="copyright">
-        &copy; 2023 Wszelkie prawa zastrzeżone
+      &copy; 2023 Wszelkie prawa zastrzeżone
     </div>
-</footer>
+  </footer>
 </body>
+
 </html>
