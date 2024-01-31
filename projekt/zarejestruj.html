@@ -134,64 +134,79 @@
     <form id="myForm">
       <fieldset>
         <legend>Informacje o tobie</legend>
+
         <label for="name">Podaj swoje imię</label>
-        <input type="text" id="name" placeholder="Imię" name="name" required><br>
+        <input type="text" id="name" placeholder="Imię" name="name" pattern="[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ]+" required
+          autocomplete="given-name"><br>
+
         <label for="nazwisko">Podaj swoje nazwisko</label>
-        <input type="text" id="nazwisko" placeholder="Nazwisko" name="nazwisko" required><br>
-        <label for="tel">Podaj numer telefonu:</label>
-        <input type="tel" id="tel" placeholder="Nr telefonu" name="tel" required pattern="[0-9]{9,15}"><br>
-        <label for="mail">Podaj swój adres email:</label>
-        <input type="email" id="mail" name="mail" placeholder="email" required><br>
+        <input type="text" id="nazwisko" placeholder="Nazwisko" name="nazwisko" pattern="[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ]+"
+          required autocomplete="family-name"><br>
+
+        <label for="tel">Podaj numer telefonu</label>
+        <input type="tel" id="tel" placeholder="Nr telefonu" name="tel" required pattern="[0-9]{9,15}"
+          autocomplete="tel"><br>
+
+        <label for="mail">Podaj adres email:</label>
+        <input type="email" id="mail" name="mail" placeholder="email" required autocomplete="email"><br>
+
         <label for="login">Podaj swój login</label>
-        <input type="text" id="login" name="login" placeholder="Login" required><br>
+        <input type="text" id="login" name="login" placeholder="Login" required autocomplete="username"><br>
+
         <label for="haslo">Podaj swoje hasło</label>
-        <input type="password" id="haslo" name="haslo" placeholder="haslo" required><br>
+        <input type="password" id="haslo" name="haslo" placeholder="haslo" required autocomplete="new-password"><br>
+
         <br>
-        <label>Zaznacz swoją płeć</label>
-        <input type="radio" name="plec1" value="mezczyzna">mężczyzna
-        <input type="radio" name="plec2" value="Kobieta">Kobieta<br><br>
+        
+
         <label for="contact-topic">Wybierz swoje Miasto:</label>
-        <select id="contact-topic" name="contact-topic">
+        <select id="contact-topic" name="contact-topic" autocomplete="address-level1">
           <option value="Warszawa">Warszawa</option>
           <option value="Rzeszów">Rzeszów</option>
           <option value="Brak" disabled>Brak</option>
         </select><br>
 
         <br>
-        <label>
-
-        </label>
       </fieldset>
       <fieldset>
-        <legend>Oferty</legend>
-        <label>Zaznacz gdzie chcesz otrzymywać oferty:</label><br>
-        <input type="checkbox" name="namail" value="mail">Chcę otrzymywać oferty na maila
-        <input type="checkbox" name="nasms" value="sms">Chcę otrzymywać oferty na SMS
-
+        <legend>Zaznacz swoją płec</legend>
+        
+        <input type="radio" name="plec1" value="mezczyzna">mężczyzna
+        <input type="radio" name="plec2" value="Kobieta">Kobieta<br><br>
+      </fieldset>  
+     
+      <fieldset>
+        <legend>Zaznacz gdzie chcesz otrzymywać oferty:</legend>
+        
+        <input type="checkbox" id="ofertyEmail" name="ofertyEmail" value="mail">Chcę otrzymywać oferty na maila<br>
+        <input type="checkbox" id="ofertySMS" name="ofertySMS" value="sms">Chcę otrzymywać oferty na SMS
       </fieldset>
+
       <fieldset>
         <legend>Domyślny adres</legend>
         <label for="contact-topic">Wybierz swoje Miasto:</label>
-        <select id="contact-topic2" name="contact-topic2">
+        <select id="contact-topic2" name="contact-topic2" autocomplete="address-level1">
           <option value="Warszawa">Warszawa</option>
           <option value="Rzeszów">Rzeszów</option>
           <option value="Brak" disabled>Brak</option>
-
         </select><br>
-        <label for="ulica">Ulica</label>
-        <input type="text" id="ulica" name="ulca" placeholder="Podaj nazwę swojej ulicy" pattern="[a-zA-Z0-9]+"><br>
-        <label for="numerDomu">Numer</label>
-        <input type="number" id="numerDomu" name="numerDomu" placeholder="Podaj numer mieszkania lub domu" min="1"><br>
 
+        <label for="ulica">Ulica</label>
+        <input type="text" id="ulica" name="ulca" placeholder="Podaj nazwę swojej ulicy" pattern="[a-zA-Z0-9]+" autocomplete="address-line1"><br>
+
+        <label for="numerDomu">Numer</label>
+        <input type="number" id="numerDomu" name="numerDomu" placeholder="Podaj numer mieszkania lub domu" min="1" ><br>
       </fieldset>
+
       <input type="checkbox" name="regulamin" value="regulamin" disabled checked>Akceptuję regulamin
       <br>
       <button type="submit" id="zaloz">Załóż konto</button>
       <button type="reset" id="reset">Resetuj</button>
     </form>
-    <script src="rejestracja.js">
+<script src="rejestracja.js">
+  
+</script>
 
-    </script>
 
   </main>
   <footer>
