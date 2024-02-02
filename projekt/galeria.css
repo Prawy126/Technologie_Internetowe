@@ -1,3 +1,44 @@
+/*
+    Galeria - zdjęcia 
+
+    Ten kod HTML reprezentuje sekcję "Galeria" na stronie internetowej. Oto jego opis:
+
+Element **main**:
+
+Jest to główny kontener na zawartość strony internetowej, zawierający sekcję "Galeria".
+Sekcja (brak klasy lub id):
+
+Wewnątrz elementu <section> znajduje się zawartość sekcji "Galeria".
+Nagłówek **h1**:
+
+Zawiera tytuł "Gallery", który jest wyświetlany jako nagłówek pierwszego poziomu.
+Element **div** z id "gallery" i klasą "gallery":
+
+To kontener dla zdjęć w galerii.
+Ma przypisane id "gallery", co może być przydatne do stylizacji za pomocą CSS.
+Wewnątrz tego kontenera znajduje się wiele elementów **img**, reprezentujących różne obrazy.
+Elementy **img**:
+
+Są to znaczniki obrazów, każdy z atrybutem "src", który określa ścieżkę do obrazu, oraz atrybutem "alt", który zawiera alternatywny tekst opisujący obraz (dla użytkowników korzystających z czytników ekranowych).
+Przykład ten tworzy sekcję "Galeria" z zestawem obrazów, które mogą być wyświetlane na stronie internetowej. Obrazy te są reprezentowane jako miniatury wewnątrz kontenera o identyfikatorze "gallery". Grupa obrazów może być klikalna i prowadzić do większych wersji tych obrazów lub innych działań, w zależności od implementacji JavaScript lub CSS.
+
+    Markup:
+     <main>
+        <section >
+        <h1>Gallery</h1>
+        <div id="gallery" class="gallery">
+          <img src="zdjecia/komputer1.png" alt="apple">
+          <img src="zdjecia/komputer2.png" alt="przyszłościowy komputer">
+          <img src="zdjecia/komputer3.png" alt="komputer">
+          <img src="zdjecia//komputer3.png" alt="komputer kopia">
+          <img src="zdjecia/laptop.png" alt="laptop">
+          <img src="zdjecia/logo.png" alt="logo">
+        </div>
+        </section>
+      </main>
+
+    Style guide: 3.0
+*/
 :root {
     --blue-ur: #282625;
     --white-ur: #FEFEFE;

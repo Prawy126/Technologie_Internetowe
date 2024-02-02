@@ -104,7 +104,7 @@ Ten kod HTML reprezentuje interaktywną galerię produktów, która zawiera ró�
     </div>
 </main>
 
-    Style guide: 1.0
+    Style guide: 2.0
 */
 
 :root {
@@ -176,3 +176,127 @@ button {
         max-width: none;
     }
 }
+
+/*
+    Tabelka z cenami
+
+   
+Ten kod HTML przedstawia stronę internetową z informacjami na temat kosztów dostawy. Oto opis jego elementów:
+
+Nagłówek **h1**:
+
+Wyświetla tytuł "Koszty dostawy".
+Tabela *table**:
+
+Jest to tabela zawierająca informacje na temat różnych rodzajów dostawy i kosztów związanych z nimi.
+Wiersz nagłówka **tr**:
+
+Zawiera nagłówki kolumn tabeli.
+Element <th> jest używany do oznaczenia nagłówków.
+Pierwszy wiersz nagłówka **tr**:
+
+Zawiera nagłówki "Rodzaj Dostawy", "Koszt przy odbiorze" i "Koszt z góry".
+Pierwsza komórka nagłówka **th**:
+
+Zawiera "Rodzaj Dostawy" i jest rozszerzona na dwie kolumny (rowspan="2").
+Drugi wiersz nagłówka **tr**:
+
+Zawiera nagłówki "Płatność przy odbiorze" i "Płatność z góry".
+Pierwsza komórka wiersza **th**:
+
+Zawiera "Płatność przy odbiorze".
+Druga komórka wiersza **th**:
+
+Zawiera "Płatność z góry".
+Pierwszy wiersz danych **tr**:
+
+Zawiera informacje dotyczące rodzaju dostawy "paczkomat" oraz odpowiadające koszty dla płatności przy odbiorze i płatności z góry.
+Pierwsza komórka danych **th**:
+
+Zawiera "paczkomat"
+
+   opisy znaczników (z użyciem .selektor)
+
+    Markup:
+    <main>
+      <H1>Koszty dostawy</H1>
+      <table >
+        <tr>
+            <th rowspan="2">Rodzaj Dostawy</th>
+            <th colspan="2"> Koszt</th>
+        </tr>
+        <tr>
+            <th>płatność przy odbiorze</th>
+            <th>Płatność z góry</th>
+        </tr>
+        <tr>
+            <th>paczkomat</th>
+            <th>23.99</th>
+            <th>19.99</th>
+        </tr>
+        <tr>
+            <th>Poczta</th>
+            <th colspan="2"> 28.00</th> 
+        </tr>
+        <tr>
+            <th>Kurier</th>
+            <th>23.99</th>
+            <th>19.99</th>
+        </tr>
+        <tr>
+            <th>Kurier expres</th>
+            <th colspan="2"> 28.00</th>
+        </tr>
+      </table>
+    </main>
+
+    Style guide: 5.0
+*/ 
+/*
+    Lista użytkownika plus kurs walut
+
+   Ten kod HTML reprezentuje stronę internetową zawierającą różne elementy, takie jak aktualny kurs Euro, zegar, oraz listę zakupów. Oto opis jego elementów:
+
+Element **main**:
+
+Jest to główny kontener strony, w którym znajdują się wszystkie inne elementy.
+Div **div class="srodek"**:
+
+Ten <div> zawiera nagłówek "Aktualny kurs Euro" oraz paragraf, w którym zostanie wyświetlony aktualny kurs Euro po pobraniu.
+Jest również zawarty nagłówek "Moja Lista Zakupów".
+Div **div id="clock"**:
+
+To miejsce, w którym zostanie wyświetlony zegar. Prawdopodobnie zostanie zaktualizowany za pomocą JavaScript.
+Div **div class="przesun"**:
+
+Ten <div> zawiera pola do wprowadzania nowych przedmiotów na liście zakupów oraz przycisk "Dodaj" do ich dodawania.
+Wykorzystuje również elementy listy do wyświetlania rzeczy na liście zakupów.
+W pliku JavaScript o nazwie "lista.js" jest obsługiwana logika dodawania przedmiotów do listy zakupów.
+Script **script src="kursDolara.js"** ** /script**:
+
+To odniesienie do pliku JavaScript o nazwie "kursDolara.js". Prawdopodobnie ten skrypt jest używany do pobierania i wyświetlania aktualnego kursu Euro.
+Kod HTML i pliki JavaScript są prawdopodobnie częścią interaktywnej strony internetowej, która umożliwia użytkownikowi śledzenie kursu Euro, wyświetlanie aktualnego czasu oraz prowadzenie listy zakupów online. JavaScript jest używany do obsługi logiki tych funkcji.
+
+   opisy znaczników (z użyciem .selektor)
+
+    Markup:
+    <main>
+    <div class="srodek">
+      <h1>Aktualny kurs Euro:</h1>
+      <p id="exchange-rate">Poczekaj na pobranie kursu...</p>
+      <h2>Moja Lista Zakupów</h2>
+    </div>
+    <div id="clock"></div>
+    <div class="przesun"><input type="text" id="item" placeholder="Dodaj rzecz do listy">
+      <button onclick="addItem()" class="dodaj">Dodaj</button>
+      <ul id="shoppingList">
+        <!-- Tutaj zostaną wyświetlone rzeczy z listy -->
+      </ul>
+      <script src="lista.js">
+      </script>
+    </div>
+    <script src="kursDolara.js"></script>
+  </main>
+
+    Style guide: 6.0
+*/ 

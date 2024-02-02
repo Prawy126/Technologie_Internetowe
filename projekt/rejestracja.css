@@ -1,4 +1,55 @@
+/*
+    Logowanie - proste logowanie
 
+   Kod HTML przedstawia sekcję "Zaloguj się" na stronie internetowej. Oto jego opis:
+
+Element **main**:
+
+Jest to główny kontener na zawartość strony internetowej, zawierający sekcję "Zaloguj się".
+Nagłówek **h1**:
+
+Zawiera tytuł "Zaloguj się", który jest wyświetlany jako nagłówek pierwszego poziomu.
+Formularz <form>:
+
+Formularz służy do wprowadzenia danych logowania.
+Etykieta **label** dla pola "Login":
+
+Opisuje pole "Login" i jest związana z inputem za pomocą atrybutu "for".
+Pole tekstowe **input** dla loginu:
+
+Typ "text" oznacza pole tekstowe.
+Atrybuty "placeholder" i "name" określają odpowiednio domyślny tekst w polu i nazwę pola.
+Identyfikator "login" jest używany w etykiecie, aby określić związek między etykietą a polem wejściowym.
+Atrybut "required" oznacza, że pole jest wymagane i nie może być puste.
+Etykieta **label** dla pola "Hasło":
+
+Opisuje pole "Hasło" i jest związana z inputem za pomocą atrybutu "for".
+Pole hasła **input**:
+
+Typ "password" oznacza pole hasła, gdzie wprowadzane znaki są zasłaniane.
+Atrybuty "placeholder" i "name" określają odpowiednio domyślny tekst w polu i nazwę pola.
+Identyfikator "haslo" jest używany w etykiecie, aby określić związek między etykietą a polem wejściowym.
+Atrybut "required" oznacza, że pole jest wymagane i nie może być puste.
+Przycisk **button** "Zaloguj się":
+
+Jest to przycisk, który pozwala zatwierdzić formularz.
+Po kliknięciu na przycisk formularz zostanie przesłany lub zostanie wykonana odpowiednia akcja za pomocą JavaScript.
+Ten kod reprezentuje podstawowy formularz logowania, który można dostosować i połączyć z odpowiednią logiką logowania na stronie internetowej.
+
+    Markup:
+<main>
+    <h1>Zaloguj się</h1>
+    <form>
+      <label for="login">Login</label>
+      <input type="text" placeholder="login" name="login" id="login" required><br>
+      <label for="haslo">Hasło</label>
+      <input type="password" placeholder="hasło" name="haslo" id="haslo" required><br>
+      <button>Zaloguj się</button>
+    </form>
+  </main>
+
+    Style guide: 4.1
+*/
 h1{
     text-align: center;
     margin-top: 20px;
@@ -26,6 +77,134 @@ input{
     height: 25px;
 
 }
+
+/*
+    Rejestracja - formularz do wypełnienia
+
+   Ten kod HTML przedstawia formularz rejestracji użytkownika na stronie internetowej. Oto opis jego elementów:
+
+Nagłówek **h1**:
+
+Wyświetla tytuł "Zarejestruj się".
+Formularz **form**:
+
+Formularz jest opakowaniem dla różnych pól i kontrolek, które użytkownik będzie wypełniał.
+Pole grupy informacji o użytkowniku <fieldset>:
+
+Jest to grupa pól, które zawierają informacje o użytkowniku.
+Posiada legendę "Informacje o tobie" opisującą grupę.
+Pole "Imię" **input**:
+
+Typ "text" dla wprowadzania imienia.
+Atrybuty "placeholder", "name", "pattern", "required" i "autocomplete" pomagają w prawidłowym wprowadzaniu imienia.
+Pole "Nazwisko" **input**:
+
+Typ "text" dla wprowadzania nazwiska.
+Atrybuty "placeholder", "name", "pattern", "required" i "autocomplete" pomagają w prawidłowym wprowadzaniu nazwiska.
+Pole "Nr telefonu" **input**:
+
+Typ "tel" dla wprowadzania numeru telefonu.
+Atrybuty "placeholder", "name", "pattern", "required" i "autocomplete" pomagają w prawidłowym wprowadzaniu numeru telefonu.
+Pole "Adres email" **input**:
+
+Typ "email" dla wprowadzania adresu email.
+Atrybuty "placeholder", "name", "required" i "autocomplete" pomagają w prawidłowym wprowadzaniu adresu email.
+Pole "Login" **input**:
+
+Typ "text" dla wprowadzania loginu.
+Atrybuty "placeholder", "name", "required" i "autocomplete" pomagają w prawidłowym wprowadzaniu loginu.
+Pole "Hasło" **input**:
+
+Typ "password" dla wprowadzania hasła.
+Atrybuty "placeholder", "name", "required", "autocomplete" i "new-password" pomagają w prawidłowym wprowadzaniu hasła.
+Pole "Miasto" **select**:
+
+Pozwala wybrać miasto z dostępnych opcji.
+Atrybut "autocomplete" pomaga w uzupełnianiu miasta.
+Pole grupy płci **fieldset**:
+
+Pozwala zaznaczyć płeć (mężczyzna lub kobieta) za pomocą przycisków typu "radio".
+Pole grupy otrzymywania ofert **fieldset**:
+
+Pozwala zaznaczyć, czy użytkownik chce otrzymywać oferty na maila lub SMS za pomocą pól typu "checkbox".
+Pole domyślnego adresu **fieldset**:
+
+Pozwala wybrać miasto, wprowadzić nazwę ulicy i numer mieszkania lub domu.
+Pole "Akceptacja regulaminu" **input**:
+
+Pole typu "checkbox", które musi być zaznaczone, aby użytkownik mógł kontynuować rejestrację. Jest początkowo wyłączone (disabled) i zaznaczone (checked).
+Przycisk "Załóż konto" **button**:
+
+Przycisk służy do zatwierdzenia formularza i złożenia wniosku o rejestrację.
+Przycisk "Resetuj" **button**:
+
+Przycisk pozwala zresetować wprowadzone dane w formularzu do stanu początkowego.
+Formularz ten zawiera różne typy pól, takie jak tekstowe, hasła, radio i checkbox, które umożliwiają użytkownikowi wprowadzenie i wybór odpowiednich informacji potrzebnych do rejestracji.
+
+   opisy znaczników (z użyciem .selektor)
+
+    Markup:
+    <main>
+    <h1>Zarejestruj się</h1>
+    <form id="myForm">
+      <fieldset>
+        <legend>Informacje o tobie</legend>
+        <label for="name">Podaj swoje imię</label>
+        <input type="text" id="name" placeholder="Imię" name="name" pattern="[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ]+" required
+          autocomplete="given-name"><br>
+        <label for="nazwisko">Podaj swoje nazwisko</label>
+        <input type="text" id="nazwisko" placeholder="Nazwisko" name="nazwisko" pattern="[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ]+"
+          required autocomplete="family-name"><br>
+        <label for="tel">Podaj numer telefonu</label>
+        <input type="tel" id="tel" placeholder="Nr telefonu" name="tel" required pattern="[0-9]{9,15}"
+          autocomplete="tel"><br>
+        <label for="mail">Podaj adres email:</label>
+        <input type="email" id="mail" name="mail" placeholder="email" required autocomplete="email"><br>
+        <label for="login">Podaj swój login</label>
+        <input type="text" id="login" name="login" placeholder="Login" required autocomplete="username"><br>
+        <label for="haslo">Podaj swoje hasło</label>
+        <input type="password" id="haslo" name="haslo" placeholder="haslo" required autocomplete="new-password"><br>
+        <br>
+        <label for="contact-topic">Wybierz swoje Miasto:</label>
+        <select id="contact-topic" name="contact-topic" autocomplete="address-level1">
+          <option value="Warszawa">Warszawa</option>
+          <option value="Rzeszów">Rzeszów</option>
+          <option value="Brak" disabled>Brak</option>
+        </select><br>
+        <br>
+      </fieldset>
+      <fieldset>
+        <legend>Zaznacz swoją płec</legend>
+        <input type="radio" name="plec1" value="mezczyzna">mężczyzna
+        <input type="radio" name="plec2" value="Kobieta">Kobieta<br><br>
+      </fieldset>  
+      <fieldset>
+        <legend>Zaznacz gdzie chcesz otrzymywać oferty:</legend>
+        <input type="checkbox" id="ofertyEmail" name="ofertyEmail" value="mail">Chcę otrzymywać oferty na maila<br>
+        <input type="checkbox" id="ofertySMS" name="ofertySMS" value="sms">Chcę otrzymywać oferty na SMS
+      </fieldset>
+      <fieldset>
+        <legend>Domyślny adres</legend>
+        <label for="contact-topic">Wybierz swoje Miasto:</label>
+        <select id="contact-topic2" name="contact-topic2" autocomplete="address-level1">
+          <option value="Warszawa">Warszawa</option>
+          <option value="Rzeszów">Rzeszów</option>
+          <option value="Brak" disabled>Brak</option>
+        </select><br>
+        <label for="ulica">Ulica</label>
+        <input type="text" id="ulica" name="ulca" placeholder="Podaj nazwę swojej ulicy" pattern="[a-zA-Z0-9]+" autocomplete="address-line1"><br>
+        <label for="numerDomu">Numer</label>
+        <input type="number" id="numerDomu" name="numerDomu" placeholder="Podaj numer mieszkania lub domu" min="1" ><br>
+      </fieldset>
+      <input type="checkbox" name="regulamin" value="regulamin" disabled checked>Akceptuję regulamin
+      <br>
+      <button type="submit" id="zaloz">Załóż konto</button>
+      <button type="reset" id="reset">Resetuj</button>
+    </form>
+    </main>
+
+    Style guide: 4.0
+*/
 
 button{
     background-color: rgb(32, 28, 28);
@@ -111,4 +290,5 @@ body{
       justify-content: center;
     }
   }
+
   
