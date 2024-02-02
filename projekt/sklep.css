@@ -1,3 +1,112 @@
+/*
+    Podstrona sklep - sklep
+
+    tutaj jest główna strona sklepu
+
+    
+Kod HTML w elemencie <main> zawiera galerię produktów, która skupia się na różnych ofertach komputerów i laptopów. Oto opis każdego głównego elementu wewnątrz **main**:
+
+**div class="gallery" id="gallery"** - Jest to kontener głównej galerii produktów. Ma klasę CSS o nazwie "gallery" i identyfikator "gallery" (o id="gallery"), co oznacza, że można go styliować i odwoływać się do niego za pomocą CSS i JavaScript.
+
+**div class="oferta"** (powtórzone wielokrotnie) - Są to poszczególne oferty produktów. Każda oferta zawiera:
+
+**img src="..." alt="..."** - Obrazek produktu z atrybutami "src" określającym ścieżkę do obrazka i "alt" zawierającym alternatywny tekst obrazka.
+**div class="tytulOferty"** - Nazwa produktu lub tytuł oferty.
+**div class="cena"** - Cena produktu.
+**button** - Dwa przyciski: "Kup teraz" i "Dodaj do koszyka".
+Każda oferta jest identyfikowana przez klasę "oferta", co ułatwia stylizowanie i manipulowanie nimi za pomocą CSS lub JavaScript.
+
+Ten kod HTML reprezentuje interaktywną galerię produktów, która zawiera różne oferty komputerów i laptopów, każda z własnym obrazkiem, nazwą, ceną i przyciskami, które można dostosować do konkretnej funkcjonalności strony internetowej.
+
+    Markup:
+    <main>
+    <div class="gallery" id="gallery">
+      <div class="oferta">
+        <img src="zdjecia/komputer1.png" alt="Nowy Komputer">
+        <div class="tytulOferty">
+          Komputer
+        </div>
+        <div class="cena">200.00</div>
+        <button>Kup teraz</button><button>Dodaj do koszyka</button>
+      </div>
+      <div class="oferta">
+        <img src="zdjecia/komputer2.png" alt="Kolejny Komputer">
+        <div class="tytulOferty">
+          Komputer2
+        </div>
+        <div class="cena">1200.00</div>
+        <button>Kup teraz</button><button>Dodaj do koszyka</button>
+      </div>
+      <div class="oferta">
+        <img src="zdjecia/komputer3.png" alt="Komputer przyszłościowy">
+        <div class="tytulOferty">
+          Jedyny taki komputer
+        </div>
+        <div class="cena">12300.00</div>
+        <button>Kup teraz</button><button>Dodaj do koszyka</button>
+      </div>
+      <div class="oferta">
+        <img src="zdjecia/komputerPrzyszlosic.png" alt="Najnowszy komputer">
+        <div class="tytulOferty">
+          Musisz go mieć
+        </div>
+        <div class="cena">23200.00</div>
+        <button>Kup teraz</button><button>Dodaj do koszyka</button>
+      </div>
+      <div class="oferta">
+        <img src="zdjecia/laptop.png" alt="laptop">
+        <div class="tytulOferty">
+          laptop
+        </div>
+        <div class="cena">100.00</div>
+        <button>Kup teraz</button><button>Dodaj do koszyka</button>
+      </div>
+      <div class="oferta">
+        <img src="zdjecia/komputer1.png" alt="laptop">
+        <div class="tytulOferty">
+          laptop
+        </div>
+        <div class="cena">100.00</div>
+        <button>Kup teraz</button><button>Dodaj do koszyka</button>
+      </div>
+      <div class="oferta">
+        <img src="zdjecia/laptop2.png" alt="laptop kolejny">
+        <div class="tytulOferty">
+          laptop
+        </div>
+        <div class="cena">120.00</div>
+        <button>Kup teraz</button><button>Dodaj do koszyka</button>
+      </div>
+      <div class="oferta">
+        <img src="zdjecia/laptop3.png" alt="laptop nowy">
+        <div class="tytulOferty">
+          nowy laptop
+        </div>
+        <div class="cena">1000.00</div>
+        <button>Kup teraz</button><button>Dodaj do koszyka</button>
+      </div>
+      <div class="oferta">
+        <img src="zdjecia/laptop3.png" alt="laptop">
+        <div class="tytulOferty">
+          laptop
+        </div>
+        <div class="cena">100.99</div>
+        <button>Kup teraz</button><button>Dodaj do koszyka</button>
+      </div>
+      <div class="oferta">
+        <img src="zdjecia/laptop5.png" alt="laptop nowej generacji">
+        <div class="tytulOferty">
+          laptop
+        </div>
+        <div class="cena">105.00</div>
+        <button>Kup teraz</button><button>Dodaj do koszyka</button>
+      </div>
+    </div>
+</main>
+
+    Style guide: 1.0
+*/
+
 :root {
     --blue-ur: #282625;
     --white-ur: #FEFEFE;
