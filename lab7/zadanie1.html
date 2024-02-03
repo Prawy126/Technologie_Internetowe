@@ -1,49 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{
+        div {
             background-size: 100%;
             width: 100px;
             height: 100px;
             animation-name: zmiana;
             background-image: url("logo_barwne.png");
-            animation-duration: 6s; 
-            animation-iteration-count: infinite; 
-           
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+
         }
-        div#nastepny:hover{
+
+        div#nastepny:hover {
             animation-name: powiekszenie;
             animation-duration: 2s;
             animation-iteration-count: 1;
         }
-        div#dookola:hover{
+
+        div#dookola:hover {
             animation-name: dookola;
             animation-duration: 5s;
             animation-iteration-count: infinite;
         }
-        
+
         @keyframes zmiana {
-            from{background-image: url("logo_barwne.png");}
-            to{background-image: url("logo_monochromatyczne.png");
+            from {
+                background-image: url("logo_barwne.png");
+            }
+
+            to {
+                background-image: url("logo_monochromatyczne.png");
+            }
         }
-        }
+
         @keyframes powiekszenie {
-            from{background-image: url("logo_barwne.png");}
-            to{width:  200px; height: 200px;}
+            from {
+                background-image: url("logo_barwne.png");
+            }
+
+            to {
+                width: 200px;
+                height: 200px;
+            }
         }
+
         @keyframes dookola {
-            from{transform: rotate(0);}
-            to{transform: rotate(360deg);}
+            from {
+                transform: rotate(0);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
         }
     </style>
 </head>
+
 <body>
     <div>
-        
+
     </div>
     <div id="nastepny">
 
@@ -52,4 +73,5 @@
 
     </div>
 </body>
+
 </html>
