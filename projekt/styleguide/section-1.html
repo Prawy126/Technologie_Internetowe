@@ -143,8 +143,7 @@
           </p>
 
           <div class="kss-description">
-            <p>Kod HTML, który podałeś, to struktura witryny internetowej podzielona na różne sekcje. Oto opis poszczególnych sekcji:</p>
-<p>Sekcja System:</p>
+            <p>Sekcja System:</p>
 <p>Jest to sekcja o klasie &quot;system&quot;.
 Zawiera trzy kontenery o klasie &quot;container&quot;, każdy reprezentuje kartę.
 Każda karta ma dwa &quot;oblicza&quot; (face face1 i face face2).
@@ -173,6 +172,77 @@ Sekcja Zdjęcia:</p>
 <p>Zawiera nagłówek &quot;Zdjęcia&quot;.
 Wyświetla różne obrazy w kontenerach z klasą &quot;box&quot;.
 Ten kod HTML tworzy stronę internetową z różnymi sekcjami, w których można znaleźć informacje o produktach, promocjach, firmie oraz przyszłości. Istnieje również możliwość wyświetlania popupów z dodatkowymi treściami.</p>
+<p>.container .card .face:</p>
+<p>Są to elementy o szerokości 300 pikseli i wysokości 200 pikseli.
+Zdefiniowana jest animacja trwająca 0.4 sekundy.
+.container .card .face.face1:</p>
+<p>Element ten jest odpowiedzialny za pierwszą stronę &quot;card&quot;.
+Ma pozycję relatywną (position: relative).
+Tło jest koloru #333 (ciemny odcień szaro-czarny).
+Element jest wycentrowany zarówno w poziomie, jak i w pionie.
+Z-index wynosi 1, co oznacza, że jest na pierwszym planie w stosunku do drugiej strony &quot;face&quot;.
+Efekt transformacji translateY(100px) przesuwa go o 100 pikseli w dół po osi Y.
+.container .card:hover .face.face1:</p>
+<p>To reguła CSS aktywowana, gdy kursor najedzie na kartę (hover).
+Element .face.face1 przesuwa się w górę na swoim miejscu (transform: translateY(0)).
+Dodatkowo, karta ma efekt cienia oraz kolorowe wypełnienie, co tworzy efekt wizualny.
+.container .card .face.face1 .content:</p>
+<p>Zawartość pierwszej strony karty.
+Początkowo ma niską przeźroczystość (opacity: 0.2).
+Trwa 0.5 sekundy animacji przejścia (transition: 0.5s).
+Tekst jest wycentrowany i biały (kolor: white).
+.container .card:hover .face.face1 .content:</p>
+<p>Gdy kursor najedzie na kartę, zawartość .content staje się bardziej widoczna (opacity: 1).
+.container .card .face.face1 .content i:</p>
+<p>Ikona na pierwszej stronie karty.
+Ma rozmiar 3 em i biały kolor.
+.container .card .face.face1 .content h3:</p>
+<p>Tytuł na pierwszej stronie karty.
+Rozmiar czcionki wynosi 1 em, a kolor jest biały.
+.container .card .face.face1 .content a:</p>
+<p>Przycisk na pierwszej stronie karty.
+Ma efekt przejścia trwający 0.5 sekundy.
+Gdy najeżdżamy na przycisk, zmienia się tło i kolor tekstu.
+.container .card .face.face2:</p>
+<p>To druga strona &quot;card&quot;.
+Ma pozycję relatywną (position: relative).
+Tło jest koloru whitesmoke (jasnoszary).
+Element jest wycentrowany zarówno w poziomie, jak i w pionie.
+Posiada cień oraz padding.
+.container .card:hover .face.face2:</p>
+<p>Gdy kursor najedzie na kartę, druga strona .face2 przesuwa się w górę (transform: translateY(0)).
+.container .card .face.face2 .content p, a:</p>
+<p>Styl dla tekstu i linków na drugiej stronie karty.
+Rozmiar czcionki wynosi 10 punktów, a kolor tekstu to #333 (ciemny szary).
+.container .card .face.face2 .content a:</p>
+<p>Linki na drugiej stronie karty.
+Są bez podkreślenia (text-decoration: none).
+Mają czarny kolor tekstu, padding i marginesy, co tworzy efekt interaktywny.
+.container .card .face.face2 .content a:hover:</p>
+<p>Gdy najeżdżamy na link, zmienia się tło i kolor tekstu, co tworzy efekt interaktywny.
+Dodatkowo, link ma cień.</p>
+<p>.img-container:</p>
+<p>Ustala pozycję jako &quot;relative&quot;.
+Określa wysokość i szerokość na 250px.
+Ustala perspektywę 3D na 500px.
+Ustawia transform-style na &quot;preserve-3d&quot;.
+.box:</p>
+<p>Dodaje cień (box-shadow) o rozmiarze 10px, kolorze i przeźroczystości.
+Ustala szerokość i wysokość na 250px.
+Nadaje zaokrąglenie rogów o promieniu 25px.
+Określa &quot;overflow&quot; na &quot;hidden&quot;, aby ukryć treść wykraczającą poza ramki.
+Dodaje obramowanie o szerokości 1px i kolorze #bbb.
+Pozycjonuje element jako &quot;absolute&quot; i umieszcza go na środku (top: 50%).
+Definiuje animację przejścia o czasie 800ms i efekcie &quot;ease-in-out&quot;.
+.box img:</p>
+<p>Skaluje obraz, aby wypełnił całą przestrzeń wewnątrz .box.
+.box:first-of-type, .box:nth-of-type(2), .box:nth-of-type(3), .box:nth-of-type(4):</p>
+<p>Są to style aplikowane do kolejnych .box (elementów z obrazami) w kontenerze .img-container.
+Każdy z tych selektorów dostosowuje pozycję, przezroczystość, kolor i efekt 3D dla odpowiedniego .box.
+.box:first-of-type jest ukryty (opacity: 0) i obrócony w lewo (-10deg).
+.box:nth-of-type(2) ma pełną widoczność (opacity: 1) i jest obrócony w lewo (-10deg).
+.box:nth-of-type(3) jest lekko przezroczysty (opacity: 0.75), obrócony w lewo i przesunięty na osi Z (translateZ) o -50px.
+.box:nth-of-type(4) jest jeszcze bardziej przezroczysty (opacity: 0.5), obrócony w lewo i przesunięty na osi Z (translateZ) o -100px.</p>
 
           </div>
 
@@ -754,6 +824,117 @@ Skrypt JavaScript:</p>
 <p>Skrypt JavaScript znajduje się na końcu kodu i jest odpowiedzialny za interakcję z przyciskiem &quot;hamburger&quot;.
 Kiedy przycisk &quot;hamburger&quot; jest kliknięty, skrypt dodaje lub usuwa klasę &quot;active&quot; z przycisku i kontenera menu, co powoduje jego rozwinięcie lub schowanie w zależności od aktualnego stanu.
 Ten kod tworzy responsywne menu nawigacyjne, które może być zwinięte i rozwinięte na stronie internetowej, szczególnie w przypadku korzystania z urządzeń mobilnych.</p>
+<p>#menu:</p>
+<p>Jest to styl dla elementu o identyfikatorze &quot;menu&quot;.
+Element jest ustawiony jako relatywny (position: relative).
+Ma lewe wyrównanie (float: left).
+Otrzymuje odstęp wewnętrzny 20 pikseli na lewej i prawej stronie (padding: 0 20px).
+Posiada zaokrąglone rogi z promieniem 3 pikseli (border-radius: 3px).
+Tło ma kolor szary (#ccc).
+#menu, #menu ul:</p>
+<p>Są to style, które usuwają domyślne punkty (kropki) na liście.
+#menu  li:</p>
+<p>Styl dla bezpośrednich potomków elementu o identyfikatorze &quot;menu&quot;.
+Elementy li są wyświetlane obok siebie (float: left).
+Posiadają perspektywę o wartości 1000 pikseli (perspective: 1000px), co może być używane w połączeniu z efektami 3D.
+#menu a:</p>
+<p>Styl dla odnośników (a) wewnątrz elementu o identyfikatorze &quot;menu&quot;.
+Odnośniki są wyświetlane jako bloki (display: block).
+Posiadają odstęp wewnętrzny (padding) na górze, dole i poziomo.
+Odstęp 13 pikseli na górze i dole oraz 20 pikseli poziomo (padding: 13px 20px 13px 20px).
+Tekst odnośników nie jest podkreślony (text-decoration: none).
+Kolor tekstu jest ustawiony na ciemnoszary (#4b4b4b).
+Rozmiar czcionki to 18 pikseli.
+Odnośniki mają przejrzyste tło (background: transparent).
+Zdefiniowano animację przejścia dla odnośników z opóźnieniem 0.25 sekundy (transition: all .25s ease-in-out).
+#menu  li:hover  a:</p>
+<p>Styl dla odnośników, które są podświetlane po najechaniu kursorem na ich rodzica.
+Tło odnośnika zmienia kolor na ciemniejszy szary (#333).
+Kolor tekstu odnośnika zmienia się na niebieski (#00dffc).
+#menu li ul:</p>
+<p>Styl dla listy nieuporządkowanej  wewnątrz elementów w menu rozwijanym.
+Lista jest ukryta .
+Ma szerokość 200 pikseli.
+Posiada zaokrąglone rogi na dole po lewej i prawej stronie (border-bottom-left-radius i border-bottom-right-radius) z promieniem 4 pikseli.
+Tło listy jest przezroczyste.
+Treść listy jest obcinana w przypadku przekroczenia szerokości elementu nadrzędnego (overflow: hidden).
+Punkt transformacji animacji 3D ustawiony jest na środkowy górny róg listy (transform-origin: 50% 0%).
+#menu li:hover ul:</p>
+<p>Styl dla listy, która jest wyświetlana po najechaniu kursorem na element li w menu rozwijanym.
+Dodano animację &quot;swingdown&quot;, która kontroluje animację pojawiania się menu rozwijanego.
+Zmieniono kolor tła na ciemniejszy szary (#333).
+Zwiększono przejrzystość do 1 (opacity: 1).
+Ustawiono widoczność na &quot;visible&quot; (visibility: visible).
+Dodano cień na menu rozwijanym (box-shadow) i określono parametry animacji (animation-name, animation-duration, animation-timing-function).
+@keyframes swingdown:</p>
+<p>Jest to definicja animacji &quot;swingdown&quot; przy użyciu animacji CSS.
+Animacja rozpoczyna się od opacznia bliskiego jedności (0.99999) i obrotu elementu o 90 stopni wzdłuż osi X.
+W trakcie animacji element obraca się w różnych kierunkach, symulując efekt &quot;swingu&quot; lub kiwania, z określonymi wartościami transformacji i funkcjami czasu.
+#menu li li a:</p>
+<p>Styl dla odnośników (a) wewnątrz elementów li w menu rozwijanym.
+Dodano odstęp wewnętrzny z lewej strony (padding-left: 15px).
+Grubość czcionki wynosi 400.
+Kolor tekstu jest ustawiony na jasnoszary (#ddd).
+Tekst nie posiada cienia.
+Dodano kreski przerywane na górze i na dole odnośników (border-top i border-bottom) z przezroczystym kolorem.
+Dodano efekt przejścia (transition) dla płynnych zmian koloru.
+#menu li li a:hover:</p>
+<p>Styl dla odnośników, które są podświetlane po najechaniu kursorem na nie w menu rozwijanym.
+Kolor tekstu odnośników zmienia się na niebieski (#00dffc).
+Dodano kreski przerywane na górze i na dole odnośników z jasnym kolorem oraz delikatne tło o niebieskim odcieniu.</p>
+<p>.L i .ADING:</p>
+<p>Są to klasy, które ustawiają pozycję (top i left) elementów ikony. Przesuwają elementy w lewo i w górę na określone pozycje.
+.outter:</p>
+<p>To styl dla zewnętrznego okręgu w ikonie.
+Ustala pozycję (top i left), szerokość (80px), wysokość (80px) i promień zaokrąglenia (border-radius).
+Dodaje efekt obracania się wskazówki zegara z animacją CSS.
+Kolor lewej krawędzi jest ustawiony na #7D1935.
+.mid:</p>
+<p>To styl dla środkowego okręgu w ikonie.
+Ustala pozycję (top i left), szerokość (50px), wysokość (50px) i promień zaokrąglenia (border-radius).
+Dodaje efekt obracania się wskazówki zegara z inną prędkością niż zewnętrzny okrąg.
+Kolor lewej krawędzi jest ustawiony na #B71427.
+Animacja (@-webkit-keyframes, @-moz-keyframes, @-o-keyframes, @keyframes):</p>
+<p>Definiuje animację o nazwie &quot;spin&quot;, która obraca elementy od 0 do 360 stopni.
+Ustawiona jest prędkość animacji, iteracja (nieskończoność) i funkcja czasowa (linear).</p>
+<p>.search-container:</p>
+<p>Ustawia tło na białe (#fff), okrągły kształt (dzięki border-radius), cień (za pomocą box-shadow) i inne właściwości.
+Określa wysokość (30px) i dodaje wewnętrzne wypełnienie (padding: 10px 20px), aby uzyskać odpowiedni rozmiar i odstępy.
+Ustala wyśrodkowanie treści za pomocą display: flex, justify-content: center i align-items: center.
+Kursor zmienia się na &quot;pointer&quot; po najechaniu na element.
+Definiuje animację przejścia (transition: 0.8s).
+.search-container:hover &gt; .search-input:</p>
+<p>Po najechaniu na .search-container, szerokość elementu .search-input zmienia się na 400px, co powoduje jego rozwinięcie.
+.search-container .search-input:</p>
+<p>Ustawia tło na przezroczyste, usuwa obramowanie (border: none) i zmienia wygląd na biały prostokąt z zaokrąglonymi rogami (dzięki border-radius).
+Szerokość początkowa elementu to 0px, ale zmienia się w trakcie animacji przejścia (transition: 0.8s).
+Ustala czcionkę o wadze 500 i rozmiarze 16px.
+.search-container .search-btn .fas:</p>
+<p>Ustala kolor ikony &quot;fas&quot; (Font Awesome) na #5cbdbb.
+@keyframes hoverShake:</p>
+<p>Jest to definicja animacji hoverShake, która powoduje delikatne drganie elementu po najechaniu na niego kursorem.
+Skew transformuje element, a wartości kąta zmieniają się, aby uzyskać efekt drgania.
+.search-container:hover:</p>
+<p>Po najechaniu na .search-container, animacja hoverShake jest uruchamiana, co powoduje drganie elementu przez krótki czas.</p>
+<p>.search-container:</p>
+<p>Ustawia tło na białe (#fff), okrągły kształt (dzięki border-radius), cień (za pomocą box-shadow) i inne właściwości.
+Określa wysokość (30px) i dodaje wewnętrzne wypełnienie (padding: 10px 20px), aby uzyskać odpowiedni rozmiar i odstępy.
+Ustala wyśrodkowanie treści za pomocą display: flex, justify-content: center i align-items: center.
+Kursor zmienia się na &quot;pointer&quot; po najechaniu na element.
+Definiuje animację przejścia (transition: 0.8s).
+.search-container:hover &gt; .search-input:</p>
+<p>Po najechaniu na .search-container, szerokość elementu .search-input zmienia się na 400px, co powoduje jego rozwinięcie.
+.search-container .search-input:</p>
+<p>Ustawia tło na przezroczyste, usuwa obramowanie (border: none) i zmienia wygląd na biały prostokąt z zaokrąglonymi rogami (dzięki border-radius).
+Szerokość początkowa elementu to 0px, ale zmienia się w trakcie animacji przejścia (transition: 0.8s).
+Ustala czcionkę o wadze 500 i rozmiarze 16px.
+.search-container .search-btn .fas:</p>
+<p>Ustala kolor ikony &quot;fas&quot; (Font Awesome) na #5cbdbb.
+@keyframes hoverShake:</p>
+<p>Jest to definicja animacji hoverShake, która powoduje delikatne drganie elementu po najechaniu na niego kursorem.
+Skew transformuje element, a wartości kąta zmieniają się, aby uzyskać efekt drgania.
+.search-container:hover:</p>
+<p>Po najechaniu na .search-container, animacja hoverShake jest uruchamiana, co powoduje drganie elementu przez krótki czas.</p>
 
           </div>
 
@@ -947,7 +1128,7 @@ hamburger.addEventListener(<span class="hljs-string">&quot;click&quot;</span>, <
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>style.css</code>, line 339
+          Source: <code>style.css</code>, line 459
         </div>
 
     </section>
@@ -1031,6 +1212,32 @@ Sekcja Copyright:</p>
 W tym kontenerze jest wyświetlany tekst &quot;© 2023 Wszelkie prawa zastrzeżone&quot;.
 Tekst ten informuje, że prawa autorskie do treści na stronie są zastrzeżone i należą do właściciela witryny.
 Ten fragment kodu HTML jest odpowiedzialny za stopkę strony internetowej i zawiera odnośniki do różnych mediów społecznościowych oraz informację o prawach autorskich.</p>
+<p>footer:</p>
+<p>Tło stopki ma kolor #333 (ciemny odcień szaro-czarny).
+Tekst w stopce jest biały (kolor: #fff).
+Tekst jest wycentrowany poziomo (text-align: center).
+Stopka ma wewnętrzny margines 20 pikseli na górze i na dole (padding: 20px).
+Element ma pozycję względną (position: relative).
+Wysokość stopki wynosi 100 pikseli (height: 100px).
+Jest odstęp 20 pikseli od elementu nad stopką (margin-top: 20px).
+.social-icons:</p>
+<p>To kontener dla ikon społecznościowych w stopce.
+Ma pozycję absolutną (position: absolute), co oznacza, że jest pozycjonowany względem najbliższego elementu z pozycją relatywną (czyli elementu footer).
+Jest umieszczony na środku stopki (top: 40px) i rozciąga się na całej szerokości (left: 0, right: 0).
+#facebook:hover, #instagram:hover, #yt:hover:</p>
+<p>Są to pseudoklasy :hover dotyczące konkretnych ikon społecznościowych (Facebook, Instagram, YouTube).
+Gdy kursor najedzie na daną ikonę, ma miejsce efekt skalowania na 150% wielkości (scale: 1.5).
+Kolor tekstu ikony zmienia się na odpowiedni (blue, orange, red) po najechaniu kursorem.
+.social-icons a:</p>
+<p>To style dla linków (ikon społecznościowych) w stopce.
+Margines poziomy między nimi wynosi 10 pikseli na lewo i na prawo (margin: 0 10px).
+Rozmiar ikon wynosi 32 piksele (font-size: 32px).
+Kolor tekstu ikon jest biały (color: #fff).
+Linki nie posiadają podkreślenia (text-decoration: none).
+.copyright:</p>
+<p>To style dla tekstu z informacją o prawach autorskich.
+Rozmiar czcionki wynosi 14 pikseli (font-size: 14px).
+W skrócie, stopka (footer) ma ciemne tło z białym tekstem i zawiera ikony społecznościowe (social-icons). Ikony te zmieniają rozmiar i kolor po najechaniu na nie kursorem. Tekst z informacją o prawach autorskich (copyright) ma mniejszy rozmiar czcionki.</p>
 
           </div>
 
@@ -1076,7 +1283,7 @@ Ten fragment kodu HTML jest odpowiedzialny za stopkę strony internetowej i zawi
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>style.css</code>, line 283
+          Source: <code>style.css</code>, line 371
         </div>
 
     </section>

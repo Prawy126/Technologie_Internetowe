@@ -139,6 +139,39 @@
 <strong>button</strong> - Dwa przyciski: &quot;Kup teraz&quot; i &quot;Dodaj do koszyka&quot;.
 Każda oferta jest identyfikowana przez klasę &quot;oferta&quot;, co ułatwia stylizowanie i manipulowanie nimi za pomocą CSS lub JavaScript.</p>
 <p>Ten kod HTML reprezentuje interaktywną galerię produktów, która zawiera różne oferty komputerów i laptopów, każda z własnym obrazkiem, nazwą, ceną i przyciskami, które można dostosować do konkretnej funkcjonalności strony internetowej.</p>
+<p>:root:</p>
+<p>Zdefiniowane są zmienne kolorów przy użyciu niestandardowych właściwości CSS (custom properties). --blue-ur to kolor niebieski (#282625), a --white-ur to kolor biały (#FEFEFE). Te zmienne można później wykorzystać w całym arkuszu stylów do ustawiania kolorów.
+body:</p>
+<p>Dla całego ciała dokumentu (body) ustawiono wyśrodkowanie tekstu poziomo.
+Kolor tekstu jest ustawiony na biały, korzystając z wcześniej zdefiniowanej zmiennej --white-ur.
+Tło strony ma kolor niebieski, korzystając z wcześniej zdefiniowanej zmiennej --blue-ur.
+Margin i padding są ustawione na 0, eliminując domyślne marginesy i paddingi.
+h1:</p>
+<p>Styl dla nagłówka pierwszego poziomu (h1).
+Jest odstęp 20 pikseli na górę (margin-top: 20px) i 20 pikseli na dole (margin-bottom: 20px).
+.cena i .tytulOferty:</p>
+<p>Styl dla elementów o klasach &quot;cena&quot; i &quot;tytulOferty&quot;.
+Zmieniają kolor tekstu na czarny.
+.gallery:</p>
+<p>Styl dla elementu o klasie &quot;gallery&quot;.
+Elementy wewnątrz &quot;gallery&quot; są rozmieszczone w siatce (grid).
+Siatka jest wyśrodkowana poziomo (justify-content: center).
+Między elementami jest odstęp 5 pikseli (gap: 5px).
+Grid-template-columns automatycznie dostosowuje liczbę kolumn w zależności od dostępnego miejsca, minimalna szerokość kolumny to 200 pikseli.
+img:</p>
+<p>Styl dla obrazów na stronie.
+Obrazy mają szerokość 100% szerokości dostępnej przestrzeni, ale nie przekraczają 200 pikseli (max-width: 200px).
+.oferta:</p>
+<p>Styl dla elementu o klasie &quot;oferta&quot;.
+Elementy te są obramowane i wyśrodkowane zarówno w pionie, jak i poziomie.
+Mają białe tło.
+button:</p>
+<p>Styl dla przycisków na stronie.
+Przyciski mają zaokrąglone rogi (border-radius: 10px).
+Są dostosowane pod względem wyglądu i rozmiaru, a ich tło jest koloru lightblue.
+Media Queries:</p>
+<p>W przypadku szerokości ekranu do 600 pikseli, obrazy wewnątrz klasy &quot;gallery&quot; zajmują 100% szerokości dostępnego miejsca (max-width: none), aby dostosować się do małych ekranów.
+W przypadku szerokości ekranu do 400 pikseli, obrazy wewnątrz klasy &quot;gallery&quot; również zajmują 100% szerokości dostępnego miejsca (max-width: none), dostosowując się do jeszcze mniejszych ekranów.</p>
 
           </div>
 

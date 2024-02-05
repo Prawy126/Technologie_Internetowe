@@ -36,6 +36,76 @@ Jest to przycisk, który pozwala zatwierdzić formularz.
 Po kliknięciu na przycisk formularz zostanie przesłany lub zostanie wykonana odpowiednia akcja za pomocą JavaScript.
 Ten kod reprezentuje podstawowy formularz logowania, który można dostosować i połączyć z odpowiednią logiką logowania na stronie internetowej.
 
+h1:
+
+Tekst w nagłówku pierwszego poziomu (h1) jest wycentrowany poziomo (text-align: center).
+Jest odstęp 20 pikseli na górę (margin-top: 20px).
+Kolor tekstu jest biały (color: white).
+Jest odstęp 10 pikseli na dole (margin-bottom: 10px).
+form:
+
+Tekst w formularzu jest wycentrowany poziomo (text-align: center).
+Istnieje odstęp 10 pikseli na wszystkich bokach (margin: 10px).
+label, input:
+
+Etykiety (label) i pola wejściowe (input) mają odstęp 10 pikseli na górę (margin-top: 10px).
+Kolor tekstu dla etykiet i pól wejściowych jest jasnoszary (color: lightgray).
+input:
+
+Pola wejściowe mają tło o kolorze ciemnoszarym (background-color: rgb(32, 28, 28)).
+Kolor tekstu w polach wejściowych jest biały (color: aliceblue).
+Pola wejściowe mają zaokrąglone rogi (border-radius: 20px).
+Tekst w polach wejściowych jest wycentrowany poziomo (text-align: center).
+#contact-topic:
+
+Pole wyboru tematu (#contact-topic) ma tło o kolorze ciemnoszarym (background-color: rgb(32, 28, 28)).
+Kolor tekstu w polu wyboru tematu jest biały (color: aliceblue).
+Pole wyboru tematu ma ustaloną wysokość na 25 pikseli (height: 25px).
+button:
+
+Przyciski (button) mają ciemnoszare tło (background-color: rgb(32, 28, 28)).
+Kolor tekstu na przyciskach jest biały (color: white).
+Przyciski mają ustaloną wysokość na 40 pikseli (height: 40px) i szerokość na 100 pikseli (width: 100px).
+Przyciski mają zaokrąglone rogi (border-radius: 20px).
+#reset:hover, #zaloz:hover:
+
+To pseudoklasy :hover dotyczące konkretnych przycisków ("reset" i "zaloguj").
+Gdy kursor najedzie na przycisk, zmienia się jego kolor na czerwony (dla "reset") lub zielony (dla "zaloguj").
+Przyciski zmieniają rozmiar na 130% pierwotnej wielkości (scale: 1.3) po najechaniu kursorem.
+th, tr, table:
+
+To style dla tabeli.
+Komórki nagłówków (th) i wierszy (tr) tabeli mają obramowanie o szerokości 2 pikseli i czarnym kolorze (border: 2px solid black).
+Tabela ma ustawione "łączenie" komórek (border-collapse: collapse), usuwając odstępy między komórkami.
+Tabela ma tło białe (background-color: #fff) i cień wokół niej (box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)).
+th, td:
+
+Komórki nagłówka (th) i danych (td) tabeli mają wewnętrzny odstęp 10 pikseli (padding: 10px).
+Mają jednopikselowe obramowanie komórek (border: 1px solid #ddd).
+Tekst w komórkach jest wycentrowany poziomo (text-align: center).
+tr:nth-child(even):
+
+Co drugi wiersz (tr) tabeli ma tło w kolorze szaro-białym (background-color: #f2f2f2).
+th:
+
+Komórki nagłówka (th) tabeli mają ciemnoszare tło (background-color: #181515).
+Kolor tekstu w komórkach nagłówka jest biały (color: #fff).
+footer:
+
+Stopka (footer) ma stałą wysokość na 100 pikseli (height: 100px).
+Tło stopki ma kolor ciemnoszary (background-color: #333).
+Kolor tekstu w stopce jest biały (color: #fff).
+Tekst w stopce jest wycentrowany poziomo (text-align: center).
+Jest wewnętrzny odstęp 20 pikseli na górze (padding-top: 20px).
+body:
+
+Treść strony jest wyświetlana w układzie flexbox, który jest konfigurowany jako kolumna (flex-direction: column).
+Działa on jako kontener dla wszystkich elementów na stronie.
+@media (max-width: 600px):
+
+Jest to reguła media query, która aktywuje się, gdy szerokość okna przeglądarki wynosi maksymalnie 600 pikseli.
+W takim przypadku zachodzą pewne zmiany stylizacyjne, na przykład menu (#menu-toggle) jest wyświetlane jako flexbox, a nie jako rozwijane. Zmiany dotyczą także niektórych elementów flexbox i rozmiaru niektórych kontenerów.
+
     Markup:
 <main>
     <h1>Zaloguj się</h1>
@@ -142,6 +212,76 @@ Przycisk pozwala zresetować wprowadzone dane w formularzu do stanu początkoweg
 Formularz ten zawiera różne typy pól, takie jak tekstowe, hasła, radio i checkbox, które umożliwiają użytkownikowi wprowadzenie i wybór odpowiednich informacji potrzebnych do rejestracji.
 
    opisy znaczników (z użyciem .selektor)
+
+   h1:
+
+Tekst w nagłówku pierwszego poziomu (h1) jest wycentrowany poziomo (text-align: center).
+Jest odstęp 20 pikseli na górę (margin-top: 20px).
+Kolor tekstu jest biały (color: white).
+Jest odstęp 10 pikseli na dole (margin-bottom: 10px).
+form:
+
+Tekst w formularzu jest wycentrowany poziomo (text-align: center).
+Istnieje odstęp 10 pikseli na wszystkich bokach (margin: 10px).
+label, input:
+
+Etykiety (label) i pola wejściowe (input) mają odstęp 10 pikseli na górę (margin-top: 10px).
+Kolor tekstu dla etykiet i pól wejściowych jest jasnoszary (color: lightgray).
+input:
+
+Pola wejściowe mają tło o kolorze ciemnoszarym (background-color: rgb(32, 28, 28)).
+Kolor tekstu w polach wejściowych jest biały (color: aliceblue).
+Pola wejściowe mają zaokrąglone rogi (border-radius: 20px).
+Tekst w polach wejściowych jest wycentrowany poziomo (text-align: center).
+#contact-topic:
+
+Pole wyboru tematu (#contact-topic) ma tło o kolorze ciemnoszarym (background-color: rgb(32, 28, 28)).
+Kolor tekstu w polu wyboru tematu jest biały (color: aliceblue).
+Pole wyboru tematu ma ustaloną wysokość na 25 pikseli (height: 25px).
+button:
+
+Przyciski (button) mają ciemnoszare tło (background-color: rgb(32, 28, 28)).
+Kolor tekstu na przyciskach jest biały (color: white).
+Przyciski mają ustaloną wysokość na 40 pikseli (height: 40px) i szerokość na 100 pikseli (width: 100px).
+Przyciski mają zaokrąglone rogi (border-radius: 20px).
+#reset:hover, #zaloz:hover:
+
+To pseudoklasy :hover dotyczące konkretnych przycisków ("reset" i "zaloguj").
+Gdy kursor najedzie na przycisk, zmienia się jego kolor na czerwony (dla "reset") lub zielony (dla "zaloguj").
+Przyciski zmieniają rozmiar na 130% pierwotnej wielkości (scale: 1.3) po najechaniu kursorem.
+th, tr, table:
+
+To style dla tabeli.
+Komórki nagłówków (th) i wierszy (tr) tabeli mają obramowanie o szerokości 2 pikseli i czarnym kolorze (border: 2px solid black).
+Tabela ma ustawione "łączenie" komórek (border-collapse: collapse), usuwając odstępy między komórkami.
+Tabela ma tło białe (background-color: #fff) i cień wokół niej (box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)).
+th, td:
+
+Komórki nagłówka (th) i danych (td) tabeli mają wewnętrzny odstęp 10 pikseli (padding: 10px).
+Mają jednopikselowe obramowanie komórek (border: 1px solid #ddd).
+Tekst w komórkach jest wycentrowany poziomo (text-align: center).
+tr:nth-child(even):
+
+Co drugi wiersz (tr) tabeli ma tło w kolorze szaro-białym (background-color: #f2f2f2).
+th:
+
+Komórki nagłówka (th) tabeli mają ciemnoszare tło (background-color: #181515).
+Kolor tekstu w komórkach nagłówka jest biały (color: #fff).
+footer:
+
+Stopka (footer) ma stałą wysokość na 100 pikseli (height: 100px).
+Tło stopki ma kolor ciemnoszary (background-color: #333).
+Kolor tekstu w stopce jest biały (color: #fff).
+Tekst w stopce jest wycentrowany poziomo (text-align: center).
+Jest wewnętrzny odstęp 20 pikseli na górze (padding-top: 20px).
+body:
+
+Treść strony jest wyświetlana w układzie flexbox, który jest konfigurowany jako kolumna (flex-direction: column).
+Działa on jako kontener dla wszystkich elementów na stronie.
+@media (max-width: 600px):
+
+Jest to reguła media query, która aktywuje się, gdy szerokość okna przeglądarki wynosi maksymalnie 600 pikseli.
+W takim przypadku zachodzą pewne zmiany stylizacyjne, na przykład menu (#menu-toggle) jest wyświetlane jako flexbox, a nie jako rozwijane. Zmiany dotyczą także niektórych elementów flexbox i rozmiaru niektórych kontenerów.
 
     Markup:
     <main>

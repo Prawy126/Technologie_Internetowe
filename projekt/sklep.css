@@ -18,6 +18,49 @@ Każda oferta jest identyfikowana przez klasę "oferta", co ułatwia stylizowani
 
 Ten kod HTML reprezentuje interaktywną galerię produktów, która zawiera różne oferty komputerów i laptopów, każda z własnym obrazkiem, nazwą, ceną i przyciskami, które można dostosować do konkretnej funkcjonalności strony internetowej.
 
+:root:
+
+Zdefiniowane są zmienne kolorów przy użyciu niestandardowych właściwości CSS (custom properties). --blue-ur to kolor niebieski (#282625), a --white-ur to kolor biały (#FEFEFE). Te zmienne można później wykorzystać w całym arkuszu stylów do ustawiania kolorów.
+body:
+
+Dla całego ciała dokumentu (body) ustawiono wyśrodkowanie tekstu poziomo.
+Kolor tekstu jest ustawiony na biały, korzystając z wcześniej zdefiniowanej zmiennej --white-ur.
+Tło strony ma kolor niebieski, korzystając z wcześniej zdefiniowanej zmiennej --blue-ur.
+Margin i padding są ustawione na 0, eliminując domyślne marginesy i paddingi.
+h1:
+
+Styl dla nagłówka pierwszego poziomu (h1).
+Jest odstęp 20 pikseli na górę (margin-top: 20px) i 20 pikseli na dole (margin-bottom: 20px).
+.cena i .tytulOferty:
+
+Styl dla elementów o klasach "cena" i "tytulOferty".
+Zmieniają kolor tekstu na czarny.
+.gallery:
+
+Styl dla elementu o klasie "gallery".
+Elementy wewnątrz "gallery" są rozmieszczone w siatce (grid).
+Siatka jest wyśrodkowana poziomo (justify-content: center).
+Między elementami jest odstęp 5 pikseli (gap: 5px).
+Grid-template-columns automatycznie dostosowuje liczbę kolumn w zależności od dostępnego miejsca, minimalna szerokość kolumny to 200 pikseli.
+img:
+
+Styl dla obrazów na stronie.
+Obrazy mają szerokość 100% szerokości dostępnej przestrzeni, ale nie przekraczają 200 pikseli (max-width: 200px).
+.oferta:
+
+Styl dla elementu o klasie "oferta".
+Elementy te są obramowane i wyśrodkowane zarówno w pionie, jak i poziomie.
+Mają białe tło.
+button:
+
+Styl dla przycisków na stronie.
+Przyciski mają zaokrąglone rogi (border-radius: 10px).
+Są dostosowane pod względem wyglądu i rozmiaru, a ich tło jest koloru lightblue.
+Media Queries:
+
+W przypadku szerokości ekranu do 600 pikseli, obrazy wewnątrz klasy "gallery" zajmują 100% szerokości dostępnego miejsca (max-width: none), aby dostosować się do małych ekranów.
+W przypadku szerokości ekranu do 400 pikseli, obrazy wewnątrz klasy "gallery" również zajmują 100% szerokości dostępnego miejsca (max-width: none), dostosowując się do jeszcze mniejszych ekranów.
+
     Markup:
     <main>
     <div class="gallery" id="gallery">
@@ -277,7 +320,12 @@ Script **script src="kursDolara.js"** ** /script**:
 To odniesienie do pliku JavaScript o nazwie "kursDolara.js". Prawdopodobnie ten skrypt jest używany do pobierania i wyświetlania aktualnego kursu Euro.
 Kod HTML i pliki JavaScript są prawdopodobnie częścią interaktywnej strony internetowej, która umożliwia użytkownikowi śledzenie kursu Euro, wyświetlanie aktualnego czasu oraz prowadzenie listy zakupów online. JavaScript jest używany do obsługi logiki tych funkcji.
 
-   opisy znaczników (z użyciem .selektor)
+Tabelka ma ustawione color: white co ustawia biały kolor liter, również bacgroud-color jest ustawiony na szary co ustawia szary kolor tła tabelki
+    znacznik h1 wykorzystuje text-aling: center co zawsze ustawia tytuł na środku oraz margin-top: 20px który ustawia 20px margines z góry
+    co pozwala na to by tytuł nie był zaraz przyklejony do navbara 
+    Główny kontener wykorzystuje leyout flex do ustawnie wszystkiego zawsze na śrdoku
+    Dodatkowo przycisk i pola mają ustawiony background-color na szary
+    
 
     Markup:
     <main>

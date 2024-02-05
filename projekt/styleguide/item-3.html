@@ -123,6 +123,36 @@ Wewnątrz tego kontenera znajduje się wiele elementów <strong>img</strong>, re
 Elementy <strong>img</strong>:</p>
 <p>Są to znaczniki obrazów, każdy z atrybutem &quot;src&quot;, który określa ścieżkę do obrazu, oraz atrybutem &quot;alt&quot;, który zawiera alternatywny tekst opisujący obraz (dla użytkowników korzystających z czytników ekranowych).
 Przykład ten tworzy sekcję &quot;Galeria&quot; z zestawem obrazów, które mogą być wyświetlane na stronie internetowej. Obrazy te są reprezentowane jako miniatury wewnątrz kontenera o identyfikatorze &quot;gallery&quot;. Grupa obrazów może być klikalna i prowadzić do większych wersji tych obrazów lub innych działań, w zależności od implementacji JavaScript lub CSS.</p>
+<p>:root:</p>
+<p>Jest to deklaracja zmiennej w CSS. W tym przypadku zdefiniowane są dwie zmienne: --blue-ur i --white-ur, które przechowują odpowiednio kolory niebieski (#282625) i biały (#FEFEFE).
+body:</p>
+<p>Styl dla całego ciała dokumentu.
+Tekst jest wyśrodkowany poziomo (text-align: center).
+Kolor tekstu jest ustawiony na biały, korzystając z wcześniej zdefiniowanej zmiennej --white-ur.
+Tło strony ma kolor niebieski, korzystając z wcześniej zdefiniowanej zmiennej --blue-ur.
+h1:</p>
+<p>Styl dla nagłówka pierwszego poziomu (h1).
+Jest odstęp 20 pikseli na górę (margin-top: 20px) i 20 pikseli na dole (margin-bottom: 20px).
+.gallery:</p>
+<p>Styl dla elementu o klasie &quot;gallery&quot;.
+Elementy wewnątrz &quot;gallery&quot; są rozmieszczone w siatce (grid).
+Siatka jest wyśrodkowana poziomo (justify-content: center).
+Między elementami jest odstęp 5 pikseli (gap: 5px).
+.gallery img:</p>
+<p>Styl dla obrazów wewnątrz elementu o klasie &quot;gallery&quot;.
+Obrazy mają szerokość 100% szerokości dostępnej przestrzeni, ale nie przekraczają 400 pikseli (max-width: 400px).
+img:hover:</p>
+<p>To styl dla obrazów, które są podświetlane po najechaniu kursorem.
+Obrazy powiększają się o 10% (scale: 1.1) po najechaniu kursorem na nie.
+Media Queries:</p>
+<p>Są to zapytania medialne, które zmieniają stylizację w zależności od szerokości ekranu przeglądarki.
+@media (max-width: 467px): Wtedy, gdy szerokość ekranu wynosi maksymalnie 467 pikseli, elementy w klasie &quot;gallery&quot; zmieniają rozmiar i wyświetlane są w jednej kolumnie.
+@media (min-width: 840px) and (max-width: 1199px): W tym zakresie szerokości ekranu, elementy w klasie &quot;gallery&quot; wyświetlane są w dwóch kolumnach.
+@media (min-width: 1200px): Gdy szerokość ekranu przekracza 1200 pikseli, elementy w klasie &quot;gallery&quot; wyświetlane są w trzech kolumnach.
+@media (max-width: 600px):</p>
+<p>Media query, które ukrywa kontener menu (&quot;#menu-container&quot;) przy szerokości ekranu maksymalnie 600 pikseli.
+@media (max-width: 400px):</p>
+<p>Media query, które dostosowuje szerokość obrazów wewnątrz klasy &quot;gallery&quot; do maksymalnej szerokości ekranu wynoszącej 400 pikseli.</p>
 
           </div>
 

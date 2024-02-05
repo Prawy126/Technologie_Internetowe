@@ -123,8 +123,7 @@
           </p>
 
           <div class="kss-description">
-            <p>Kod HTML, który podałeś, to struktura witryny internetowej podzielona na różne sekcje. Oto opis poszczególnych sekcji:</p>
-<p>Sekcja System:</p>
+            <p>Sekcja System:</p>
 <p>Jest to sekcja o klasie &quot;system&quot;.
 Zawiera trzy kontenery o klasie &quot;container&quot;, każdy reprezentuje kartę.
 Każda karta ma dwa &quot;oblicza&quot; (face face1 i face face2).
@@ -153,6 +152,77 @@ Sekcja Zdjęcia:</p>
 <p>Zawiera nagłówek &quot;Zdjęcia&quot;.
 Wyświetla różne obrazy w kontenerach z klasą &quot;box&quot;.
 Ten kod HTML tworzy stronę internetową z różnymi sekcjami, w których można znaleźć informacje o produktach, promocjach, firmie oraz przyszłości. Istnieje również możliwość wyświetlania popupów z dodatkowymi treściami.</p>
+<p>.container .card .face:</p>
+<p>Są to elementy o szerokości 300 pikseli i wysokości 200 pikseli.
+Zdefiniowana jest animacja trwająca 0.4 sekundy.
+.container .card .face.face1:</p>
+<p>Element ten jest odpowiedzialny za pierwszą stronę &quot;card&quot;.
+Ma pozycję relatywną (position: relative).
+Tło jest koloru #333 (ciemny odcień szaro-czarny).
+Element jest wycentrowany zarówno w poziomie, jak i w pionie.
+Z-index wynosi 1, co oznacza, że jest na pierwszym planie w stosunku do drugiej strony &quot;face&quot;.
+Efekt transformacji translateY(100px) przesuwa go o 100 pikseli w dół po osi Y.
+.container .card:hover .face.face1:</p>
+<p>To reguła CSS aktywowana, gdy kursor najedzie na kartę (hover).
+Element .face.face1 przesuwa się w górę na swoim miejscu (transform: translateY(0)).
+Dodatkowo, karta ma efekt cienia oraz kolorowe wypełnienie, co tworzy efekt wizualny.
+.container .card .face.face1 .content:</p>
+<p>Zawartość pierwszej strony karty.
+Początkowo ma niską przeźroczystość (opacity: 0.2).
+Trwa 0.5 sekundy animacji przejścia (transition: 0.5s).
+Tekst jest wycentrowany i biały (kolor: white).
+.container .card:hover .face.face1 .content:</p>
+<p>Gdy kursor najedzie na kartę, zawartość .content staje się bardziej widoczna (opacity: 1).
+.container .card .face.face1 .content i:</p>
+<p>Ikona na pierwszej stronie karty.
+Ma rozmiar 3 em i biały kolor.
+.container .card .face.face1 .content h3:</p>
+<p>Tytuł na pierwszej stronie karty.
+Rozmiar czcionki wynosi 1 em, a kolor jest biały.
+.container .card .face.face1 .content a:</p>
+<p>Przycisk na pierwszej stronie karty.
+Ma efekt przejścia trwający 0.5 sekundy.
+Gdy najeżdżamy na przycisk, zmienia się tło i kolor tekstu.
+.container .card .face.face2:</p>
+<p>To druga strona &quot;card&quot;.
+Ma pozycję relatywną (position: relative).
+Tło jest koloru whitesmoke (jasnoszary).
+Element jest wycentrowany zarówno w poziomie, jak i w pionie.
+Posiada cień oraz padding.
+.container .card:hover .face.face2:</p>
+<p>Gdy kursor najedzie na kartę, druga strona .face2 przesuwa się w górę (transform: translateY(0)).
+.container .card .face.face2 .content p, a:</p>
+<p>Styl dla tekstu i linków na drugiej stronie karty.
+Rozmiar czcionki wynosi 10 punktów, a kolor tekstu to #333 (ciemny szary).
+.container .card .face.face2 .content a:</p>
+<p>Linki na drugiej stronie karty.
+Są bez podkreślenia (text-decoration: none).
+Mają czarny kolor tekstu, padding i marginesy, co tworzy efekt interaktywny.
+.container .card .face.face2 .content a:hover:</p>
+<p>Gdy najeżdżamy na link, zmienia się tło i kolor tekstu, co tworzy efekt interaktywny.
+Dodatkowo, link ma cień.</p>
+<p>.img-container:</p>
+<p>Ustala pozycję jako &quot;relative&quot;.
+Określa wysokość i szerokość na 250px.
+Ustala perspektywę 3D na 500px.
+Ustawia transform-style na &quot;preserve-3d&quot;.
+.box:</p>
+<p>Dodaje cień (box-shadow) o rozmiarze 10px, kolorze i przeźroczystości.
+Ustala szerokość i wysokość na 250px.
+Nadaje zaokrąglenie rogów o promieniu 25px.
+Określa &quot;overflow&quot; na &quot;hidden&quot;, aby ukryć treść wykraczającą poza ramki.
+Dodaje obramowanie o szerokości 1px i kolorze #bbb.
+Pozycjonuje element jako &quot;absolute&quot; i umieszcza go na środku (top: 50%).
+Definiuje animację przejścia o czasie 800ms i efekcie &quot;ease-in-out&quot;.
+.box img:</p>
+<p>Skaluje obraz, aby wypełnił całą przestrzeń wewnątrz .box.
+.box:first-of-type, .box:nth-of-type(2), .box:nth-of-type(3), .box:nth-of-type(4):</p>
+<p>Są to style aplikowane do kolejnych .box (elementów z obrazami) w kontenerze .img-container.
+Każdy z tych selektorów dostosowuje pozycję, przezroczystość, kolor i efekt 3D dla odpowiedniego .box.
+.box:first-of-type jest ukryty (opacity: 0) i obrócony w lewo (-10deg).
+.box:nth-of-type(2) ma pełną widoczność (opacity: 1) i jest obrócony w lewo (-10deg).
+.box:nth-of-type(3) jest lekko przezroczysty (opacity: 0.75), obrócony w lewo i przesunięty na osi Z (translateZ) o -50px.
+.box:nth-of-type(4) jest jeszcze bardziej przezroczysty (opacity: 0.5), obrócony w lewo i przesunięty na osi Z (translateZ) o -100px.</p>
 
           </div>
 

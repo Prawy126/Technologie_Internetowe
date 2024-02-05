@@ -150,6 +150,117 @@ Skrypt JavaScript:</p>
 <p>Skrypt JavaScript znajduje się na końcu kodu i jest odpowiedzialny za interakcję z przyciskiem &quot;hamburger&quot;.
 Kiedy przycisk &quot;hamburger&quot; jest kliknięty, skrypt dodaje lub usuwa klasę &quot;active&quot; z przycisku i kontenera menu, co powoduje jego rozwinięcie lub schowanie w zależności od aktualnego stanu.
 Ten kod tworzy responsywne menu nawigacyjne, które może być zwinięte i rozwinięte na stronie internetowej, szczególnie w przypadku korzystania z urządzeń mobilnych.</p>
+<p>#menu:</p>
+<p>Jest to styl dla elementu o identyfikatorze &quot;menu&quot;.
+Element jest ustawiony jako relatywny (position: relative).
+Ma lewe wyrównanie (float: left).
+Otrzymuje odstęp wewnętrzny 20 pikseli na lewej i prawej stronie (padding: 0 20px).
+Posiada zaokrąglone rogi z promieniem 3 pikseli (border-radius: 3px).
+Tło ma kolor szary (#ccc).
+#menu, #menu ul:</p>
+<p>Są to style, które usuwają domyślne punkty (kropki) na liście.
+#menu  li:</p>
+<p>Styl dla bezpośrednich potomków elementu o identyfikatorze &quot;menu&quot;.
+Elementy li są wyświetlane obok siebie (float: left).
+Posiadają perspektywę o wartości 1000 pikseli (perspective: 1000px), co może być używane w połączeniu z efektami 3D.
+#menu a:</p>
+<p>Styl dla odnośników (a) wewnątrz elementu o identyfikatorze &quot;menu&quot;.
+Odnośniki są wyświetlane jako bloki (display: block).
+Posiadają odstęp wewnętrzny (padding) na górze, dole i poziomo.
+Odstęp 13 pikseli na górze i dole oraz 20 pikseli poziomo (padding: 13px 20px 13px 20px).
+Tekst odnośników nie jest podkreślony (text-decoration: none).
+Kolor tekstu jest ustawiony na ciemnoszary (#4b4b4b).
+Rozmiar czcionki to 18 pikseli.
+Odnośniki mają przejrzyste tło (background: transparent).
+Zdefiniowano animację przejścia dla odnośników z opóźnieniem 0.25 sekundy (transition: all .25s ease-in-out).
+#menu  li:hover  a:</p>
+<p>Styl dla odnośników, które są podświetlane po najechaniu kursorem na ich rodzica.
+Tło odnośnika zmienia kolor na ciemniejszy szary (#333).
+Kolor tekstu odnośnika zmienia się na niebieski (#00dffc).
+#menu li ul:</p>
+<p>Styl dla listy nieuporządkowanej  wewnątrz elementów w menu rozwijanym.
+Lista jest ukryta .
+Ma szerokość 200 pikseli.
+Posiada zaokrąglone rogi na dole po lewej i prawej stronie (border-bottom-left-radius i border-bottom-right-radius) z promieniem 4 pikseli.
+Tło listy jest przezroczyste.
+Treść listy jest obcinana w przypadku przekroczenia szerokości elementu nadrzędnego (overflow: hidden).
+Punkt transformacji animacji 3D ustawiony jest na środkowy górny róg listy (transform-origin: 50% 0%).
+#menu li:hover ul:</p>
+<p>Styl dla listy, która jest wyświetlana po najechaniu kursorem na element li w menu rozwijanym.
+Dodano animację &quot;swingdown&quot;, która kontroluje animację pojawiania się menu rozwijanego.
+Zmieniono kolor tła na ciemniejszy szary (#333).
+Zwiększono przejrzystość do 1 (opacity: 1).
+Ustawiono widoczność na &quot;visible&quot; (visibility: visible).
+Dodano cień na menu rozwijanym (box-shadow) i określono parametry animacji (animation-name, animation-duration, animation-timing-function).
+@keyframes swingdown:</p>
+<p>Jest to definicja animacji &quot;swingdown&quot; przy użyciu animacji CSS.
+Animacja rozpoczyna się od opacznia bliskiego jedności (0.99999) i obrotu elementu o 90 stopni wzdłuż osi X.
+W trakcie animacji element obraca się w różnych kierunkach, symulując efekt &quot;swingu&quot; lub kiwania, z określonymi wartościami transformacji i funkcjami czasu.
+#menu li li a:</p>
+<p>Styl dla odnośników (a) wewnątrz elementów li w menu rozwijanym.
+Dodano odstęp wewnętrzny z lewej strony (padding-left: 15px).
+Grubość czcionki wynosi 400.
+Kolor tekstu jest ustawiony na jasnoszary (#ddd).
+Tekst nie posiada cienia.
+Dodano kreski przerywane na górze i na dole odnośników (border-top i border-bottom) z przezroczystym kolorem.
+Dodano efekt przejścia (transition) dla płynnych zmian koloru.
+#menu li li a:hover:</p>
+<p>Styl dla odnośników, które są podświetlane po najechaniu kursorem na nie w menu rozwijanym.
+Kolor tekstu odnośników zmienia się na niebieski (#00dffc).
+Dodano kreski przerywane na górze i na dole odnośników z jasnym kolorem oraz delikatne tło o niebieskim odcieniu.</p>
+<p>.L i .ADING:</p>
+<p>Są to klasy, które ustawiają pozycję (top i left) elementów ikony. Przesuwają elementy w lewo i w górę na określone pozycje.
+.outter:</p>
+<p>To styl dla zewnętrznego okręgu w ikonie.
+Ustala pozycję (top i left), szerokość (80px), wysokość (80px) i promień zaokrąglenia (border-radius).
+Dodaje efekt obracania się wskazówki zegara z animacją CSS.
+Kolor lewej krawędzi jest ustawiony na #7D1935.
+.mid:</p>
+<p>To styl dla środkowego okręgu w ikonie.
+Ustala pozycję (top i left), szerokość (50px), wysokość (50px) i promień zaokrąglenia (border-radius).
+Dodaje efekt obracania się wskazówki zegara z inną prędkością niż zewnętrzny okrąg.
+Kolor lewej krawędzi jest ustawiony na #B71427.
+Animacja (@-webkit-keyframes, @-moz-keyframes, @-o-keyframes, @keyframes):</p>
+<p>Definiuje animację o nazwie &quot;spin&quot;, która obraca elementy od 0 do 360 stopni.
+Ustawiona jest prędkość animacji, iteracja (nieskończoność) i funkcja czasowa (linear).</p>
+<p>.search-container:</p>
+<p>Ustawia tło na białe (#fff), okrągły kształt (dzięki border-radius), cień (za pomocą box-shadow) i inne właściwości.
+Określa wysokość (30px) i dodaje wewnętrzne wypełnienie (padding: 10px 20px), aby uzyskać odpowiedni rozmiar i odstępy.
+Ustala wyśrodkowanie treści za pomocą display: flex, justify-content: center i align-items: center.
+Kursor zmienia się na &quot;pointer&quot; po najechaniu na element.
+Definiuje animację przejścia (transition: 0.8s).
+.search-container:hover &gt; .search-input:</p>
+<p>Po najechaniu na .search-container, szerokość elementu .search-input zmienia się na 400px, co powoduje jego rozwinięcie.
+.search-container .search-input:</p>
+<p>Ustawia tło na przezroczyste, usuwa obramowanie (border: none) i zmienia wygląd na biały prostokąt z zaokrąglonymi rogami (dzięki border-radius).
+Szerokość początkowa elementu to 0px, ale zmienia się w trakcie animacji przejścia (transition: 0.8s).
+Ustala czcionkę o wadze 500 i rozmiarze 16px.
+.search-container .search-btn .fas:</p>
+<p>Ustala kolor ikony &quot;fas&quot; (Font Awesome) na #5cbdbb.
+@keyframes hoverShake:</p>
+<p>Jest to definicja animacji hoverShake, która powoduje delikatne drganie elementu po najechaniu na niego kursorem.
+Skew transformuje element, a wartości kąta zmieniają się, aby uzyskać efekt drgania.
+.search-container:hover:</p>
+<p>Po najechaniu na .search-container, animacja hoverShake jest uruchamiana, co powoduje drganie elementu przez krótki czas.</p>
+<p>.search-container:</p>
+<p>Ustawia tło na białe (#fff), okrągły kształt (dzięki border-radius), cień (za pomocą box-shadow) i inne właściwości.
+Określa wysokość (30px) i dodaje wewnętrzne wypełnienie (padding: 10px 20px), aby uzyskać odpowiedni rozmiar i odstępy.
+Ustala wyśrodkowanie treści za pomocą display: flex, justify-content: center i align-items: center.
+Kursor zmienia się na &quot;pointer&quot; po najechaniu na element.
+Definiuje animację przejścia (transition: 0.8s).
+.search-container:hover &gt; .search-input:</p>
+<p>Po najechaniu na .search-container, szerokość elementu .search-input zmienia się na 400px, co powoduje jego rozwinięcie.
+.search-container .search-input:</p>
+<p>Ustawia tło na przezroczyste, usuwa obramowanie (border: none) i zmienia wygląd na biały prostokąt z zaokrąglonymi rogami (dzięki border-radius).
+Szerokość początkowa elementu to 0px, ale zmienia się w trakcie animacji przejścia (transition: 0.8s).
+Ustala czcionkę o wadze 500 i rozmiarze 16px.
+.search-container .search-btn .fas:</p>
+<p>Ustala kolor ikony &quot;fas&quot; (Font Awesome) na #5cbdbb.
+@keyframes hoverShake:</p>
+<p>Jest to definicja animacji hoverShake, która powoduje delikatne drganie elementu po najechaniu na niego kursorem.
+Skew transformuje element, a wartości kąta zmieniają się, aby uzyskać efekt drgania.
+.search-container:hover:</p>
+<p>Po najechaniu na .search-container, animacja hoverShake jest uruchamiana, co powoduje drganie elementu przez krótki czas.</p>
 
           </div>
 
@@ -343,7 +454,7 @@ hamburger.addEventListener(<span class="hljs-string">&quot;click&quot;</span>, <
           </details>
 
         <div class="kss-source kss-style">
-          Source: <code>style.css</code>, line 339
+          Source: <code>style.css</code>, line 459
         </div>
 
     </div>
