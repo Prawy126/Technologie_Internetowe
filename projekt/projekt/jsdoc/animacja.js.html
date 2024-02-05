@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: animacja.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,51 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: animacja.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Funkcja do cyklicznego przenoszenia pierwszego elementu dziecka kontenera "img-container" na jego koniec.
+ *
+ * @function
+ * @global
+ * 
+ */
+function rotateImages() {
+    /**
+     * Referencja do kontenera obrazków o klasie "img-container".
+     * @type {HTMLElement}
+     */
+    const imgContainer = document.querySelector(".img-container");
 
+    /**
+     * Interwał, który uruchamia funkcję co 2500 milisekund (2,5 sekundy).
+     */
+    setInterval(() => {
+        /**
+         * Pierwszy element dziecka kontenera (który jest pierwszym obrazkiem).
+         * @type {HTMLElement}
+         */
+        let first = imgContainer.firstElementChild;
 
-    <h3> </h3>
+        // Usunięcie pierwszego elementu dziecka z kontenera
+        first.remove();
 
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+        // Dodanie usuniętego obrazka na koniec kontenera (cykliczne przeniesienie)
+        imgContainer.appendChild(first);
+    }, 2500);
+}
+// Wywołanie to uruchamia skrypt do przesuwania zdjęć
+    rotateImages();
+</code></pre>
+        </article>
+    </section>
 
 
 

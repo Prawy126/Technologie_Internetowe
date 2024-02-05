@@ -31,6 +31,8 @@ function initializeSlider() {
     /**
      * Przewija do określonego slajdu na podstawie indeksu.
      * @param {number} index - Indeks slajdu do przewinięcia.
+     * @function
+     * @global
      */
     function goToSlide(index) {
         /**
@@ -39,17 +41,23 @@ function initializeSlider() {
          */
         const slideWidth = slides.clientWidth;
 
+        // Przewijanie do określonego slajdu z efektem "smooth"
         slides.scrollTo({
             left: slideWidth * index,
             behavior: 'smooth'
         });
 
+        // Zaznaczanie odpowiedniego przycisku nawigacji radiowej
         radioButtons[index].checked = true;
+
+        // Aktualizacja bieżącego indeksu
         currentIndex = index;
     }
 
     /**
      * Przesuwa automatycznie na kolejny slajd.
+     * @function
+     * @global
      */
     function autoSlide() {
         currentIndex = (currentIndex + 1) % totalSlides;
@@ -65,9 +73,14 @@ function initializeSlider() {
      * Nasłuchuje zdarzenia przewijania w elemencie slides.
      */
     slides.addEventListener('scroll', function() {
+        // Obliczanie indeksu na podstawie przewinięcia
         const index = Math.round(this.scrollLeft / this.clientWidth);
+
+        // Zaznaczanie odpowiedniego przycisku nawigacji radiowej
         radioButtons[index].checked = true;
-        currentIndex = index; // Aktualizacja bieżącego indeksu po ręcznym przewijaniu
+
+        // Aktualizacja bieżącego indeksu po ręcznym przewijaniu
+        currentIndex = index;
     });
 }
 

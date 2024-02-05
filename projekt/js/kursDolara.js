@@ -1,12 +1,13 @@
 /**
- * Kod JavaScript odpowiedzialny za pobieranie i wyświetlanie aktualnego kursu Euro.
+ * Funkcja pobierająca i wyświetlająca aktualny kurs Euro z API Narodowego Banku Polskiego (NBP).
+ * Wywoływana po załadowaniu dokumentu HTML.
  *
  * @function
  * @global
  */
-document.addEventListener('DOMContentLoaded', function () {
+function fetchEuroExchangeRate() {
     /**
-     * Funkcja fetch jest używana do pobrania danych kursu Euro z API Narodowego Banku Polskiego (NBP).
+     * Funkcja fetch jest używana do pobierania danych kursu Euro z API NBP.
      *
      * @function
      * @param {string} url - Adres URL API NBP, z którego pobierane są dane kursu Euro.
@@ -40,4 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
              */
             console.error('Wystąpił błąd:', error);
         });
-});
+}
+
+// Nasłuchuj załadowania dokumentu HTML i wywołaj funkcję fetchEuroExchangeRate
+document.addEventListener('DOMContentLoaded', fetchEuroExchangeRate);

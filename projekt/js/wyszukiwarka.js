@@ -1,59 +1,72 @@
 /**
- * Funkcja wykonywana po załadowaniu całego dokumentu HTML.
- * Dodaje obsługę wyszukiwania na stronie.
+ * Inicjalizuje funkcję wyszukiwania na stronie.
+ *  Funkcja ta otwiera nowe okno przeglądarki i wykorzystuje wyszukiwarkę Goolge do wyszukiwania treści.
  * @function
+ * @global
  */
-document.addEventListener('DOMContentLoaded', function() {
+function initSearch() {
   /**
-   * Pole tekstowe, w którym użytkownik wprowadza zapytanie do wyszukiwania.
+   * Pole tekstowe do wprowadzenia zapytania.
+   *
    * @type {HTMLInputElement}
    */
   var searchInput = document.getElementById('search-input');
 
   /**
-   * Przycisk służący do uruchamiania wyszukiwania.
+   * Przycisk uruchamiający wyszukiwanie.
+   *
    * @type {HTMLButtonElement}
    */
   var searchButton = document.getElementById('search-btn');
 
   /**
-   * Funkcja odpowiedzialna za wyszukiwanie i otwieranie wyników w nowej karcie.
+   * Funkcja wykonująca wyszukiwanie na podstawie wprowadzonego zapytania.
    * @function
+   * @global
    */
   function search() {
-    /**
-     * Zapytanie wprowadzone przez użytkownika.
-     * @type {string}
-     */
-    var query = searchInput.value;
+      /**
+       * Zapytanie wprowadzone przez użytkownika.
+       *
+       * @type {string}
+       */
+      var query = searchInput.value;
 
-    /**
-     * URL Google Search z zakodowanym zapytaniem.
-     * @type {string}
-     */
-    var googleSearchUrl = 'https://www.google.com/search?q=' + encodeURIComponent(query);
+      /**
+       * URL do wyników wyszukiwania Google.
+       *
+       * @type {string}
+       */
+      var googleSearchUrl = 'https://www.google.com/search?q=' + encodeURIComponent(query);
 
-    // Otwiera wyniki wyszukiwania w nowej karcie przeglądarki
-    window.open(googleSearchUrl, '_blank');
+      // Otwiera wyniki wyszukiwania w nowej karcie przeglądarki
+      window.open(googleSearchUrl, '_blank');
   }
 
   /**
-   * Nasłuchuje zdarzenia naciśnięcia klawisza w polu tekstowym.
-   * Jeśli naciśnięty klawisz to Enter, wywołuje funkcję `search`.
+   * Nasłuchuje zdarzenia naciśnięcia klawisza Enter w polu tekstowym.
+   *
+   * @param {KeyboardEvent} event - Zdarzenie klawiatury.
    */
   searchInput.addEventListener('keypress', function(event) {
-    if (event.key === 'Enter') {
-      event.preventDefault(); // Zapobiega standardowej akcji formularza
-      search();
-    }
+      if (event.key === 'Enter') {
+          event.preventDefault(); // Zapobiega standardowej akcji formularza
+          search();
+      }
   });
 
   /**
-   * Nasłuchuje zdarzenia kliknięcia przycisku.
-   * Wywołuje funkcję `search`.
+   * Nasłuchuje zdarzenia kliknięcia przycisku wyszukiwania.
+   *
+   * @param {MouseEvent} event - Zdarzenie myszy.
    */
   searchButton.addEventListener('click', function(event) {
-    event.preventDefault(); // Zapobiega standardowej akcji linku
-    search();
+      event.preventDefault(); // Zapobiega standardowej akcji linku
+      search();
   });
-});
+}
+
+/**
+* Wywołuje funkcję `initSearch` po załadowaniu dokumentu HTML.
+*/
+document.addEventListener('DOMContentLoaded', initSearch);

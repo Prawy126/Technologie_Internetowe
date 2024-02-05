@@ -30,7 +30,7 @@
     
         <h2><span class="attribs"><span class="type-signature"></span></span>User<span class="signature">()</span><span class="type-signature"></span></h2>
         
-            <div class="class-description">Klasa reprezentująca użytkownika.</div>
+            <div class="class-description">Reprezentuje użytkownika systemu, zarządzając jego danymi osobowymi i preferencjami.Klasa umożliwia zapisywanie i odczytywanie informacji o użytkowniku do/z lokalnego magazynu przeglądarki,co pozwala na utrzymanie ciągłości danych między sesjami przeglądania.Zawiera metody do konwersji danych użytkownika na format tekstowy, zapisu i odczytu z lokalnego magazynu,a także inicjalizacji i obsługi formularza rejestracyjnego.</div>
         
     
 </header>
@@ -53,7 +53,7 @@
 
 
 <div class="description">
-    Konstruktor klasy User, inicjalizuje pola użytkownika.
+    Tworzy instancję klasy User, inicjalizując wszystkie właściwości na wartości domyślne.
 </div>
 
 
@@ -97,7 +97,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="rejestracja.js.html">rejestracja.js</a>, <a href="rejestracja.js.html#line5">line 5</a>
+        <a href="rejestracja.js.html">rejestracja.js</a>, <a href="rejestracja.js.html#line10">line 10</a>
     </li></ul></dd>
     
 
@@ -161,7 +161,7 @@
 
 
 <div class="description">
-    Metoda zwracająca informacje o użytkowniku jako tekst.
+    Generuje i zwraca reprezentację informacji o użytkowniku w formie tekstowej.
 </div>
 
 
@@ -205,7 +205,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="rejestracja.js.html">rejestracja.js</a>, <a href="rejestracja.js.html#line27">line 27</a>
+        <a href="rejestracja.js.html">rejestracja.js</a>, <a href="rejestracja.js.html#line33">line 33</a>
     </li></ul></dd>
     
 
@@ -234,7 +234,7 @@
 
         
 <div class="param-desc">
-    Informacje o użytkowniku jako tekst.
+    Tekst zawierający wszystkie dane użytkownika.
 </div>
 
 
@@ -271,7 +271,7 @@
 
 
 <div class="description">
-    Metoda inicjalizująca formularz rejestracyjny i obsługująca jego zdarzenia.
+    Inicjalizuje formularz rejestracyjny użytkownika, wypełniając go danymi z lokalnego magazynu (jeśli dostępne),i obsługuje zdarzenie submit formularza, w tym walidację danych i aktualizację danych użytkownika.Metoda ładuje istniejące dane użytkownika z lokalnego magazynu i ustawia wartości formularza na te dane,umożliwiając użytkownikowi edycję swoich informacji. Po wypełnieniu formularza i jego zatwierdzeniu,metoda waliduje wprowadzone dane na podstawie określonych wzorców. Jeśli dane są prawidłowe, zostaną zapisanew lokalnym magazynie, a formularz zostanie wyczyszczony. W przypadku błędów walidacji użytkownik zostanie o nichpoinformowany poprzez komunikaty alert.
 </div>
 
 
@@ -315,7 +315,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="rejestracja.js.html">rejestracja.js</a>, <a href="rejestracja.js.html#line56">line 56</a>
+        <a href="rejestracja.js.html">rejestracja.js</a>, <a href="rejestracja.js.html#line72">line 72</a>
     </li></ul></dd>
     
 
@@ -359,7 +359,7 @@
 
 
 <div class="description">
-    Metoda zapisująca dane użytkownika do pamięci lokalnej przeglądarki.
+    Zapisuje dane użytkownika do lokalnego magazynu przeglądarki, umożliwiając ich późniejsze odczytanie.
 </div>
 
 
@@ -403,7 +403,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="rejestracja.js.html">rejestracja.js</a>, <a href="rejestracja.js.html#line34">line 34</a>
+        <a href="rejestracja.js.html">rejestracja.js</a>, <a href="rejestracja.js.html#line40">line 40</a>
     </li></ul></dd>
     
 
@@ -447,7 +447,7 @@
 
 
 <div class="description">
-    Metoda statyczna wczytująca dane użytkownika z pamięci lokalnej przeglądarki.
+    Odczytuje i zwraca dane użytkownika z lokalnego magazynu przeglądarki.Jeśli dane nie są dostępne, zwraca nową instancję klasy User.
 </div>
 
 
@@ -491,7 +491,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="rejestracja.js.html">rejestracja.js</a>, <a href="rejestracja.js.html#line42">line 42</a>
+        <a href="rejestracja.js.html">rejestracja.js</a>, <a href="rejestracja.js.html#line50">line 50</a>
     </li></ul></dd>
     
 
@@ -520,7 +520,7 @@
 
         
 <div class="param-desc">
-    Obiekt użytkownika wczytany z pamięci lokalnej lub nowy obiekt User, jeśli dane nie są dostępne.
+    Obiekt użytkownika z danymi odczytanymi z magazynu lub nowy obiekt, jeśli dane nie są dostępne.
 </div>
 
 
@@ -559,13 +559,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="User.html">User</a></li></ul><h3>Global</h3><ul><li><a href="global.html#addItem">addItem</a></li><li><a href="global.html#handleKeyPress">handleKeyPress</a></li><li><a href="global.html#initializeSlider">initializeSlider</a></li><li><a href="global.html#loadShoppingList">loadShoppingList</a></li><li><a href="global.html#removeItem">removeItem</a></li><li><a href="global.html#saveShoppingList">saveShoppingList</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="User.html">User</a></li></ul><h3>Global</h3><ul><li><a href="global.html#addItem">addItem</a></li><li><a href="global.html#autoSlide">autoSlide</a></li><li><a href="global.html#fetchEuroExchangeRate">fetchEuroExchangeRate</a></li><li><a href="global.html#goToSlide">goToSlide</a></li><li><a href="global.html#handleKeyPress">handleKeyPress</a></li><li><a href="global.html#initSearch">initSearch</a></li><li><a href="global.html#initializeSlider">initializeSlider</a></li><li><a href="global.html#loadShoppingList">loadShoppingList</a></li><li><a href="global.html#removeItem">removeItem</a></li><li><a href="global.html#rotateImages">rotateImages</a></li><li><a href="global.html#saveShoppingList">saveShoppingList</a></li><li><a href="global.html#search">search</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Sat Feb 03 2024 16:35:09 GMT+0100 (czas środkowoeuropejski standardowy)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Mon Feb 05 2024 16:46:33 GMT+0100 (czas środkowoeuropejski standardowy)
 </footer>
 
 <script> prettyPrint(); </script>

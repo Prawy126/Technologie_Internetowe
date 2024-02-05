@@ -1,6 +1,10 @@
-let imgContainer = document.querySelector(".img-container");
+function rotateImages() {
+        const imgContainer = document.querySelector(".img-container");
+    
         setInterval(() => {
-        let last = imgContainer.firstElementChild;
-        last.remove();
-        imgContainer.appendChild(last);
+            let first = imgContainer.firstElementChild;
+            first.remove();
+            imgContainer.appendChild(first);
         }, 2500);
+    }
+    rotateImages();
