@@ -1,5 +1,6 @@
 class User {
   constructor() {
+    // Inicjalizacja właściwości użytkownika
     this.imie = "";
     this.nazwisko = "";
     this.telefon = "";
@@ -13,14 +14,17 @@ class User {
     this.numerDomu = "";
   }
 
+  // Metoda zwracająca informacje o użytkowniku jako tekst
   getInfoAsString() {
     return `Imię: ${this.imie}\nNazwisko: ${this.nazwisko}\nLogin: ${this.login}\nHasło: ${this.haslo}\nTelefon: ${this.telefon}\nEmail: ${this.email}\nOtrzymywanie ofert na email: ${this.ofertyEmail}\nOtrzymywanie ofert na SMS: ${this.ofertySMS}\nMiasto: ${this.miasto}\nUlica: ${this.ulica}\nNumer domu: ${this.numerDomu}`;
   }
 
+  // Metoda zapisująca dane użytkownika do lokalnego magazynu
   saveToLocalStorage() {
     localStorage.setItem("userData", JSON.stringify(this));
   }
 
+  // Metoda statyczna wczytująca dane użytkownika z lokalnego magazynu
   static loadFromLocalStorage() {
     const userData = localStorage.getItem("userData");
     if (userData) {
@@ -32,10 +36,13 @@ class User {
     return new User();
   }
 
+  // Metoda inicjalizująca formularz użytkownika
   initializeForm() {
+    // Pobranie formularza i danych użytkownika z lokalnego magazynu
     var form = document.getElementById("myForm");
     var newUser = User.loadFromLocalStorage();
 
+    // Pobranie pól formularza
     var nameInput = document.getElementById("name");
     var surnameInput = document.getElementById("nazwisko");
     var telInput = document.getElementById("tel");
@@ -48,6 +55,7 @@ class User {
     var ulicaInput = document.getElementById("ulica");
     var numerDomuInput = document.getElementById("numerDomu");
 
+    // Wypełnienie pól formularza danymi użytkownika
     nameInput.value = newUser.imie;
     surnameInput.value = newUser.nazwisko;
     telInput.value = newUser.telefon;
@@ -60,7 +68,9 @@ class User {
     ulicaInput.value = newUser.ulica;
     numerDomuInput.value = newUser.numerDomu;
 
+    // Nasłuchiwanie zdarzenia submit formularza
     form.addEventListener("submit", function (event) {
+      // Aktualizacja danych użytkownika na podstawie wartości właściwości formularza
       newUser.imie = nameInput.value.trim();
       newUser.nazwisko = surnameInput.value.trim();
       newUser.telefon = telInput.value.trim();
@@ -72,6 +82,7 @@ class User {
       newUser.miasto = miastoInput.value;
       newUser.ulica = ulicaInput.value.trim();
       newUser.numerDomu = numerDomuInput.value.trim();
+
 
       var namePattern = /^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+$/u;
       var telPattern = /^[0-9]{9,15}$/;
