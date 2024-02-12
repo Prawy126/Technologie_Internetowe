@@ -6,9 +6,9 @@ layout: default
 
 ## LABORATORIA:
 
-### [LAB 1](https://prawy126.github.io/Technologie_Internetowe/lab1) 
+- ### [LAB 1](https://prawy126.github.io/Technologie_Internetowe/lab1) 
 
-### [LAB 2](https://prawy126.github.io/Technologie_Internetowe/lab2) 
+- ### [LAB 2](https://prawy126.github.io/Technologie_Internetowe/lab2)
 
  
 ### [LAB 3](https://prawy126.github.io/Technologie_Internetowe/lab3) 
