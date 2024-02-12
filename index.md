@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-
-# Technologie internetowe
+ 
+# Technologie internetowe ![Rozmiar repozytorium](https://img.shields.io/github/repo-size/Prawy126/Technologie_Internetowe) ![Licencja](https://img.shields.io/github/license/Prawy126/Technologie_Internetowe)
 
 ## LABORATORIA:
 
