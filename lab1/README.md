@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Lab1
 ## Zadanie 1
 Utwórz dokument index.html (zwyczajowa nazwa głównego dokumentu
