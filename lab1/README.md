@@ -266,7 +266,8 @@ zdefiniowane za pomocą < li > tworzą menu.
 unikatowej wartości. Następnie utwórz menu składające się z
 hiperłączy do odpowiednich nagłówków.**
 Hiperłącza mogą odwoływać się do nagłówków przez zdefiniowanie wartości
-atrybutu href jako #[id znacznika]:
+atrybutu href jako # [id znacznika]:
+
 ```html
 <a href="#heading">Przejdź do nagłówka o id heading.</a>
 <div style="display: block;height: 5000px;"></div>
