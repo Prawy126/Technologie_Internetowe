@@ -146,6 +146,6 @@ layout: default
 - [Jak strona wygląda](https://prawy126.github.io/Technologie_Internetowe/lab1/index.html)
 
 ### Treści zadań
-- [link](https://prawy126.github.io/Technologie_Internetowe/lab1/README.md)
+- [link](https://prawy126.github.io/Technologie_Internetowe/lab1/README)
 
 
