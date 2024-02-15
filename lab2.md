@@ -138,4 +138,4 @@ layout: default
 
 
 ### Treści zadań
-- [link](https://prawy126.github.io/Technologie_Internetowe/lab2/README.md)
+- [link](https://prawy126.github.io/Technologie_Internetowe/lab2/README)

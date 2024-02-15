@@ -29,4 +29,7 @@ layout: default
 
 - ### [Projekt](https://prawy126.github.io/Technologie_Internetowe/projekt/index)
 
+    - #### [Dkoumentacja KSS](https://prawy126.github.io/Technologie_Internetowe/projekt/styleguide/index.html)
+    - #### [Dokumentacja JSDoc](https://prawy126.github.io/Technologie_Internetowe/projekt/projekt/jsdoc/index.html)
+
 
