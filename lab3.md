@@ -435,3 +435,6 @@ layout: default
 ```
 
 - [Aktualny podgląd kodu](https://prawy126.github.io/Technologie_Internetowe/lab3/strona2)
+
+### Treści zadań
+- [link](https://prawy126.github.io/Technologie_Internetowe/lab3/README)
