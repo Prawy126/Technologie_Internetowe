@@ -1,6 +1,6 @@
----
+
 layout: default
----
+
 
 # LAB 3
 
@@ -39,7 +39,7 @@ layout: default
 ```
 
 - [Aktualny podgląd kodu](https://prawy126.github.io/Technologie_Internetowe/lab3/index)
----
+
 - ## zadanie 2 i 3
 - 
 
@@ -90,7 +90,7 @@ layout: default
 ```
 
 - [Aktualny podgląd kodu](https://prawy126.github.io/Technologie_Intenetowe/lab3/index2)
----
+
 - ## zadanie 5
 - 
 
@@ -135,7 +135,7 @@ layout: default
 ```
 
 - [Aktualny podgląd kodu](https://prawy126.github.io/Technologie_Internetowe/lab3/zadanie5)
----
+
 - ## zadanie 6
 - 
 
@@ -181,9 +181,9 @@ layout: default
 ```
 
 - [Aktualny podgląd kodu](https://prawy126.github.io/Technologie_Internetowe/lab3/zadanie6)
----
+
 - ## zmiana wyglądu strony z labu poprzedniego wersja 1
-- 
+
 
 ```html
 <!DOCTYPE html>
@@ -276,9 +276,9 @@ layout: default
 ```
 
 - [Aktualny podgląd kodu](https://prawy126.github.io/Technologie_Internetowe/lab3/strona)
----
+
 - ## zmiana wyglądu strony z labu poprzedniego wersja 2
-- 
+
 
 ```html
 <!DOCTYPE html>
