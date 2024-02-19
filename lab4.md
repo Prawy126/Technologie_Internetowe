@@ -486,4 +486,4 @@ layout: default
 - [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Internetowe/lab4/zadanie10)
 
 ### Treści zadań
-- [link](https://prawy126.github.io/Technologie_Internetowe/lab1/README)
+- [link](https://prawy126.github.io/Technologie_Internetowe/lab4/README)
