@@ -3,7 +3,7 @@ layout: default
 ---
 
 # LAB 6
-- ZADANIE 1
+- ## ZADANIE 1
 - 
 
 ```html
@@ -66,7 +66,7 @@ layout: default
 
 - [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Internetowe/lab6/zadanie1)
 ---
-- ZADANIE 2
+- ## ZADANIE 2
 - 
 
 ```html
@@ -113,7 +113,7 @@ layout: default
 
 - [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Internetowe/lab6/zadanie2)
 ---
-- ZADANIE 3 I 4
+- ## ZADANIE 3 I 4
 - 
 
 ```html
@@ -340,7 +340,7 @@ button{
 
 - [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Internetowe/lab6/simple-slider.html)
 ---
-- ZADANIE 5
+- ## ZADANIE 5
 - 
 
 ```html

@@ -3,7 +3,7 @@ layout: default
 ---
 
 # LAB 8
-- ZADANIE 1
+- ## ZADANIE 1
 - 
 
 ```html
@@ -32,7 +32,7 @@ layout: default
 - [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Internetowe/lab8/zadanie1)
 ---
 
-- ZADANIE 2
+- ## ZADANIE 2
 - 
 
 ```js
@@ -47,7 +47,7 @@ function arithmeticMean(...params){
 - [Podgląd aktualny podgląd jak wygląda strona](https://github.com/prawy126/Technologie_Internetowe/lab8/zadanie2)
 ---
 
-- ZADANIE 3
+- ## ZADANIE 3
 -
 
 ```html
@@ -140,7 +140,7 @@ document.body.append(HTMLTable2);
 - [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Internetowe/lab8/zadanie3)
 ---
 
-- ZADANIE 4
+- ## ZADANIE 4
 - 
 
 ```html
@@ -222,7 +222,7 @@ document.body.append(HTMLTable2);
 - [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Internetowe/lab8/zadanie4)
 ---
 
-- ZADANIE 5
+- ## ZADANIE 5
 - 
 
 ```html

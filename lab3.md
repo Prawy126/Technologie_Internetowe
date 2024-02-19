@@ -4,7 +4,7 @@ layout: default
 
 # LAB 3
 
-- zadanie 1 
+- ## zadanie 1 
 - 
 
 ```html
@@ -40,7 +40,7 @@ layout: default
 
 - [Aktualny podgląd kodu](https://prawy126.github.io/Technologie_Internetowe/lab3/index)
 ---
-- zadanie 2 i 3
+- ## zadanie 2 i 3
 - 
 
 ```html
@@ -91,41 +91,7 @@ layout: default
 
 - [Aktualny podgląd kodu](https://prawy126.github.io/Technologie_Intenetowe/lab3/index2)
 ---
-- zadanie 4
-- 
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, inital-scale=1.0"> 
-       <title>CSS Inheritance</title> 
-       <link rel="stylesheet" type="text/css" href="cascade_examle.css">
-        <style>
-            section {
-                border: 1px dashed red;
-                color: red;
-            }
-            p{
-                all:inherit;
-            }
-        </style>
-    </head>
-    <body>
-        <section style="color: #000">
-            Ten element będzie obramowany i będzie posiadał czerwoną czcionkę
-            <p>
-                Ten element nie będzie obramowany, ale będzie posiadał czerwoną czcionkę. 
-            </p>
-        </section>
-    </body>
-</html>
-```
-
-- [Aktualny podgląd kodu](https://prawy126.github.io/Technologie_Internetowe/lab3/zadanie4)
----
-- zadanie 5
+- ## zadanie 5
 - 
 
 ```html
@@ -170,7 +136,7 @@ layout: default
 
 - [Aktualny podgląd kodu](https://prawy126.github.io/Technologie_Internetowe/lab3/zadanie5)
 ---
-- zadanie 6
+- ## zadanie 6
 - 
 
 ```html
@@ -216,7 +182,7 @@ layout: default
 
 - [Aktualny podgląd kodu](https://prawy126.github.io/Technologie_Internetowe/lab3/zadanie6)
 ---
-- zmiana wyglądu strony z labu poprzedniego wersja 1
+- ## zmiana wyglądu strony z labu poprzedniego wersja 1
 - 
 
 ```html
@@ -311,7 +277,7 @@ layout: default
 
 - [Aktualny podgląd kodu](https://prawy126.github.io/Technologie_Internetowe/lab3/strona)
 ---
-- zmiana wyglądu strony z labu poprzedniego wersja 2
+- ## zmiana wyglądu strony z labu poprzedniego wersja 2
 - 
 
 ```html

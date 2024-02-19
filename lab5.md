@@ -3,7 +3,7 @@ layout: default
 ---
 
 # LAB 5
-- ZADANIE 1 I 2
+- ## ZADANIE 1 I 2
 - 
 
 ```html
@@ -122,7 +122,7 @@ layout: default
 
 - [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Internetowe/lab5/zadanie2)
 ---
-- ZADANIE 3 I 4
+- ## ZADANIE 3 I 4
 - 
 
 ```html
@@ -418,7 +418,7 @@ layout: default
 
 - [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Internetowe/lab5/zadanie4)
 ---
-- ZADANIE 6
+- ## ZADANIE 6
 - 
 
 ```html
@@ -583,7 +583,7 @@ layout: default
 
 - [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Internetowe/lab5/zadanie6)
 ---
-- ZADANIE 7
+- ## ZADANIE 7
 - 
 
 ```html
@@ -632,7 +632,7 @@ layout: default
 
 - [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Internetowe/lab5/zadanie7)
 ---
-- ZADANIE 8
+- ## ZADANIE 8
 - 
 
 ```html
