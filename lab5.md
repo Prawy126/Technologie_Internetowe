@@ -1849,3 +1849,6 @@ article:nth-of-type(2) ol li:nth-child(14n+14) {
 ```
 
 - [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Internetowe/lab5/zadanie8)
+
+### Treści zadań
+- [link](https://prawy126.github.io/Technologie_Internetowe/lab5/README)

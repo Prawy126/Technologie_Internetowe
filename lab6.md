@@ -1,5 +1,6 @@
-
+---
 layout: default
+---
 
  LAB 6
 - ## ZADANIE 1
@@ -459,4 +460,7 @@ button{
 ```
 
 - [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Internetowe/lab5/zadanie5)
+
+### Treści zadań
+- [link](https://prawy126.github.io/Technologie_Internetowe/lab6/README)
 

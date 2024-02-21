@@ -1,6 +1,6 @@
-
+---
 layout: default
-
+---
 # LAB 8
  ## ZADANIE 1
 - 
@@ -311,4 +311,7 @@ document.body.append(HTMLTable2);
 ```
 
 - [Podgląd aktualny podgląd jak wygląda strona](https://prawy126.github.io/Technologie_Internetowe/lab8/zadanie5)
+
+### Treści zadań
+- [link](https://prawy126.github.io/Technologie_Internetowe/lab8/README)
 
