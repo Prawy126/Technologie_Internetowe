@@ -22,7 +22,7 @@ o nie są dostępne poza blokami {}
 JavaScript pozwala na elastyczne przypisywanie różnych typów danych do
 tych samych zmiennych w trakcie działania programu.
 
-```JS
+```js
 let zmienna = 10; // Zmienna 'zmienna' jest typu number (liczba)
 console.log(typeof zmienna); // Wyświetli: number
 zmienna = "Tekst"; // Teraz 'zmienna' jest typu string (tekst)
@@ -64,7 +64,7 @@ Znajdź wytłumaczenie otrzymanych rezultatów w sieci.
 Funkcje można zadeklarować na kilka sposobów.
 Sposób 1: Definicja funkcji
 
-```JS
+```js
 function mojaFunkcja() {
 // kod funkcji
 }
@@ -73,14 +73,14 @@ Sposób 2: Wyrażenie funkcyjne
 Tworzona jest tu funkcja anonimowa (funkcja która nie ma nazwy) i jest
 przypisywana do stałej mojaFunkcja
 
-```JS
+```js
 const mojaFunkcja = function () {
 // kod funkcji
 };
 ```
 Sposób 3: Funkcja strzałkowa (Arrow function) - ES6
 
-```JS
+```js
 const mojaFunkcja = () => {
 // kod funkcji
 };
@@ -88,7 +88,7 @@ const mojaFunkcja = () => {
 
 Sposób 4: Konstruktor Function
 
-```JS
+```js
 const mojaFunkcja = new Function('arg1', 'arg2', 'return arg1 + arg2;');
 ```
 
@@ -100,7 +100,7 @@ bardzo elastyczne i użyteczne zarówno jako bloki kodu, jak i obiekty.
 **Funkcje jako obiekty:**
 Mogą być przypisywane do zmiennych i stałych:
 
-```JS
+```js
 let myFunc = function () {
 console.log("Funkcja została wywołana");
 };
@@ -109,7 +109,7 @@ myFunc(); // wywołanie funkcji
 
 Mogą być przekazywane jako argumenty do innych funkcji:
 
-```JS
+```js
 function execute(func_var) {
 func_var();
 }
@@ -120,7 +120,7 @@ console.log("Wywołana funkcja");
 
 Mogą być zwracane przez inne funkcje:
 
-```JS
+```js
 function createFunction() {
 return function () {
 console.log("Funkcja zwrócona przez inną funkcję");
@@ -133,7 +133,7 @@ newFunction(); // obiekt ten jest funkcją
 
 Mogą posiadać właściwości i metody:
 
-```JS
+```js
 function myFunction() {
 // kod funkcji
 }
@@ -143,7 +143,7 @@ console.log(myFunction.nazwa); // Wyświetli "Funkcja testowa"
 
 Są instancjami obiektu typu Function:
 
-```JS
+```js
 console.log(typeof myFunction); // Wyświetli "function"
 console.log(myFunction instanceof Function); // Zwróci true
 ```
@@ -151,7 +151,7 @@ console.log(myFunction instanceof Function); // Zwróci true
 Aby utworzyć funkcję, która przyjmuje nieskończenie wiele parametrów
 używamy operatora ... (rest parameter)
 
-```JS
+```js
 function przyklad(...params) {
 console.log(params);
 }
@@ -216,7 +216,7 @@ document.getElementsByTagName('p')[0].innerHTML = 'Akapit 2'
 Ponadto możliwe jest programowe tworzenie nowych elementów i dodanie
 ich do dokumentu:
 
-```JS
+```js
 let newP = document.createElement('p');
 newP.innerText = 'Programowo utworzony akapit';
 document.body.append(newP);
@@ -228,7 +228,7 @@ Poniżej pokazano przykład, w którym tablice, zawierającą obiekty JSON
 przekształcono w dynamicznie wygenerowaną tablicę HTML.
 [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
 
-```JS
+```js
 const exchangeRate = [{"currency":"dolar amerykański","code":"USD","mid":3.9432},
 {"currency":"dolar
 australijski","code":"AUD","mid":2.6897},
@@ -273,7 +273,7 @@ elementu(ów). Tutaj sprawiono, że tabela posiada dość klasyczne
 obramowanie. Jednak od razu warto zwrócić uwagę na fakt, że żeby to
 uzyskać była potrzeba wykorzystania dwóch pętli:
 
-```JS
+```js
 HTMLTable.style.borderCollapse = 'collapse';
 for (let child of HTMLTable.children) {
 child.style.border = '1px solid black';
@@ -287,7 +287,7 @@ grandchild.style.border = '1px solid black';
 Alternatywą jest programowe dodanie samego stylu (który jest przecież
 atrybutem HTML):
 
-```JS
+```js
 const HTMLTable2 = HTMLTable.cloneNode(true); // tworzymy kopię elementu zanim
 potem zmodyfikujemy mu style, true oznacza, że kopiujemy element z potomkami
 
@@ -314,7 +314,7 @@ ostylować dużą liczbę elementów, jak i upraszcza zdecydowanie skrypt.
 Na podstawie przykładów napisz program, który wygeneruje programowo
 tabelę, na bazie następującej tablicy w JavaScript:
 
-```JS
+```js
 const data = [
 ['Imię', 'Nazwisko', 'Wiek'],
 ['John', 'Doe', 30],
