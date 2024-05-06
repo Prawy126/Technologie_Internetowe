@@ -290,20 +290,14 @@ layout: default
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
             ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-            TECHNOLOGIE INTERNETOWE | MGR INŻ. WOJCIECH GAŁKA, 
-            MGR INŻ. MARCIN MRUKOWICZ, MGR INŻ. JAROMIR SARZYŃSKI 
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur  occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
             laborum
         </section>
         <section id="trzeci">
             <img src="logo_UR_blue.png">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
             ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-            TECHNOLOGIE INTERNETOWE | MGR INŻ. WOJCIECH GAŁKA, 
-            MGR INŻ. MARCIN MRUKOWICZ, MGR INŻ. JAROMIR SARZYŃSKI 
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
             laborum
         </section>
     </article>
